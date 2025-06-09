@@ -1,0 +1,209 @@
+@import "./base/funcionalidades";
+@import "./base/generales";
+@import "./base/querys";
+@import "./components/contacto";
+@import "./components/nosotros";
+@import "./components/productos";
+@import "./components/servicios";
+
+.video-container {
+    display: flex;
+    /*para que el video esté en el centro*/
+    align-items: center;
+    flex-direction: column;
+
+    h1 {
+        font-size: 70px;
+        text-align: center;
+        color: brown;
+        font-weight: bold;
+        /*letra gorda*/
+        text-shadow:
+            2px 2px 0 black,
+            -2px 2px 0 black,
+            2px -2px 0 black,
+            -2px -2px 0 black;
+    }
+
+    h2 {
+        color: #c1121f;
+        text-align: center;
+        font-size: 50px;
+        text-shadow:
+            2px 2px 0 black,
+            -2px 2px 0 black,
+            2px -2px 0 black,
+            -2px -2px 0 black;
+        margin-bottom: 50px;
+    }
+}
+
+.titulos-inicio {
+    h3 {
+        text-align: center;
+        font-size: 40px;
+        text-decoration: underline;
+        margin-top: 50px;
+        text-align: center;
+        font-size: 40px;
+        text-decoration: underline;
+    }
+
+    p {
+        font-size: 30px;
+        color: #000;
+        border: 3px solid brown;
+        background-color: brown;
+        text-align: center;
+        margin: 45px;
+        border-radius: 50px;
+        font-weight: bold;
+    }
+
+    .div-aceites {
+        display: grid;
+        grid-template-columns: 25% 25% 25%;
+        /*ancho de cada div*/
+        grid-template-rows: 400px;
+        /*define mi estructura interna del "alto". Puedo definir al lado de px otro valor exterior abajo. una capacidad más.*/
+        padding-bottom: 30px;
+        /*para q los aceites no estén pegados a la siguiente seccion*/
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 50px;
+        /*distancia entre la siguiente section*/
+        ;
+
+        div {
+            border: 2px solid black;
+            padding: 5px;
+            display: flex;
+            /*para que mi contenido esté alineado*/
+            flex-direction: column;
+            align-items: center;
+            /*para que el aceite esté en el centro*/
+
+            h4 {
+                font-size: 25px;
+                text-align: center;
+                width: 40vh;
+                /*width con este vh para que el titulo quede en ese porcentaje respecto al ancho*/
+                ;
+            }
+
+            img {
+                height: 250px;
+                width: 250px;
+            }
+
+            a {
+                font-size: 30px;
+                background-color: brown;
+                color: black;
+                margin: 15px;
+                border-radius: 10px;
+                text-align: center;
+                /*para que mi botón esté bien en el centro*/
+                text-decoration: none;
+
+                &:hover {
+                    background-color: rgba(6, 225, 6, 0.766);
+                }
+            }
+        }
+    }
+
+    .tres-img-texto {
+        color: #fdf0d5;
+        text-align: center;
+        font-style: italic;
+        display: grid;
+        grid-column: span 3;
+        margin: 50px;
+    }
+
+    .linea-divisoria {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        grid-column: span 3;
+
+        div {
+            width: 500px;
+            border-top: 3px solid white;
+            margin-bottom: 50px;
+        }
+    }
+
+}
+
+.experiencias {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    margin-left: 30px;
+    padding-bottom: 50px;
+
+    .cambio-focos {
+        p {
+            width: 300px;
+            text-align: center;
+        }
+    }
+
+    .golcito {
+        p {
+            width: 300px;
+            text-align: center;
+        }
+    }
+
+    .focus {
+        p {
+            width: 300px;
+            text-align: center;
+        }
+    }
+
+    .peugeot {
+        #openModal {
+            width: 300px;
+            backdrop-filter: blur(5px);
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: brown;
+            color: white;
+            cursor: pointer;
+        }
+
+        #modal {
+            background-color: #0000003e;
+            inset-inline-start: 500px;
+            /*no pude distribuirlo ni con grid ni con flexbox xq sino el video aparecía antes de apretar video*/
+            margin-top: 50px;
+            backdrop-filter: blur(5px);
+
+            #openModal {
+                &:hover {
+                    background-color: rgba(6, 225, 6, 0.766);
+                }
+            }
+
+            /* Efecto de desenfoque */
+            #closeModal {
+                display: flex;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                background-color: brown;
+                color: white;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: rgba(6, 225, 6, 0.766);
+                }
+            }
+        }
+    }
+}

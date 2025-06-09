@@ -1,0 +1,54 @@
+.hero-productos {
+    p {
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .div-productos {
+        display: flex;
+        /*distribuyo de manera horizontal*/
+        justify-content: space-evenly;
+
+        /*separo mis combos*/
+        div {
+            border: 2px solid black;
+            padding: 5px;
+            display: flex;
+            /*para que mi contenido esté alineado*/
+            flex-direction: column;
+            /*para que mi contenido esté alineado*/
+            align-items: center;
+            /*para que mi botón esté bien en el centro*/
+            margin-bottom: 30px;
+
+            h3 {
+                font-size: 25px;
+                text-align: center;
+                width: 40vh;
+                /*width con este vh para que el titulo quede en ese porcentaje respecto al hancho*/
+                ;
+            }
+
+            img {
+                width: 250px;
+                height: 250px;
+            }
+
+            a {
+                background-color: brown;
+                color: black;
+                margin: 15px;
+                border-radius: 10px;
+                text-align: center;
+                /*para que mi botón esté bien en el centro*/
+                font-size: 30px;
+                text-decoration: none;
+
+                &:hover {
+                    background-color: rgba(6, 225, 6, 0.766);
+                }
+            }
+        }
+    }
+}

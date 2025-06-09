@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>conocemassobrenosotros</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg"> <!--contiene flex-wrap para que mis elementos estén alineados-->
+            <img class="logo" src="../img/logo.png" alt="">
+            <div class="container-fluid"><!--clase de inicio y Productos-->
+                <a class="navbar-brand" href="../index.html">Inicio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation"> <!--esto que es? no tocar-->
+                    <span class="navbar-toggler-icon"></span><!--esto que es? no tocar-->
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!--div desde nosotros hasta search-->
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0"> <!--lista desde nosotros hasta productos-->
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="conocemassobrenosotros.html">Conocé más sobre
+                                nosotros</a>
+                        </li>
+                        <li class="nav-item dropdown"> <!--Productos-->
+                            <a class="nav-link dropdown-toggle" href="productos.html" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Productos
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="productos.html">Ofertas</a></li>
+                                <li><a class="dropdown-item" href="servicios.html">Servicios</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" />
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="mi-fondo">
+        <section class="nosotros">
+            <h1>Nuestra historia</h1>
+            <h2>30 años al servicio del automotor</h2>
+            <div class="nosotros-historia">
+                <div class="mostrador">
+                    <img src="../img/mostrador.jpg" alt="">
+                    <p> Ubicados en el corazón de Florida, Vte López, nuestro lubricentro está preparado para realizar
+                        el mantenimiento adecuado a su vehículo. Nos da gusto recibir a cada cliente y brindar el mejor
+                        servicio especializado, creando como resultado un vínculo personal y profesional con quien elija
+                        Florida Shopping Car.</p>
+                </div>
+                <div class="nosotros-centro">
+                    <img src="../img/tablero-herramientas.jpg" alt="">
+                    <p>El equipo profesional de lubriexpertos, va a responder sus inquietudes con el fin de ser una gran
+                        ayuda a la hora de proteger su motor.
+                        Siguiendo el mandato de Hugo, quien inició este proyecto hace 30 años, hoy sigue manteniendo la
+                        esencia de su creador, donde cada detalle cuenta y lo mas importante: de forma honesta. </p>
+                </div>
+                <div class="entrada">
+                    <img src="../img/entradab.jpg" alt="">
+                    <p> Gracias por visitar nuestro sitio web. Ahora sólo queda conocernos personalmente. Espero cubrir
+                        sus necesidades y transmitir esta pasión por los motores que llevo dentro y ha formado un estilo
+                        de vida. Los esperamos en Avellaneda 1803. ¡Gracias y buenas rutas! </p>
+                </div>
+            </div>
+        </section>
+        <section class="marcas">
+            <h3>Algunas de las marcas con las que trabajamos</h3>
+            <div class="marcass">
+                <img src="../img/helix.jpg" alt="">
+                <img src="../img/elaion.jpeg" alt="">
+                <img src="../img/valvoline.jpeg" alt="">
+                <img src="../img/wynss.jpeg" alt="">
+                <img src="../img/weba.png" alt="">
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div>
+            <a href="https://www.instagram.com/lubricentrofloridashoppingcar?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                target="_blank"><img src="../img/instagram.png" alt=""></a>
+            <a href="https://www.facebook.com/profile.php?id=61575339303053" target="_blank"><img
+                    src="../img/facebook.png" alt=""></a>
+            <a href="contacto.html"><img src="../img/delivery-bike.png" alt=""></a> <!--poner formulario-->
+            <iframe class="mapa"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3287.2384016456267!2d-58.491023224418306!3d-34.52218747298355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb136f7d6a88f%3A0x2b70cacb16c24b27!2sNicol%C3%A1s%20Avellaneda%201807%2C%20B1602%20Florida%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1745675566553!5m2!1ses!2sar"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,259 @@
+@charset "UTF-8";
+header {
+  background-color: black;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  /*para q mi grilla no pase x arriba*/
+  font-size: 20px;
+}
+header nav .logo {
+  width: 100px;
+  height: 100px;
+}
+header nav .container-fluid a {
+  color: brown;
+}
+header nav .container-fluid a:hover {
+  color: rgba(6, 225, 6, 0.766);
+}
+header nav .container-fluid .d-flex input {
+  background-color: #000;
+}
+header nav .container-fluid .d-flex button {
+  background-color: brown;
+  color: white;
+  border: 3px solid brown;
+}
+
+.btn-outline-sucess:hover {
+  background-color: rgba(6, 225, 6, 0.766);
+  border: rgba(6, 225, 6, 0.766);
+}
+
+.mi-fondo {
+  background-image: url(../img/fondo.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.video-container {
+  display: flex;
+  /*para que el video esté en el centro*/
+  align-items: center;
+  flex-direction: column;
+}
+.video-container h1 {
+  font-size: 70px;
+  text-align: center;
+  color: brown;
+  font-weight: bold;
+  /*letra gorda*/
+  text-shadow: 2px 2px 0 black, -2px 2px 0 black, 2px -2px 0 black, -2px -2px 0 black;
+}
+.video-container h2 {
+  color: #c1121f;
+  text-align: center;
+  font-size: 50px;
+  text-shadow: 2px 2px 0 black, -2px 2px 0 black, 2px -2px 0 black, -2px -2px 0 black;
+  margin-bottom: 50px;
+}
+
+.titulos-inicio h3 {
+  text-align: center;
+  font-size: 40px;
+  text-decoration: underline;
+  margin-top: 50px;
+  text-align: center;
+  font-size: 40px;
+  text-decoration: underline;
+}
+.titulos-inicio p {
+  font-size: 30px;
+  color: #000;
+  border: 3px solid brown;
+  background-color: brown;
+  text-align: center;
+  margin: 45px;
+  border-radius: 50px;
+  font-weight: bold;
+}
+.titulos-inicio .div-aceites {
+  display: grid;
+  grid-template-columns: 25% 25% 25%;
+  /*ancho de cada div*/
+  grid-template-rows: 400px;
+  /*define mi estructura interna del "alto". Puedo definir al lado de px otro valor exterior abajo. una capacidad más.*/
+  padding-bottom: 30px;
+  /*para q los aceites no estén pegados a la siguiente seccion*/
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 50px;
+  /*distancia entre la siguiente section*/
+}
+.titulos-inicio .div-aceites div {
+  border: 2px solid black;
+  padding: 5px;
+  display: flex;
+  /*para que mi contenido esté alineado*/
+  flex-direction: column;
+  align-items: center;
+  /*para que el aceite esté en el centro*/
+}
+.titulos-inicio .div-aceites div h4 {
+  font-size: 25px;
+  text-align: center;
+  width: 40vh;
+  /*width con este vh para que el titulo quede en ese porcentaje respecto al ancho*/
+}
+.titulos-inicio .div-aceites div img {
+  height: 250px;
+  width: 250px;
+}
+.titulos-inicio .div-aceites div a {
+  font-size: 30px;
+  background-color: brown;
+  color: black;
+  margin: 15px;
+  border-radius: 10px;
+  text-align: center;
+  /*para que mi botón esté bien en el centro*/
+  text-decoration: none;
+}
+.titulos-inicio .div-aceites div a:hover {
+  background-color: rgba(6, 225, 6, 0.766);
+}
+.titulos-inicio .tres-img-texto {
+  color: #fdf0d5;
+  text-align: center;
+  font-style: italic;
+  display: grid;
+  grid-column: span 3;
+  margin: 50px;
+}
+.titulos-inicio .linea-divisoria {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  grid-column: span 3;
+}
+.titulos-inicio .linea-divisoria div {
+  width: 500px;
+  border-top: 3px solid white;
+  margin-bottom: 50px;
+}
+
+.experiencias {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  margin-left: 30px;
+  padding-bottom: 50px;
+}
+.experiencias .cambio-focos p {
+  width: 300px;
+  text-align: center;
+}
+.experiencias .golcito p {
+  width: 300px;
+  text-align: center;
+}
+.experiencias .focus p {
+  width: 300px;
+  text-align: center;
+}
+.experiencias .peugeot #openModal {
+  width: 300px;
+  backdrop-filter: blur(5px);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: brown;
+  color: white;
+  cursor: pointer;
+}
+.experiencias .peugeot #modal {
+  background-color: rgba(0, 0, 0, 0.2431372549);
+  inset-inline-start: 500px;
+  /*no pude distribuirlo ni con grid ni con flexbox xq sino el video aparecía antes de apretar video*/
+  margin-top: 50px;
+  backdrop-filter: blur(5px);
+  /* Efecto de desenfoque */
+}
+.experiencias .peugeot #modal #openModal:hover {
+  background-color: rgba(6, 225, 6, 0.766);
+}
+.experiencias .peugeot #modal #closeModal {
+  display: flex;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: brown;
+  color: white;
+  cursor: pointer;
+}
+.experiencias .peugeot #modal #closeModal:hover {
+  background-color: rgba(6, 225, 6, 0.766);
+}
+
+.nosotros .nosotros-historia {
+  font-size: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.nosotros .nosotros-historia .mostrador {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.nosotros .nosotros-historia .mostrador img {
+  width: 600px;
+  height: 400px;
+}
+.nosotros .nosotros-historia .mostrador p {
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+}
+.nosotros .nosotros-centro {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+.nosotros .nosotros-centro img {
+  grid-column: 2;
+}
+.nosotros .nosotros-centro p {
+  grid-row: 1;
+  /*el texto está en primer fila y no abajo*/
+  display: flex;
+  align-items: center;
+  /*centro texto en mi img*/
+}
+.nosotros .entrada {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.nosotros .entrada p {
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+}
+
+.marcas h3 {
+  margin-top: 50px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.marcas .marcass {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 10px;
+}
+.marcas .marcass img {
+  margin-left: 15px;
+  height: 150px;
+  width: 150px;
+}
+
+/*# sourceMappingURL=estilos.css.map */

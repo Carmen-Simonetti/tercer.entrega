@@ -1,0 +1,72 @@
+.nosotros {
+    .nosotros-historia {
+        font-size: 30px;
+        margin-left: 50px;
+        margin-right: 50px;
+
+        .mostrador {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+
+            img {
+                width: 600px;
+                height: 400px;
+            }
+
+            p {
+                display: flex;
+                align-items: center;
+                margin-left: 30px;
+            }
+        }
+    }
+
+    .nosotros-centro {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+
+        img {
+            grid-column: 2;
+        }
+
+        p {
+            grid-row: 1;
+            /*el texto está en primer fila y no abajo*/
+            display: flex;
+            align-items: center;
+            /*centro texto en mi img*/
+        }
+    }
+
+    .entrada {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+
+        p {
+            display: flex;
+            align-items: center;
+            margin-left: 30px;
+        }
+    }
+
+}
+
+.marcas {
+    h3 {
+        margin-top: 50px;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .marcass {
+        display: flex;
+        justify-content: space-evenly;
+        padding-bottom: 10px;
+
+        img {
+            margin-left: 15px;
+            height: 150px;
+            width: 150px;
+        }
+    }
+}

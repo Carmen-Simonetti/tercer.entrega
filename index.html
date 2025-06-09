@@ -1,0 +1,155 @@
+<!DOCTYPE html> <!--tipo de doc-->
+<html lang="en"> <!--html en este caso el lenguaje q vamos a utilizar-->
+
+<head>
+    <meta charset="UTF-8"> <!--tipo de sintaxis tipo de escritura-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- etiqueta con atributo para adaptarse a diferentes dispositivos-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!--boostrap iconos-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <!--boostrap-->
+    <link rel="stylesheet" href="./css/style.css">
+    <!--css-->
+    <title>floridashoppingcar</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg"> <!--contiene flex-wrap para que mis elementos estén alineados-->
+            <img class="logo" src="img/logo.png" alt="">
+            <div class="container-fluid"><!--clase de inicio y Productos-->
+                <a class="navbar-brand" href="index.html">Inicio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation"> <!--esto que es? no tocar-->
+                    <span class="navbar-toggler-icon"></span><!--esto que es? no tocar-->
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!--div desde nosotros hasta search-->
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0"> <!--lista desde nosotros hasta productos-->
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./pages/conocemassobrenosotros.html">Conocé
+                                más sobre nosotros</a>
+                        </li>
+                        <li class="nav-item dropdown"> <!--Productos-->
+                            <a class="nav-link dropdown-toggle" href="./pages/productos.html" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Productos
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./pages/productos.html">Ofertas</a></li>
+                                <li><a class="dropdown-item" href="./pages/servicios.html">Servicios</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" />
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="mi-fondo">
+        <!--hero section--><!--el rotulo de la clase en este ejemplo: "hero" siempre tiene q estar relacionado con el contenido-->
+        <section class="video-container">
+            <h1>Florida Shopping Car</h1>
+            <h2>30 años al servicio del automotor</h2>
+            <video width="640" height="360" controls>
+                <source src="./img/franco-en-lubri.mp4" type="video/mp4">
+            </video>
+        </section>
+        <section class="titulos-inicio">
+            <h3>Cambio de aceite</h3>
+            <p> Incluye aceite + filtros + mano de obra </p>
+            <div class="div-aceites">
+                <div>
+                    <h4>Combo Sintético $119.999</h4>
+                    <!--utilicé padding para que mis aceites queden todos perfectamente alineados-->
+                    <img src="img/sintetico.webp" alt="">
+                    <a href="">Comprar</a>
+                </div>
+                <div>
+                    <h4>Combo Semi-sintético $69.999</h4>
+                    <img src="img/semi.webp" alt="">
+                    <a href="">Comprar</a>
+                </div>
+                <div>
+                    <h4>Combo Mineral $49.999</h4>
+                    <img src="img/mineral.webp" alt="">
+                    <a href="">Comprar</a>
+                </div>
+            </div>
+            <h5 class="tres-img-texto">Elegir un mecánico para su auto es una decisión importante. Llegue al taller y
+                conozca nuestro servicio de mantenimiento preventivo para
+                asegurar el óptimo rendimiento de su motor, bajo la mirada técnica de alguien que vive apasionado
+                por los motores.</h5>
+            <div class="linea-divisoria">
+                <div></div> <!--estoy usando un div para generar la linea-->
+            </div>
+        </section>
+        <section class="experiencias">
+
+            <div class="cambio-focos">
+                <img src="img/otra.png" alt="">
+                <p>Se completó el nivel de aceite para transmisión y se cambiaron los focos.</p>
+            </div>
+            <div class="golcito">
+                <img src="img/golcito.png" alt="">
+                <p>Cambio de filtro de nafta Vw Gol 1.6</p>
+            </div>
+            <div class="renault">
+                <img src="img/cambio-reno.png" alt="">
+                <p>Cambio de aceite a Renault</p>
+            </div>
+            <div class="focus">
+                <img src="img/focus-filtros.png" alt="">
+                <p>Cambio de aceite y filtros Ford Focus.</p>
+            </div>
+            <div class="fitito">
+                <img src="img/fitito.png" alt="">
+                <p>Cambio de aceite a Fiat 600</p>
+            </div>
+           <div class="peugeot">
+                <img src="img/peugeot.png" alt="">
+                <button id="openModal">Ver video cambio de aceite Peugeot</button>
+                <dialog id="modal">
+                    <video width="600" height="500" controls>
+                        <source src="./img/cambio-de-aceite.mp4" type="video/mp4">
+                    </video>
+                    <button id="closeModal">Salir</button>
+                </dialog>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div>
+            <a href="https://www.instagram.com/lubricentrofloridashoppingcar?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                target="_blank"><img src="img/instagram.png" alt=""></a>
+            <a href="https://www.facebook.com/profile.php?id=61575339303053" target="_blank"><img src="img/facebook.png"
+                    alt=""></a>
+            <a href="./pages/contacto.html"><img src="img/delivery-bike.png" alt=""></a> <!--poner formulario-->
+            <iframe class="mapa"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3287.2384016456267!2d-58.491023224418306!3d-34.52218747298355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb136f7d6a88f%3A0x2b70cacb16c24b27!2sNicol%C3%A1s%20Avellaneda%201807%2C%20B1602%20Florida%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1745675566553!5m2!1ses!2sar"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
+    <script>
+        const modal = document.getElementById('modal');
+        const openModal = document.getElementById('openModal');
+        const closeModal = document.getElementById('closeModal');
+        openModal.addEventListener('click', () => modal.showModal());
+        closeModal.addEventListener('click', () => modal.close());
+    </script>
+</body>
+
+</html>

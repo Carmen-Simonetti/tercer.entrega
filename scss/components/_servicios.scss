@@ -1,0 +1,38 @@
+.servicios {
+    h3 {
+        text-align: center;
+        font-size: 30px;
+        border-style: solid;
+        color: #000;
+        background-color: brown;
+        font-weight: bold;
+        /*letra gorda*/
+        text-shadow:
+            2px 2px 0 white,
+            -2px 2px 0 white,
+            2px -2px 0 white,
+            -2px -2px 0 white;
+        margin-bottom: 50px;
+    }
+
+    div {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 15px;
+
+        .div {
+            display: flex;
+            font-size: 20px;
+
+            img {
+                width: 250px;
+                height: 250px;
+            }
+
+            p {
+                margin-left: 3px;
+                color: #fdf0d5;
+            }
+        }
+    }
+}

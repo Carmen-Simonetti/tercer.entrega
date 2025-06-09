@@ -1,0 +1,39 @@
+.contacto {
+    p {
+        color: #fdf0d5;
+        font-size: 30px;
+        text-align: center;
+        padding-top: 50px;
+    }
+
+    div {
+        font-size: 30px;
+        margin: 50px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+.formulario {
+    div {
+        .contact-form {
+            font-size: 30px;
+        }
+    }
+}
+
+.form-button {
+    font-size: 25px;
+    background: rgba(128, 128, 128, 0.545);
+    border-radius: 10px;
+
+    &:hover {
+        background-color: rgba(6, 225, 6, 0.766);
+    }
+}
+
+.form-input {
+    width: 200px;
+    height: 30px;
+    background: rgba(128, 128, 128, 0.545);
+}

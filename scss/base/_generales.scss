@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    /*usé estas 2 prop para eliminar los bordes*/
+    color: black;
+    box-sizing: border-box;
+    font-family: "Comic Relief", system-ui;
+}
+
+header {
+    background-color: black;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    /*para q mi grilla no pase x arriba*/
+    font-size: 20px;
+
+    nav {
+        .logo {
+            width: 100px;
+            height: 100px;
+        }
+
+        .container-fluid {
+            a {
+                color: brown;
+
+                &:hover {
+                    color: rgba(6, 225, 6, 0.766);
+                }
+            }
+
+            .d-flex {
+                input {
+                    background-color: #000;
+                }
+
+                button {
+                    background-color: brown;
+                    color: white;
+                    border: 3px solid brown;
+                }
+
+            }
+        }
+    }
+}
+
+.btn-outline-sucess {
+    &:hover {
+        background-color: rgba(6, 225, 6, 0.766);
+        border: rgba(6, 225, 6, 0.766);
+    }
+}
+
+.mi-fondo {
+    background-color: #003049;
+}
+
+.experiencias {
+    p {
+        font-size: 25px;
+        color: #fdf0d5;
+    }
+
+    img {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+.nosotros-historia {
+    p {
+        color: #fdf0d5;
+    }
+}
+.footer {
+    display: block;
+    background-image: url(../img/posible\ footer.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
