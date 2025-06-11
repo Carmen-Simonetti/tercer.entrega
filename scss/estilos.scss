@@ -81,44 +81,51 @@
             padding: 5px;
             @include flex (flex, center);
             flex-direction: column;
+            transition: width 5s ease, background-color 1s ease;
 
-
-            h4 {
-                font-size: 25px;
-                text-align: center;
-                width: 200px;
-                ;
-            }
-
-            img {
-                height: 250px;
-                width: 250px;
-            }
-
-            a {
-                @extend %boton;
-
-                &:hover {
-                    background-color: rgba(6, 225, 6, 0.766);
-                }
+            &:hover {
+                background-color: #669bbc;
             }
         }
+
     }
 
-    .tres-img-texto {
-        color: $color-principal;
+    h4 {
+        font-size: 25px;
         text-align: center;
-        font-style: italic;
-        margin: 50px;
+        width: 200px;
+        ;
     }
 
-    .linea-divisoria {
-        @include flex-justify (flex, center);
-        div {
-            width: 500px;
-            border-top: 3px solid white;
-            margin-bottom: 50px;
+    img {
+        height: 250px;
+        width: 250px;
+    }
+
+    a {
+        @extend %boton;
+
+        &:hover {
+            background-color: rgba(6, 225, 6, 0.766);
         }
+    }
+}
+
+
+.tres-img-texto {
+    color: $color-principal;
+    text-align: center;
+    font-style: italic;
+    margin: 50px;
+}
+
+.linea-divisoria {
+    @include flex-justify (flex, center);
+
+    div {
+        width: 500px;
+        border-top: 3px solid white;
+        margin-bottom: 50px;
     }
 }
 
@@ -139,13 +146,13 @@
 
     .golcito {
         p {
-            width: 300px;    
+            width: 300px;
         }
     }
 
     .focus {
         p {
-            width: 300px; 
+            width: 300px;
         }
     }
 

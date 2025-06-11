@@ -24,6 +24,7 @@ $background-color: rgba(6, 225, 6, 0.766),
     text-align: center;
     /*para que mi botón esté bien en el centro*/
     text-decoration: none;
+    transition: background 1s linear;
 }
 //* MIXIN 
 @mixin flex($flex, $align){

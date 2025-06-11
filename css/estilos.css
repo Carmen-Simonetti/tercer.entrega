@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.titulos-inicio .div-aceites div a {
+.titulos-inicio a {
   font-size: 30px;
   background-color: brown;
   color: #fdf0d5;
@@ -9,6 +9,7 @@
   text-align: center;
   /*para que mi botón esté bien en el centro*/
   text-decoration: none;
+  transition: background 1s linear;
 }
 
 * {
@@ -45,6 +46,7 @@ header nav .container-fluid .d-flex button {
   background-color: brown;
   color: white;
   border: 3px solid brown;
+  transition: background 1s linear;
 }
 header nav .container-fluid .d-flex button:hover {
   background-color: rgba(6, 225, 6, 0.766);
@@ -983,30 +985,36 @@ header nav .container-fluid .d-flex button:hover {
   display: flex;
   align-items: center;
   flex-direction: column;
+  transition: width 5s ease, background-color 1s ease;
 }
-.titulos-inicio .div-aceites div h4 {
+.titulos-inicio .div-aceites div:hover {
+  background-color: #669bbc;
+}
+.titulos-inicio h4 {
   font-size: 25px;
   text-align: center;
   width: 200px;
 }
-.titulos-inicio .div-aceites div img {
+.titulos-inicio img {
   height: 250px;
   width: 250px;
 }
-.titulos-inicio .div-aceites div a:hover {
+.titulos-inicio a:hover {
   background-color: rgba(6, 225, 6, 0.766);
 }
-.titulos-inicio .tres-img-texto {
+
+.tres-img-texto {
   color: #fdf0d5;
   text-align: center;
   font-style: italic;
   margin: 50px;
 }
-.titulos-inicio .linea-divisoria {
+
+.linea-divisoria {
   display: flex;
   justify-content: center;
 }
-.titulos-inicio .linea-divisoria div {
+.linea-divisoria div {
   width: 500px;
   border-top: 3px solid white;
   margin-bottom: 50px;

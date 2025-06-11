@@ -347,7 +347,10 @@ h2 {
     color: #fdf0d5;
     font-size: 30px;
     text-align: center;
-    padding-top: 50px;
+    padding: 30px;
+    background: linear-gradient(90deg, #780000, #669bbc);
+    background-size: 200% 200%;
+    animation: gradientAnimation 5s infinite alternate;
 }
 
 /*!---formulario---!*/
