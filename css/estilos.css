@@ -63,6 +63,7 @@ header nav .container-fluid .d-flex button:hover {
 .experiencias p {
   font-size: 25px;
   color: #fdf0d5;
+  text-align: center;
 }
 .experiencias img {
   width: 300px;
@@ -626,6 +627,12 @@ header nav .container-fluid .d-flex button:hover {
   }
 }
 @media screen and (max-width: 558px) {
+  .mi-fondo .titulos-inicio .linea-divisoria {
+    display: none;
+  }
+  .mi-fondo .titulos-inicio .tres-img-texto {
+    padding-left: 0;
+  }
   .mi-fondo .marcas .marcass {
     display: grid;
     grid-template-columns: 100px 100px;
@@ -712,7 +719,7 @@ header nav .container-fluid .d-flex button:hover {
     font-size: 30px;
   }
   .mi-fondo .titulos-inicio .tres-img-texto {
-    width: 300px;
+    width: 340px;
   }
   .mi-fondo .experiencias .peugeot #modal {
     inset-inline-start: 60px;
@@ -774,6 +781,7 @@ header nav .container-fluid .d-flex button:hover {
   }
   .mi-fondo .titulos-inicio p {
     font-size: 15px;
+    padding: 5px;
   }
   .video-container h1 {
     font-size: 40px;
@@ -856,7 +864,6 @@ header nav .container-fluid .d-flex button:hover {
     grid-template-columns: 100px 100px 100px;
     gap: 10px;
     padding-bottom: 10px;
-    padding-left: 30px;
   }
   .marcass img {
     width: 70px;
@@ -873,6 +880,7 @@ header nav .container-fluid .d-flex button:hover {
   }
   .hero-productos p {
     margin-bottom: 50px;
+    padding: 5px;
   }
   .div-servicios-cambio img {
     width: 300px;
@@ -1014,15 +1022,12 @@ header nav .container-fluid .d-flex button:hover {
 }
 .experiencias .cambio-focos p {
   width: 300px;
-  text-align: center;
 }
 .experiencias .golcito p {
   width: 300px;
-  text-align: center;
 }
 .experiencias .focus p {
   width: 300px;
-  text-align: center;
 }
 .experiencias .peugeot {
   display: flex;

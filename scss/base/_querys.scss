@@ -652,6 +652,20 @@
 }
 
 @media screen and (max-width:558px) {
+      .mi-fondo {
+        .titulos-inicio {
+            .linea-divisoria {
+               display: none;
+            }
+        }
+    }
+    .mi-fondo {
+        .titulos-inicio {
+            .tres-img-texto {
+                padding-left: 0;
+            }
+        }
+    }
     .mi-fondo {
         .marcas {
             .marcass {
@@ -831,7 +845,7 @@
     .mi-fondo {
         .titulos-inicio {
             .tres-img-texto {
-                width: 300px;
+                width: 340px;
             }
         }
     }
@@ -957,6 +971,7 @@
         .titulos-inicio {
             p {
                 font-size: 15px;
+                padding: 5px;
             }
         }
     }
@@ -978,13 +993,15 @@
             content: "✨";
         }
     }
-.mi-fondo {
-    .hero-productos {
-        h1 {
-            font-size: 20px;
+
+    .mi-fondo {
+        .hero-productos {
+            h1 {
+                font-size: 20px;
+            }
         }
     }
-}
+
     header .navbar {
         position: sticky;
     }
@@ -1009,6 +1026,7 @@
             }
         }
     }
+
 
     .mi-fondo {
         .titulos-inicio {
@@ -1099,7 +1117,6 @@
         grid-template-columns: 100px 100px 100px;
         gap: 10px;
         padding-bottom: 10px;
-        padding-left: 30px;
     }
 
     .marcass img {
@@ -1120,6 +1137,7 @@
 
     .hero-productos p {
         margin-bottom: 50px;
+        padding: 5px;
     }
 
     .div-servicios-cambio img {
