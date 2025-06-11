@@ -1,4 +1,13 @@
 @charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  /*usé estas 2 prop para eliminar los bordes*/
+  color: black;
+  box-sizing: border-box;
+  font-family: "Comic Relief", system-ui;
+}
+
 header {
   background-color: black;
   position: sticky;
@@ -32,170 +41,61 @@ header nav .container-fluid .d-flex button {
 }
 
 .mi-fondo {
-  background-image: url(../img/fondo.webp);
+  background-color: #003049;
+}
+
+.experiencias p {
+  font-size: 25px;
+  color: #fdf0d5;
+}
+.experiencias img {
+  width: 300px;
+  height: 300px;
+}
+
+.nosotros-historia p {
+  color: #fdf0d5;
+}
+
+.footer {
+  display: block;
+  background-image: url(../img/posible\ footer.avif);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
 }
 
-.video-container {
-  display: flex;
-  /*para que el video esté en el centro*/
-  align-items: center;
-  flex-direction: column;
-}
-.video-container h1 {
-  font-size: 70px;
-  text-align: center;
-  color: brown;
-  font-weight: bold;
-  /*letra gorda*/
-  text-shadow: 2px 2px 0 black, -2px 2px 0 black, 2px -2px 0 black, -2px -2px 0 black;
-}
-.video-container h2 {
-  color: #c1121f;
-  text-align: center;
-  font-size: 50px;
-  text-shadow: 2px 2px 0 black, -2px 2px 0 black, 2px -2px 0 black, -2px -2px 0 black;
-  margin-bottom: 50px;
-}
-
-.titulos-inicio h3 {
-  text-align: center;
-  font-size: 40px;
-  text-decoration: underline;
-  margin-top: 50px;
-  text-align: center;
-  font-size: 40px;
-  text-decoration: underline;
-}
-.titulos-inicio p {
+.contacto p {
+  color: #fdf0d5;
   font-size: 30px;
-  color: #000;
-  border: 3px solid brown;
-  background-color: brown;
   text-align: center;
-  margin: 45px;
-  border-radius: 50px;
-  font-weight: bold;
+  padding-top: 50px;
 }
-.titulos-inicio .div-aceites {
-  display: grid;
-  grid-template-columns: 25% 25% 25%;
-  /*ancho de cada div*/
-  grid-template-rows: 400px;
-  /*define mi estructura interna del "alto". Puedo definir al lado de px otro valor exterior abajo. una capacidad más.*/
-  padding-bottom: 30px;
-  /*para q los aceites no estén pegados a la siguiente seccion*/
+.contacto div {
+  font-size: 30px;
+  margin: 50px;
   display: flex;
   justify-content: space-evenly;
-  margin-bottom: 50px;
-  /*distancia entre la siguiente section*/
-}
-.titulos-inicio .div-aceites div {
-  border: 2px solid black;
-  padding: 5px;
-  display: flex;
-  /*para que mi contenido esté alineado*/
-  flex-direction: column;
-  align-items: center;
-  /*para que el aceite esté en el centro*/
-}
-.titulos-inicio .div-aceites div h4 {
-  font-size: 25px;
-  text-align: center;
-  width: 40vh;
-  /*width con este vh para que el titulo quede en ese porcentaje respecto al ancho*/
-}
-.titulos-inicio .div-aceites div img {
-  height: 250px;
-  width: 250px;
-}
-.titulos-inicio .div-aceites div a {
-  font-size: 30px;
-  background-color: brown;
-  color: black;
-  margin: 15px;
-  border-radius: 10px;
-  text-align: center;
-  /*para que mi botón esté bien en el centro*/
-  text-decoration: none;
-}
-.titulos-inicio .div-aceites div a:hover {
-  background-color: rgba(6, 225, 6, 0.766);
-}
-.titulos-inicio .tres-img-texto {
-  color: #fdf0d5;
-  text-align: center;
-  font-style: italic;
-  display: grid;
-  grid-column: span 3;
-  margin: 50px;
-}
-.titulos-inicio .linea-divisoria {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  grid-column: span 3;
-}
-.titulos-inicio .linea-divisoria div {
-  width: 500px;
-  border-top: 3px solid white;
-  margin-bottom: 50px;
 }
 
-.experiencias {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
-  margin-left: 30px;
-  padding-bottom: 50px;
+.formulario div .contact-form {
+  font-size: 30px;
 }
-.experiencias .cambio-focos p {
-  width: 300px;
-  text-align: center;
+
+.form-button {
+  font-size: 25px;
+  background: rgba(128, 128, 128, 0.545);
+  border-radius: 10px;
 }
-.experiencias .golcito p {
-  width: 300px;
-  text-align: center;
-}
-.experiencias .focus p {
-  width: 300px;
-  text-align: center;
-}
-.experiencias .peugeot #openModal {
-  width: 300px;
-  backdrop-filter: blur(5px);
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  background-color: brown;
-  color: white;
-  cursor: pointer;
-}
-.experiencias .peugeot #modal {
-  background-color: rgba(0, 0, 0, 0.2431372549);
-  inset-inline-start: 500px;
-  /*no pude distribuirlo ni con grid ni con flexbox xq sino el video aparecía antes de apretar video*/
-  margin-top: 50px;
-  backdrop-filter: blur(5px);
-  /* Efecto de desenfoque */
-}
-.experiencias .peugeot #modal #openModal:hover {
+.form-button:hover {
   background-color: rgba(6, 225, 6, 0.766);
 }
-.experiencias .peugeot #modal #closeModal {
-  display: flex;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  background-color: brown;
-  color: white;
-  cursor: pointer;
-}
-.experiencias .peugeot #modal #closeModal:hover {
-  background-color: rgba(6, 225, 6, 0.766);
+
+.form-input {
+  width: 200px;
+  height: 30px;
+  background: rgba(128, 128, 128, 0.545);
 }
 
 .nosotros .nosotros-historia {
@@ -254,6 +154,880 @@ header nav .container-fluid .d-flex button {
   margin-left: 15px;
   height: 150px;
   width: 150px;
+}
+
+.hero-productos p {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.hero-productos .div-productos {
+  display: flex;
+  /*distribuyo de manera horizontal*/
+  justify-content: space-evenly;
+  /*separo mis combos*/
+}
+.hero-productos .div-productos div {
+  border: 2px solid black;
+  padding: 5px;
+  display: flex;
+  /*para que mi contenido esté alineado*/
+  flex-direction: column;
+  /*para que mi contenido esté alineado*/
+  align-items: center;
+  /*para que mi botón esté bien en el centro*/
+  margin-bottom: 30px;
+}
+.hero-productos .div-productos div h3 {
+  font-size: 25px;
+  text-align: center;
+  width: 40vh;
+  /*width con este vh para que el titulo quede en ese porcentaje respecto al hancho*/
+}
+.hero-productos .div-productos div img {
+  width: 250px;
+  height: 250px;
+}
+.hero-productos .div-productos div a {
+  background-color: brown;
+  color: black;
+  margin: 15px;
+  border-radius: 10px;
+  text-align: center;
+  /*para que mi botón esté bien en el centro*/
+  font-size: 30px;
+  text-decoration: none;
+}
+.hero-productos .div-productos div a:hover {
+  background-color: rgba(6, 225, 6, 0.766);
+}
+
+.servicios h3 {
+  text-align: center;
+  font-size: 30px;
+  border-style: solid;
+  color: #000;
+  background-color: brown;
+  font-weight: bold;
+  /*letra gorda*/
+  text-shadow: 2px 2px 0 white, -2px 2px 0 white, 2px -2px 0 white, -2px -2px 0 white;
+  margin-bottom: 50px;
+}
+.servicios div {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 15px;
+}
+.servicios div .div {
+  display: flex;
+  font-size: 20px;
+}
+.servicios div .div img {
+  width: 250px;
+  height: 250px;
+}
+.servicios div .div p {
+  margin-left: 3px;
+  color: #fdf0d5;
+}
+
+@media screen and (max-width: 1500px) {
+  .nosotros .nosotros-historia .mostrador p {
+    margin-left: 0;
+  }
+  .nosotros .entrada {
+    display: flex;
+  }
+  .nosotros .entrada img {
+    width: 800px;
+  }
+  .nosotros .entrada p {
+    width: 800px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    margin-left: 0;
+  }
+  .marcas .marcass {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 10px;
+  }
+}
+@media screen and (max-width: 1497px) {
+  .experiencias {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 1450px) {
+  .nosotros .nosotros-centro img {
+    width: 500px;
+  }
+  .nosotros .entrada img {
+    width: 600px;
+    height: 300px;
+  }
+}
+@media screen and (max-width: 1365px) {
+  .mi-fondo .experiencias {
+    display: grid;
+    grid-template-columns: 500px 500px;
+    justify-content: center;
+    /*para que mis img estén bien en el centro*/
+    padding-top: 30px;
+  }
+  .mi-fondo .experiencias div {
+    padding-bottom: 20px;
+  }
+}
+.titulos-inicio .linea-divisoria div {
+  display: none;
+}
+
+@media screen and (max-width: 1348px) {
+  .nosotros .nosotros-centro img {
+    width: 450px;
+  }
+  .mi-fondo .titulos-inicio .div-aceites {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .nosotros .nosotros-centro {
+    display: grid;
+    grid-template-columns: 700px 500px;
+  }
+}
+@media screen and (max-width: 1251px) {
+  .nosotros .entrada img {
+    width: 400px;
+  }
+  .servicios div div {
+    flex-wrap: wrap;
+  }
+  .contacto div {
+    font-size: 25px;
+  }
+  .contacto div div {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contacto div div img {
+    width: 40px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .titulos-inicio .div-aceites div h4 {
+    width: 200px;
+  }
+  .titulos-inicio .div-aceites {
+    display: grid;
+    grid-template-columns: 350px 350px;
+  }
+  .nosotros .nosotros-historia .mostrador img {
+    width: 500px;
+  }
+  .nosotros .nosotros-centro {
+    display: grid;
+    grid-template-columns: 600px 500px;
+  }
+}
+@media screen and (max-width: 1190px) {
+  .contacto div {
+    flex-direction: column;
+    margin: 20px;
+  }
+  .titulos-inicio .div-aceites {
+    display: grid;
+    grid-template-columns: 350px 350px;
+  }
+}
+@media screen and (max-width: 1121px) {
+  .nosotros .nosotros-historia .entrada p {
+    padding-left: 5px;
+  }
+  .nosotros .nosotros-historia .mostrador p {
+    padding-left: 5px;
+  }
+  .nosotros .nosotros-historia .nosotros-centro img {
+    width: 400px;
+  }
+  .contacto p {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .hero-productos .div-productos {
+    display: grid;
+    grid-template-columns: 300px 300px;
+  }
+  .mi-fondo .experiencias .peugeot #modal {
+    inset-inline-start: 300px;
+  }
+  .mi-fondo .experiencias .peugeot #modal video {
+    height: 400px;
+    width: 450px;
+  }
+}
+@media screen and (max-width: 1051px) {
+  .nosotros .nosotros-historia p {
+    font-size: 20px;
+  }
+  .nosotros .nosotros-historia .mostrador img {
+    width: 400px;
+    height: 300px;
+  }
+  .nosotros .nosotros-historia .nosotros-centro {
+    display: grid;
+    grid-template-columns: 500px 500px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .experiencias {
+    display: grid;
+    grid-template-columns: 470px 470px;
+  }
+  .nosotros .nosotros-historia .nosotros-centro img {
+    width: 300px;
+  }
+  .nosotros .nosotros-historia .entrada img {
+    height: 200px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 960px) {
+  .mi-fondo .titulos-inicio .div-aceites {
+    display: grid;
+    grid-template-columns: 300px 300px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .nosotros .nosotros-historia div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .nosotros-historia p {
+    width: 600px;
+    margin-bottom: 30px;
+  }
+  .marcass {
+    display: grid;
+    grid-template-columns: 150px 150px 150px 150px 150px;
+  }
+}
+@media screen and (max-width: 851px) {
+  .contacto p {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 841px) {
+  .servicios div {
+    display: grid;
+    grid-template-columns: 350px 350px;
+  }
+  .div-aceites {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    gap: 50px;
+    margin-left: 50px;
+  }
+}
+@media screen and (max-width: 827px) {
+  .mi-fondo .experiencias {
+    display: grid;
+    grid-template-columns: 350px 350px;
+  }
+  h2 {
+    font-size: 40px;
+  }
+  .hero-productos p {
+    padding-bottom: 30px;
+  }
+  .marcass img {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 803px) {
+  .experiencias p {
+    padding-bottom: 30px;
+  }
+  .peugeot {
+    display: flex;
+    flex-direction: column;
+  }
+  #modal {
+    inset-inline-start: 230px;
+  }
+  #modal video {
+    width: 350px;
+    height: 450px;
+  }
+  .mapa {
+    width: 300px;
+  }
+  .footer div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+}
+@media screen and (max-width: 714px) {
+  .mi-fondo .titulos-inicio .div-aceites {
+    display: grid;
+    grid-template-columns: 300px;
+  }
+  .mi-fondo .video-container h1 {
+    font-size: 50px;
+    padding-top: 30px;
+  }
+  .nosotros-historia div {
+    display: flex;
+    align-items: center;
+  }
+  .nosotros-historia p {
+    font-size: 20px;
+    padding-bottom: 30px;
+  }
+  .entrada img {
+    width: 499px;
+  }
+  .entrada p {
+    width: 499px;
+  }
+  .servicios div {
+    grid-template-columns: 300px 300px;
+  }
+}
+@media screen and (max-width: 754px) {
+  .mi-fondo .experiencias .peugeot #modal {
+    inset-inline-start: 200px;
+  }
+  .mi-fondo .experiencias .peugeot #modal video {
+    height: 340px;
+    width: 350px;
+  }
+  .marcass {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .mi-fondo .experiencias {
+    display: grid;
+    grid-template-columns: 350px;
+  }
+  .mi-fondo .titulos-inicio .tres-img-texto {
+    width: 500px;
+    margin-left: 50px;
+  }
+  .mi-fondo .div-aceites {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 649px) {
+  .mi-fondo .titulos-inicio p {
+    font-size: 20px;
+  }
+  .nosotros h1,
+  h2 {
+    font-size: 50px;
+  }
+  .nosotros-historia p {
+    width: 500px;
+    padding-bottom: 20px;
+  }
+  .entrada img {
+    width: 350px;
+  }
+  .marcas h3 {
+    width: 399px;
+  }
+  .mapa {
+    width: 250px;
+  }
+  .div-aceites {
+    display: grid;
+    grid-template-columns: 250px 250px;
+  }
+}
+@media screen and (max-width: 638px) {
+  .video-container video {
+    width: 500px;
+  }
+  .div-productos {
+    display: grid;
+    grid-template-columns: 250px 250px;
+  }
+  .servicios div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .servicios p {
+    text-align: center;
+  }
+  .linea-divisoria {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .mi-fondo .titulos-inicio .tres-img-texto {
+    width: 450px;
+    padding-left: 50px;
+  }
+  .mi-fondo .experiencias .peugeot #modal {
+    inset-inline-start: 140px;
+  }
+  .mi-fondo .experiencias .peugeot #modal video {
+    height: 340px;
+    width: 300px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .mi-fondo .video-container h1 {
+    font-size: 40px;
+  }
+  .mi-fondo .video-container h2 {
+    font-size: 30px;
+    width: 250px;
+    margin-bottom: 0;
+  }
+  .video-container video {
+    display: none;
+  }
+  .mi-fondo .experiencias .peugeot #openModal {
+    width: 250px;
+  }
+  .experiencias div {
+    margin-left: 0;
+  }
+  .experiencias div img {
+    width: 250px;
+    height: 250px;
+  }
+  .mi-fondo .experiencias div p {
+    width: 250px;
+    margin-left: 0;
+  }
+  #openModal {
+    width: 250px;
+    padding: 0;
+  }
+  .mi-fondo .titulos-inicio .tres-img-texto {
+    padding-left: 0;
+    width: 380px;
+  }
+}
+@media screen and (max-width: 499px) {
+  .titulos-inicio h3 {
+    margin-top: 0;
+  }
+  .mostrador img {
+    width: 350px;
+  }
+  .mostrador p {
+    width: 350px;
+  }
+  .nosotros-centro img {
+    width: 350px;
+  }
+  .nosotros-centro p {
+    width: 349px;
+    display: grid;
+    display: flex;
+    /*alineo texto*/
+    justify-content: flex-start;
+  }
+  .entrada img {
+    width: 350px;
+  }
+  .entrada p {
+    width: 350px;
+  }
+  .marcass {
+    display: grid;
+    grid-template-columns: 150px 150px;
+    gap: 10px;
+    padding-bottom: 10px;
+  }
+  .marcas h3 {
+    width: 300px;
+  }
+  .mapa {
+    width: 200px;
+    height: 200px;
+  }
+  .div-productos {
+    display: grid;
+    grid-template-columns: 250px;
+  }
+}
+@media screen and (max-width: 451px) {
+  .focus img {
+    width: 350px;
+  }
+  .formulario h2 {
+    font-size: 30px;
+  }
+  .mi-fondo .titulos-inicio .tres-img-texto {
+    width: 300px;
+  }
+  .mi-fondo .experiencias .peugeot #modal {
+    inset-inline-start: 60px;
+  }
+  .mi-fondo .experiencias .peugeot #modal video {
+    height: 340px;
+    width: 250px;
+  }
+}
+@media screen and (max-width: 399px) {
+  .mi-fondo .video-container h1 {
+    font-size: 30px;
+  }
+  .mi-fondo .video-container h2 {
+    font-size: 20px;
+    width: 250px;
+    margin-bottom: 0;
+  }
+  .mi-fondo .titulos-inicio h3 {
+    font-size: 30px;
+    margin-top: 20px;
+  }
+  .mi-fondo .titulos-inicio .div-aceites {
+    margin-left: 0;
+  }
+  .nosotros-historia {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .golcito img {
+    width: 350px;
+  }
+  .fitito img {
+    width: 350px;
+  }
+}
+@media screen and (max-width: 379px) {
+  .cambio-focos img {
+    width: 350px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .cambio-focos p {
+    width: 340px;
+  }
+}
+/*!--- MEDIA QUARY 350 PARA ABAJO-------*/
+@media screen and (max-width: 351px) {
+  .mi-fondo .titulos-inicio .div-aceites {
+    margin-left: 50px;
+  }
+  .mi-fondo .titulos-inicio p {
+    font-size: 15px;
+  }
+  .video-container h1 {
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+  }
+  .video-container h1::after {
+    content: "✨";
+  }
+  .video-container h1::before {
+    content: "✨";
+  }
+  header .navbar {
+    position: sticky;
+  }
+  .header {
+    position: sticky;
+    top: 0;
+  }
+  .video-container h2 {
+    font-size: 30px;
+  }
+  .video-container video {
+    display: none;
+  }
+  .mi-fondo .titulos-inicio p {
+    margin: 15px;
+  }
+  .mi-fondo .titulos-inicio .tres-img-texto {
+    width: 250px;
+  }
+  .mi-fondo .experiencias div p {
+    width: 200px;
+  }
+  .mi-fondo .experiencias .peugeot #openModal {
+    width: 200px;
+    padding: 5px;
+  }
+  .div-aceites div {
+    width: 250px;
+  }
+  .tres-img-texto {
+    padding-top: 15px;
+  }
+  .experiencias div img {
+    height: 200px;
+    width: 200px;
+  }
+  .experiencias div p {
+    font-size: 15px;
+    width: 200px;
+  }
+  .mi-fondo .experiencias .peugeot #modal {
+    inset-inline-start: 25px;
+  }
+  .mi-fondo .experiencias .peugeot #modal video {
+    height: 340px;
+    width: 300px;
+  }
+  #modal {
+    inset-inline-start: 30px;
+    /*direccionalidad*/
+  }
+  .nosotros p {
+    font-size: 20px;
+    padding: 15px;
+  }
+  .nosotros img {
+    width: 340px;
+  }
+  .mostrador {
+    display: grid;
+    grid-template-columns: 300px;
+  }
+  .marcass {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    gap: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+  }
+  .marcass img {
+    width: 70px;
+    height: 70px;
+  }
+  .marcas h3 {
+    margin-left: 25px;
+    margin-top: 30px;
+  }
+  .hero-productos .div-productos {
+    display: grid;
+    grid-template-columns: 300px;
+    margin-left: 25px;
+  }
+  .hero-productos p {
+    margin-bottom: 50px;
+  }
+  .div-servicios-cambio img {
+    width: 300px;
+    margin-left: 30px;
+  }
+  .div-servicios-cambio img {
+    margin-left: 0;
+  }
+  .div-verificacion img {
+    width: 160px;
+  }
+  .div-limpieza img {
+    width: 200px;
+  }
+  .div-limpieza {
+    flex-wrap: wrap;
+  }
+  .contacto p {
+    font-size: 20px;
+  }
+  .contact-form {
+    font-size: 20px;
+  }
+  .contact-form div input {
+    width: 130px;
+    height: 20px;
+  }
+  .form-button {
+    font-size: 20px;
+  }
+  .contact-form div {
+    padding: 3px;
+  }
+  .footer {
+    padding: 5px;
+  }
+  .mapa {
+    width: 180px;
+  }
+}
+.video-container {
+  display: flex;
+  /*para que el video esté en el centro*/
+  align-items: center;
+  flex-direction: column;
+}
+.video-container h1 {
+  padding-top: 50px;
+  font-size: 70px;
+  text-align: center;
+  color: #c1121f;
+  font-weight: bold;
+  /*letra gorda*/
+  text-shadow: 2px 2px 0 black, -2px 2px 0 black, 2px -2px 0 black, -2px -2px 0 black;
+}
+.video-container h2 {
+  color: #c1121f;
+  text-align: center;
+  font-size: 50px;
+  text-shadow: 2px 2px 0 black, -2px 2px 0 black, 2px -2px 0 black, -2px -2px 0 black;
+  margin-bottom: 50px;
+}
+
+.titulos-inicio h3 {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 40px;
+  text-decoration: underline;
+  margin-top: 50px;
+  text-align: center;
+  font-size: 40px;
+  text-decoration: underline;
+}
+.titulos-inicio p {
+  font-size: 30px;
+  color: #000;
+  border: 3px solid brown;
+  background-color: brown;
+  text-align: center;
+  margin: 45px;
+  border-radius: 50px;
+  font-weight: bold;
+}
+.titulos-inicio .div-aceites {
+  padding-top: 50px;
+  display: grid;
+  grid-template-columns: 350px 350px 350px;
+  /*ancho de cada div*/
+  grid-template-rows: 400px;
+  /*define mi estructura interna del "alto". Puedo definir al lado de px otro valor exterior abajo. una capacidad más.*/
+  justify-content: center;
+  gap: 30px;
+  padding-bottom: 30px;
+  /*para q los aceites no estén pegados a la siguiente seccion*/
+  margin-bottom: 50px;
+  /*distancia entre la siguiente section*/
+}
+.titulos-inicio .div-aceites div {
+  border: 2px solid black;
+  padding: 5px;
+  display: flex;
+  /*para que mi contenido esté alineado*/
+  flex-direction: column;
+  align-items: center;
+  /*para que el aceite esté en el centro*/
+}
+.titulos-inicio .div-aceites div h4 {
+  font-size: 25px;
+  text-align: center;
+  width: 200px;
+}
+.titulos-inicio .div-aceites div img {
+  height: 250px;
+  width: 250px;
+}
+.titulos-inicio .div-aceites div a {
+  font-size: 30px;
+  background-color: brown;
+  color: black;
+  margin: 15px;
+  border-radius: 10px;
+  text-align: center;
+  /*para que mi botón esté bien en el centro*/
+  text-decoration: none;
+}
+.titulos-inicio .div-aceites div a:hover {
+  background-color: rgba(6, 225, 6, 0.766);
+}
+.titulos-inicio .tres-img-texto {
+  color: #fdf0d5;
+  text-align: center;
+  font-style: italic;
+  margin: 50px;
+}
+.titulos-inicio .linea-divisoria {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  grid-column: span 3;
+}
+.titulos-inicio .linea-divisoria div {
+  width: 500px;
+  border-top: 3px solid white;
+  margin-bottom: 50px;
+}
+
+.experiencias {
+  display: grid;
+  grid-template-columns: 470px 470px 470px;
+  gap: 20px;
+  padding-bottom: 50px;
+  justify-items: center;
+}
+.experiencias .cambio-focos p {
+  width: 300px;
+  text-align: center;
+}
+.experiencias .golcito p {
+  width: 300px;
+  text-align: center;
+}
+.experiencias .focus p {
+  width: 300px;
+  text-align: center;
+}
+.experiencias .peugeot {
+  display: flex;
+  flex-direction: column;
+}
+.experiencias .peugeot #openModal {
+  width: 300px;
+  backdrop-filter: blur(5px);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: brown;
+  color: white;
+  cursor: pointer;
+}
+.experiencias .peugeot #modal {
+  background-color: rgba(0, 0, 0, 0.2431372549);
+  inset-inline-start: 500px;
+  /*no pude distribuirlo ni con grid ni con flexbox xq sino el video aparecía antes de apretar video*/
+  margin-top: 50px;
+  backdrop-filter: blur(5px);
+  /* Efecto de desenfoque */
+}
+.experiencias .peugeot #modal #openModal:hover {
+  background-color: rgba(6, 225, 6, 0.766);
+}
+.experiencias .peugeot #modal #closeModal {
+  display: flex;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: brown;
+  color: white;
+  cursor: pointer;
+}
+.experiencias .peugeot #modal #closeModal:hover {
+  background-color: rgba(6, 225, 6, 0.766);
 }
 
 /*# sourceMappingURL=estilos.css.map */

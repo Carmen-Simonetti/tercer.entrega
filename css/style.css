@@ -215,12 +215,14 @@ h2 {
 .experiencias div {
     justify-items: center;
 }
-.peugeot {   
-   display: flex;
-   justify-content: flex-start;
-   align-items: center;
-   flex-direction: column;
+
+.peugeot {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
 }
+
 #modal {
     background-color: #0000003e;
     inset-inline-start: 500px;
@@ -481,7 +483,6 @@ h2 {
 /*!----------MEDIA QUERY----------------*/
 
 @media screen and (max-width: 1500px) {
-
     .mostrador p {
         margin-left: 0;
     }
@@ -509,15 +510,6 @@ h2 {
 }
 
 @media screen and (max-width:1497px) {
-
-    .header {
-        flex-direction: column;
-    }
-
-    .navbar ul {
-        flex-direction: column;
-    }
-
     .experiencias {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -557,6 +549,10 @@ h2 {
 }
 
 @media screen and (max-width:1251px) {
+    .entrada img {
+        width: 400px;
+    }
+
     .servicios div div {
         flex-wrap: wrap;
     }
@@ -584,31 +580,30 @@ h2 {
     .div-aceites h4 {
         width: 200px;
     }
+
     .mostrador img {
         width: 500px;
     }
+
     .nosotros-centro {
-         display: grid;
-         grid-template-columns: 600px 500px;
+        display: grid;
+        grid-template-columns: 600px 500px;
+    }
+
+    .titulos-inicio .div-aceites {
+        display: grid;
+        grid-template-columns: 250px 250px;
     }
 }
 
 @media screen and (max-width:1190px) {
     .contacto div {
         flex-direction: column;
-    }
-
-    .contacto div {
         margin: 20px;
     }
 }
 
 @media screen and (max-width:1121px) {
-
-    .entrada img {
-        width: 400px;
-    }
-
     .entrada p {
         padding-left: 5px;
     }
@@ -625,13 +620,22 @@ h2 {
         padding-left: 50px;
         padding-right: 50px;
     }
+
+    .hero-productos .div-productos {
+        display: grid;
+        grid-template-columns: 300px 300px;
+    }
+
+    .div-productos div h3 {
+        width: 200px;
+    }
 }
 
 @media screen and (max-width: 1051px) {
-    .div-aceites {
+    /*.div-aceites {
         display: grid;
         grid-template-columns: 270px 270px 270px;
-    }
+    }*/
 
     .nosotros-historia p {
         font-size: 20px;
@@ -641,6 +645,7 @@ h2 {
         width: 400px;
         height: 300px;
     }
+
     .nosotros-centro {
         display: grid;
         grid-template-columns: 500px 500px;
@@ -672,24 +677,9 @@ h2 {
         grid-template-columns: 270px 270px 270px;
         gap: 15px;
     }
-
-    .nosotros-centro {
-        display: grid;
-        grid-template-columns: 500px 500px;
-    }
 }
 
 @media screen and (max-width: 900px) {
-    .div-aceites {
-        display: grid;
-        grid-template-columns: 250px 250px 250px;
-    }
-
-    .div-productos {
-        display: grid;
-        grid-template-columns: 300px 300px;
-    }
-
     .nosotros-historia div {
         display: flex;
         flex-direction: column;
@@ -1003,7 +993,7 @@ h2 {
 /*!--- MEDIA QUARY 350 PARA ABAJO-------*/
 @media screen and (max-width:351px) {
 
-    h1 {
+    .video-container h1 {
         font-size: 40px;
         display: flex;
         justify-content: center;
@@ -1112,8 +1102,9 @@ h2 {
         margin-top: 30px;
     }
 
-    .div-productos {
-        flex-wrap: wrap;
+    .hero-productos .div-productos {
+        display: grid;
+        grid-template-columns: 300px;
         margin-left: 25px;
     }
 

@@ -1,0 +1,1059 @@
+@media screen and (max-width: 1500px) {
+    .nosotros {
+        .nosotros-historia {
+            .mostrador {
+                p {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+
+    .nosotros {
+        .entrada {
+            display: flex;
+        }
+    }
+
+    .nosotros {
+        .entrada {
+            img {
+                width: 800px;
+            }
+        }
+    }
+
+    .nosotros {
+        .entrada {
+            p {
+                width: 800px;
+                margin-bottom: 0;
+                padding-bottom: 0;
+                margin-left: 0;
+            }
+        }
+    }
+
+    .marcas {
+        .marcass {
+            display: flex;
+            justify-content: space-evenly;
+            padding-bottom: 10px;
+        }
+    }
+}
+
+@media screen and (max-width:1497px) {
+    .experiencias {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 1450px) {
+    .nosotros {
+        .nosotros-centro {
+            img {
+                width: 500px;
+            }
+        }
+    }
+
+    .nosotros {
+        .entrada {
+            img {
+                width: 600px;
+                height: 300px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1365px) {
+    .mi-fondo {
+        .experiencias {
+            display: grid;
+            grid-template-columns: 500px 500px;
+            justify-content: center;
+            /*para que mis img estén bien en el centro*/
+            padding-top: 30px;
+
+            div {
+                padding-bottom: 20px;
+            }
+        }
+    }
+}
+
+.titulos-inicio {
+    .linea-divisoria {
+        div {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 1348px) {
+    .nosotros {
+        .nosotros-centro {
+            img {
+                width: 450px;
+            }
+        }
+    }
+
+    .mi-fondo {
+        .titulos-inicio {
+            .div-aceites {
+                display: grid;
+                grid-template-columns: 300px 300px 300px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1300px) {
+
+    .nosotros {
+        .nosotros-centro {
+            display: grid;
+            grid-template-columns: 700px 500px;
+        }
+    }
+}
+
+@media screen and (max-width:1251px) {
+    .nosotros {
+        .entrada {
+            img {
+                width: 400px;
+            }
+        }
+    }
+
+    .servicios {
+        div {
+            div {
+                flex-wrap: wrap;
+            }
+        }
+    }
+
+    .contacto {
+        div {
+            font-size: 25px;
+        }
+    }
+
+    .contacto {
+        div {
+            div {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }
+
+    .contacto {
+        div {
+            div {
+                img {
+                    width: 40px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .titulos-inicio {
+        .div-aceites {
+            div {
+                h4 {
+                    width: 200px;
+                }
+            }
+        }
+    }
+
+    .titulos-inicio {
+        .div-aceites {
+            display: grid;
+            grid-template-columns: 350px 350px;
+        }
+    }
+
+    .nosotros {
+        .nosotros-historia {
+            .mostrador {
+                img {
+                    width: 500px;
+                }
+            }
+        }
+    }
+
+    .nosotros {
+        .nosotros-centro {
+            display: grid;
+            grid-template-columns: 600px 500px;
+        }
+    }
+}
+
+@media screen and (max-width:1190px) {
+    .contacto div {
+        flex-direction: column;
+        margin: 20px;
+    }
+
+    .titulos-inicio {
+        .div-aceites {
+            display: grid;
+            grid-template-columns: 350px 350px;
+        }
+    }
+}
+
+@media screen and (max-width:1121px) {
+    .nosotros {
+        .nosotros-historia {
+            .entrada {
+                p {
+                    padding-left: 5px;
+                }
+            }
+        }
+    }
+
+    .nosotros {
+        .nosotros-historia {
+            .mostrador {
+                p {
+                    padding-left: 5px;
+                }
+            }
+        }
+    }
+
+    .nosotros {
+        .nosotros-historia {
+            .nosotros-centro {
+                img {
+                    width: 400px;
+                }
+            }
+        }
+    }
+
+    .contacto p {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .hero-productos {
+        .div-productos {
+            display: grid;
+            grid-template-columns: 300px 300px;
+        }
+    }
+    .mi-fondo {
+        .experiencias {
+            .peugeot {
+                    #modal { inset-inline-start: 300px;
+                        video {
+                            height: 400px;
+                            width: 450px;
+                        }
+                    }
+                
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1051px) {
+    .nosotros {
+        .nosotros-historia {
+            p {
+                font-size: 20px;
+            }
+        }
+    }
+
+    .nosotros {
+        .nosotros-historia {
+            .mostrador {
+                img {
+                    width: 400px;
+                    height: 300px;
+                }
+            }
+        }
+    }
+
+    .nosotros {
+        .nosotros-historia {
+            .nosotros-centro {
+                display: grid;
+                grid-template-columns: 500px 500px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .experiencias {
+        display: grid;
+        grid-template-columns: 470px 470px;
+    }
+
+    .nosotros {
+        .nosotros-historia {
+            .nosotros-centro {
+                img {
+                    width: 300px;
+                }
+            }
+        }
+    }
+
+    .nosotros {
+        .nosotros-historia {
+            .entrada {
+                img {
+                    height: 200px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:992px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .mi-fondo {
+        .titulos-inicio {
+            .div-aceites {
+                display: grid;
+                grid-template-columns: 300px 300px;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+    .nosotros {
+        .nosotros-historia {
+            div {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }
+
+    .nosotros-historia p {
+        width: 600px;
+        margin-bottom: 30px;
+    }
+
+    .marcass {
+        display: grid;
+        grid-template-columns: 150px 150px 150px 150px 150px;
+    }
+}
+
+@media screen and (max-width:851px) {
+    .contacto p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 841px) {
+    .servicios div {
+        display: grid;
+        grid-template-columns: 350px 350px;
+    }
+
+    .div-aceites {
+        display: grid;
+        grid-template-columns: 300px 300px;
+        gap: 50px;
+        margin-left: 50px;
+    }
+}
+
+@media screen and (max-width:827px) {
+    .mi-fondo {
+        .experiencias {
+            display: grid;
+            grid-template-columns: 350px 350px;
+        }
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    .hero-productos p {
+        padding-bottom: 30px;
+    }
+
+    .marcass img {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 803px) {
+    .experiencias p {
+        padding-bottom: 30px;
+    }
+
+    .peugeot {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #modal {
+        inset-inline-start: 230px;
+    }
+
+    #modal video {
+        width: 350px;
+        height: 450px;
+    }
+
+    .mapa {
+        width: 300px;
+    }
+
+    .footer div {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+}
+
+@media screen and (max-width: 714px) {
+    .mi-fondo {
+        .titulos-inicio {
+            .div-aceites {
+                display: grid;
+                grid-template-columns: 300px;
+            }
+        }
+    }
+
+    .mi-fondo {
+        .video-container {
+            h1 {
+                font-size: 50px;
+                padding-top: 30px;
+            }
+        }
+    }
+
+    .nosotros-historia div {
+        display: flex;
+        align-items: center;
+    }
+
+    .nosotros-historia p {
+        font-size: 20px;
+        padding-bottom: 30px;
+    }
+
+    .entrada img {
+        width: 499px;
+    }
+
+    .entrada p {
+        width: 499px;
+    }
+
+    .servicios div {
+        grid-template-columns: 300px 300px;
+    }
+}
+
+@media screen and (max-width: 754px) {
+    .mi-fondo {
+        .experiencias {
+            .peugeot {
+                    #modal { inset-inline-start: 200px;
+                        video {
+                            height: 340px;
+                            width: 350px;
+                        }
+                    }
+                
+            }
+        }
+    }
+
+    .marcass {
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .mi-fondo {
+        .experiencias {
+            display: grid;
+            grid-template-columns: 350px;
+        }
+    }
+
+    .mi-fondo {
+        .titulos-inicio {
+            .tres-img-texto {
+                width: 500px;
+                margin-left: 50px;
+
+            }
+        }
+    }
+
+    .mi-fondo {
+        .div-aceites {
+            margin: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 649px) {
+    .mi-fondo {
+        .titulos-inicio {
+            p {
+                font-size: 20px;
+            }
+        }
+    }
+
+
+    .nosotros h1,
+    h2 {
+        font-size: 50px;
+    }
+
+    .nosotros-historia p {
+        width: 500px;
+        padding-bottom: 20px;
+    }
+
+    .entrada img {
+        width: 350px;
+    }
+
+    .marcas h3 {
+        width: 399px;
+    }
+
+    .mapa {
+        width: 250px;
+    }
+
+    .div-aceites {
+        display: grid;
+        grid-template-columns: 250px 250px;
+    }
+}
+
+@media screen and (max-width:638px) {
+    .video-container video {
+        width: 500px;
+    }
+
+    .div-productos {
+        display: grid;
+        grid-template-columns: 250px 250px;
+    }
+
+    .servicios div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .servicios p {
+        text-align: center;
+    }
+
+    .linea-divisoria {
+        display: none
+    }
+}
+
+@media screen and (max-width:600px) {
+
+    .mi-fondo {
+        .titulos-inicio {
+            .tres-img-texto {
+                width: 450px;
+                padding-left: 50px;
+            }
+        }
+    }
+    .mi-fondo {
+        .experiencias {
+            .peugeot {
+                    #modal { inset-inline-start: 140px;
+                        video {
+                            height: 340px;
+                            width: 300px;
+                        }
+                    }
+                
+            }
+        }
+    }
+}
+
+@media screen and (max-width:500px) {
+    .mi-fondo {
+        .video-container {
+            h1 {
+                font-size: 40px;
+            }
+        }
+    }
+
+    .mi-fondo {
+        .video-container {
+            h2 {
+                font-size: 30px;
+                width: 250px;
+                margin-bottom: 0;
+            }
+        }
+    }
+
+
+    .video-container video {
+        display: none;
+    }
+
+    .mi-fondo {
+        .experiencias {
+            .peugeot {
+                #openModal {
+                    width: 250px;
+
+                }
+            }
+        }
+    }
+
+    .experiencias div {
+        margin-left: 0;
+    }
+
+    .experiencias div img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .mi-fondo {
+        .experiencias {
+            div {
+                p {
+                    width: 250px;
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+
+    #openModal {
+        width: 250px;
+        padding: 0;
+    }
+
+    .mi-fondo {
+        .titulos-inicio {
+            .tres-img-texto {
+                padding-left: 0;
+                width: 380px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 499px) {
+    .titulos-inicio h3 {
+        margin-top: 0;
+    }
+
+    .mostrador img {
+        width: 350px;
+    }
+
+    .mostrador p {
+        width: 350px;
+    }
+
+    .nosotros-centro img {
+        width: 350px;
+    }
+
+    .nosotros-centro p {
+        width: 349px;
+        display: grid;
+        display: flex;
+        /*alineo texto*/
+        justify-content: flex-start;
+    }
+
+    .entrada img {
+        width: 350px;
+    }
+
+    .entrada p {
+        width: 350px;
+    }
+
+    .marcass {
+        display: grid;
+        grid-template-columns: 150px 150px;
+        gap: 10px;
+        padding-bottom: 10px;
+    }
+
+    .marcas h3 {
+        width: 300px;
+    }
+
+    .mapa {
+        width: 200px;
+        height: 200px;
+    }
+
+    .div-productos {
+        display: grid;
+        grid-template-columns: 250px;
+    }
+}
+
+@media screen and (max-width:451px) {
+    .focus img {
+        width: 350px;
+    }
+
+    .formulario h2 {
+        font-size: 30px;
+    }
+
+    .mi-fondo {
+        .titulos-inicio {
+            .tres-img-texto {
+                width: 300px;
+            }
+        }
+    }
+    .mi-fondo {
+        .experiencias {
+            .peugeot {
+                    #modal { inset-inline-start: 60px;
+                        video {
+                            height: 340px;
+                            width: 250px;
+                        }
+                    }
+                
+            }
+        }
+    }
+}
+
+@media screen and (max-width:399px) {
+    .mi-fondo {
+        .video-container {
+            h1 {
+                font-size: 30px;
+            }
+        }
+    }
+
+    .mi-fondo {
+        .video-container {
+            h2 {
+                font-size: 20px;
+                width: 250px;
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .mi-fondo {
+        .titulos-inicio {
+            h3 {
+                font-size: 30px;
+                margin-top: 20px;
+            }
+        }
+    }
+
+    .mi-fondo {
+        .titulos-inicio {
+            .div-aceites {
+                margin-left: 0;
+            }
+        }
+    }
+
+    .nosotros-historia {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .golcito img {
+        width: 350px;
+    }
+
+    .fitito img {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width:379px) {
+    .cambio-focos img {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width:360px) {
+    .cambio-focos p {
+        width: 340px;
+    }
+}
+
+/*!--- MEDIA QUARY 350 PARA ABAJO-------*/
+@media screen and (max-width:351px) {
+    .mi-fondo {
+        .titulos-inicio {
+            .div-aceites {
+                margin-left: 50px;
+            }
+        }
+    }
+
+    .mi-fondo {
+        .titulos-inicio {
+            p {
+                font-size: 15px;
+            }
+        }
+    }
+
+    .video-container h1 {
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .video-container h1 {
+        &::after {
+            content: "✨"
+        }
+    }
+
+    .video-container h1 {
+        &::before {
+            content: "✨";
+        }
+    }
+
+    header .navbar {
+        position: sticky;
+    }
+
+    .header {
+        position: sticky;
+        top: 0;
+    }
+
+    .video-container h2 {
+        font-size: 30px;
+    }
+
+    .video-container video {
+        display: none;
+    }
+
+    .mi-fondo {
+        .titulos-inicio {
+            p {
+                margin: 15px;
+            }
+        }
+    }
+
+    .mi-fondo {
+        .titulos-inicio {
+            .tres-img-texto {
+                width: 250px;
+            }
+        }
+    }
+
+    .mi-fondo {
+        .experiencias {
+            div {
+                p {
+
+                    width: 200px;
+                }
+            }
+        }
+    }
+
+    .mi-fondo {
+        .experiencias {
+            .peugeot {
+                #openModal {
+                    width: 200px;
+                    padding: 5px;
+                }
+            }
+        }
+    }
+
+    .div-aceites div {
+        width: 250px;
+    }
+
+    .tres-img-texto {
+        padding-top: 15px;
+    }
+
+
+    .experiencias div img {
+        height: 200px;
+        width: 200px;
+    }
+
+    .experiencias div p {
+        font-size: 15px;
+        width: 200px;
+    }
+
+    .mi-fondo {
+        .experiencias {
+            .peugeot {
+                    #modal { inset-inline-start: 25px;
+                        video {
+                            height: 340px;
+                            width: 300px;
+                        }
+                    }
+                
+            }
+        }
+    }
+
+    #modal {
+        inset-inline-start: 30px;
+        /*direccionalidad*/
+    }
+
+    .nosotros p {
+        font-size: 20px;
+        padding: 15px;
+    }
+
+    .nosotros img {
+        width: 340px;
+    }
+
+    .mostrador {
+        display: grid;
+        grid-template-columns: 300px;
+    }
+
+    .marcass {
+        display: grid;
+        grid-template-columns: 100px 100px 100px;
+        gap: 10px;
+        padding-bottom: 10px;
+        padding-left: 30px;
+    }
+
+    .marcass img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .marcas h3 {
+        margin-left: 25px;
+        margin-top: 30px;
+    }
+
+    .hero-productos .div-productos {
+        display: grid;
+        grid-template-columns: 300px;
+        margin-left: 25px;
+    }
+
+    .hero-productos p {
+        margin-bottom: 50px;
+    }
+
+    .div-servicios-cambio img {
+        width: 300px;
+        margin-left: 30px;
+    }
+
+    .div-servicios-cambio img {
+        margin-left: 0;
+    }
+
+    .div-verificacion img {
+        width: 160px;
+    }
+
+    .div-limpieza img {
+        width: 200px;
+    }
+
+    .div-limpieza {
+        flex-wrap: wrap;
+    }
+
+    .contacto p {
+        font-size: 20px;
+    }
+
+    .contact-form {
+        font-size: 20px;
+    }
+
+    .contact-form div input {
+        width: 130px;
+        height: 20px;
+    }
+
+    .form-button {
+        font-size: 20px;
+    }
+
+    .contact-form div {
+        padding: 3px;
+    }
+
+    .footer {
+        padding: 5px;
+    }
+
+    .mapa {
+        width: 180px;
+    }
+}

@@ -1,11 +1,10 @@
-@import "./base/funcionalidades";
 @import "./base/generales";
-@import "./base/querys";
+
 @import "./components/contacto";
 @import "./components/nosotros";
 @import "./components/productos";
 @import "./components/servicios";
-
+@import "./base/querys";
 .video-container {
     display: flex;
     /*para que el video esté en el centro*/
@@ -13,9 +12,10 @@
     flex-direction: column;
 
     h1 {
+        padding-top: 50px;
         font-size: 70px;
         text-align: center;
-        color: brown;
+        color: #c1121f;
         font-weight: bold;
         /*letra gorda*/
         text-shadow:
@@ -39,7 +39,7 @@
 }
 
 .titulos-inicio {
-    h3 {
+    h3 {margin-top: 50px;
         text-align: center;
         font-size: 40px;
         text-decoration: underline;
@@ -61,18 +61,20 @@
     }
 
     .div-aceites {
+        padding-top: 50px;
         display: grid;
-        grid-template-columns: 25% 25% 25%;
+        grid-template-columns: 350px 350px 350px;
         /*ancho de cada div*/
         grid-template-rows: 400px;
-        /*define mi estructura interna del "alto". Puedo definir al lado de px otro valor exterior abajo. una capacidad más.*/
+        /*define mi estructura interna del "alto". Puedo definir al lado de px otro valor exterior abajo. una capacidad más.*/  
+        justify-content: center;
+        gap: 30px;
         padding-bottom: 30px;
         /*para q los aceites no estén pegados a la siguiente seccion*/
-        display: flex;
-        justify-content: space-evenly;
         margin-bottom: 50px;
         /*distancia entre la siguiente section*/
         ;
+
 
         div {
             border: 2px solid black;
@@ -86,8 +88,7 @@
             h4 {
                 font-size: 25px;
                 text-align: center;
-                width: 40vh;
-                /*width con este vh para que el titulo quede en ese porcentaje respecto al ancho*/
+                width: 200px;
                 ;
             }
 
@@ -117,8 +118,6 @@
         color: #fdf0d5;
         text-align: center;
         font-style: italic;
-        display: grid;
-        grid-column: span 3;
         margin: 50px;
     }
 
@@ -139,10 +138,10 @@
 
 .experiencias {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 470px 470px 470px;
     gap: 20px;
-    margin-left: 30px;
     padding-bottom: 50px;
+    justify-items: center;
 
     .cambio-focos {
         p {
@@ -166,7 +165,8 @@
     }
 
     .peugeot {
-        #openModal {
+       display: flex;
+        flex-direction: column;#openModal {
             width: 300px;
             backdrop-filter: blur(5px);
             padding: 10px 20px;
@@ -175,6 +175,7 @@
             background-color: brown;
             color: white;
             cursor: pointer;
+
         }
 
         #modal {
