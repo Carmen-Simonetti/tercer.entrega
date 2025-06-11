@@ -1,0 +1,37 @@
+//* VARIABLES
+$color-principal: #fdf0d5;
+$color-secundario: brown;
+$color-terciario: #c1121f;
+
+//* LISTAS
+$font-size: 70px,
+    50px,
+    30px,
+    20px,
+    40px;
+
+$background-color: rgba(6, 225, 6, 0.766),
+    brown;
+
+//* EXTENDS 
+%boton {
+    font-size: nth($font-size, 3);
+    background-color: $color-secundario;
+    color: $color-principal;
+    margin: 15px;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+    /*para que mi botón esté bien en el centro*/
+    text-decoration: none;
+}
+//* MIXIN 
+@mixin flex($flex, $align){
+    display: $flex;
+    align-items: $align;
+}
+
+@mixin flex-justify ($flex, $justify){
+    display: $flex;
+    justify-content: $justify;
+}

@@ -39,6 +39,12 @@ header {
                     background-color: brown;
                     color: white;
                     border: 3px solid brown;
+
+                    &:hover {
+                        background-color: rgba(6, 225, 6, 0.766);
+                        border: rgba(6, 225, 6, 0.766);
+
+                    }
                 }
 
             }
@@ -74,6 +80,7 @@ header {
         color: #fdf0d5;
     }
 }
+
 .footer {
     display: block;
     background-image: url(../img/posible\ footer.avif);

@@ -4,7 +4,7 @@
         font-size: 30px;
         border-style: solid;
         color: #000;
-        background-color: brown;
+        background-color: nth($background-color, 2);
         font-weight: bold;
         /*letra gorda*/
         text-shadow:
@@ -31,7 +31,7 @@
 
             p {
                 margin-left: 3px;
-                color: #fdf0d5;
+                color: $color-principal;
             }
         }
     }

@@ -1,21 +1,20 @@
+@import "./base/funcionalidades";
 @import "./base/generales";
-
 @import "./components/contacto";
 @import "./components/nosotros";
 @import "./components/productos";
 @import "./components/servicios";
 @import "./base/querys";
+
 .video-container {
-    display: flex;
-    /*para que el video esté en el centro*/
-    align-items: center;
+    @include flex (flex, center);
     flex-direction: column;
 
     h1 {
         padding-top: 50px;
-        font-size: 70px;
+        font-size: nth($font-size, 1);
         text-align: center;
-        color: #c1121f;
+        color: $color-terciario;
         font-weight: bold;
         /*letra gorda*/
         text-shadow:
@@ -26,9 +25,9 @@
     }
 
     h2 {
-        color: #c1121f;
+        color: $color-terciario;
         text-align: center;
-        font-size: 50px;
+        font-size: nth($font-size, 2);
         text-shadow:
             2px 2px 0 black,
             -2px 2px 0 black,
@@ -39,9 +38,10 @@
 }
 
 .titulos-inicio {
-    h3 {margin-top: 50px;
+    h3 {
+        margin-top: 50px;
         text-align: center;
-        font-size: 40px;
+        font-size: nth($font-size, 5);
         text-decoration: underline;
         margin-top: 50px;
         text-align: center;
@@ -50,10 +50,10 @@
     }
 
     p {
-        font-size: 30px;
+        font-size: nth($font-size, 3);
         color: #000;
-        border: 3px solid brown;
-        background-color: brown;
+        border: 3px solid black;
+        background-color: nth($background-color, 2);
         text-align: center;
         margin: 45px;
         border-radius: 50px;
@@ -66,7 +66,7 @@
         grid-template-columns: 350px 350px 350px;
         /*ancho de cada div*/
         grid-template-rows: 400px;
-        /*define mi estructura interna del "alto". Puedo definir al lado de px otro valor exterior abajo. una capacidad más.*/  
+        /*define mi estructura interna del "alto". Puedo definir al lado de px otro valor exterior abajo. una capacidad más.*/
         justify-content: center;
         gap: 30px;
         padding-bottom: 30px;
@@ -79,11 +79,9 @@
         div {
             border: 2px solid black;
             padding: 5px;
-            display: flex;
-            /*para que mi contenido esté alineado*/
+            @include flex (flex, center);
             flex-direction: column;
-            align-items: center;
-            /*para que el aceite esté en el centro*/
+
 
             h4 {
                 font-size: 25px;
@@ -98,14 +96,7 @@
             }
 
             a {
-                font-size: 30px;
-                background-color: brown;
-                color: black;
-                margin: 15px;
-                border-radius: 10px;
-                text-align: center;
-                /*para que mi botón esté bien en el centro*/
-                text-decoration: none;
+                @extend %boton;
 
                 &:hover {
                     background-color: rgba(6, 225, 6, 0.766);
@@ -115,26 +106,22 @@
     }
 
     .tres-img-texto {
-        color: #fdf0d5;
+        color: $color-principal;
         text-align: center;
         font-style: italic;
         margin: 50px;
     }
 
     .linea-divisoria {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        grid-column: span 3;
-
+        @include flex-justify (flex, center);
         div {
             width: 500px;
             border-top: 3px solid white;
             margin-bottom: 50px;
         }
     }
-
 }
+
 
 .experiencias {
     display: grid;
@@ -142,6 +129,7 @@
     gap: 20px;
     padding-bottom: 50px;
     justify-items: center;
+    font-size: nth($font-size, 4);
 
     .cambio-focos {
         p {
@@ -165,16 +153,22 @@
     }
 
     .peugeot {
-       display: flex;
-        flex-direction: column;#openModal {
+        display: flex;
+        flex-direction: column;
+
+        #openModal {
             width: 300px;
             backdrop-filter: blur(5px);
             padding: 10px 20px;
             border: none;
             border-radius: 5px;
-            background-color: brown;
-            color: white;
+            background-color: $color-secundario;
+            color: $color-principal;
             cursor: pointer;
+
+            &:hover {
+                background-color: rgba(6, 225, 6, 0.766);
+            }
 
         }
 
@@ -185,19 +179,13 @@
             margin-top: 50px;
             backdrop-filter: blur(5px);
 
-            #openModal {
-                &:hover {
-                    background-color: rgba(6, 225, 6, 0.766);
-                }
-            }
-
             /* Efecto de desenfoque */
             #closeModal {
                 display: flex;
                 padding: 10px 20px;
                 border: none;
                 border-radius: 5px;
-                background-color: brown;
+                background-color: $color-secundario;
                 color: white;
                 cursor: pointer;
 

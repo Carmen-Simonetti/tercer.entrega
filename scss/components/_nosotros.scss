@@ -1,8 +1,31 @@
 
+.nosotros { h1 {
+        padding-top: 50px;
+        font-size: nth($font-size,1);
+        text-align: center;
+        color: $color-terciario;
+        font-weight: bold;
+        /*letra gorda*/
+        text-shadow:
+            2px 2px 0 black,
+            -2px 2px 0 black,
+            2px -2px 0 black,
+            -2px -2px 0 black;
+    }
 
-.nosotros {
+    h2 {
+        color: $color-terciario;
+        text-align: center;
+        font-size: nth($font-size,2);
+        text-shadow:
+            2px 2px 0 black,
+            -2px 2px 0 black,
+            2px -2px 0 black,
+            -2px -2px 0 black;
+        margin-bottom: 50px;
+    }
     .nosotros-historia {
-        font-size: 30px;
+        font-size: nth($font-size,3);
         margin-left: 50px;
         margin-right: 50px;
 
@@ -16,8 +39,7 @@
             }
 
             p {
-                display: flex;
-                align-items: center;
+                @include flex (flex,center);
                 margin-left: 30px;
             }
         }
@@ -28,15 +50,13 @@
         grid-template-columns: 2fr 1fr;
 
         img {
-            grid-column: 2;
+            width: 500px;
         }
 
         p {
             grid-row: 1;
             /*el texto está en primer fila y no abajo*/
-            display: flex;
-            align-items: center;
-            /*centro texto en mi img*/
+           @include flex (flex,center);
         }
     }
 
@@ -45,8 +65,7 @@
         grid-template-columns: 1fr 2fr;
 
         p {
-            display: flex;
-            align-items: center;
+            @include flex (flex,center);
             margin-left: 30px;
         }
     }
@@ -61,8 +80,7 @@
     }
 
     .marcass {
-        display: flex;
-        justify-content: space-evenly;
+        @include flex-justify (flex,space-evenly);
         padding-bottom: 10px;
 
         img {

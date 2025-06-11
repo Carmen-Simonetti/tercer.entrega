@@ -36,10 +36,11 @@
             }
 
             a {
-                background-color: brown;
-                color: black;
+                background-color: $color-secundario;
+                color: $color-principal;
                 margin: 15px;
                 border-radius: 10px;
+                padding: 5px;
                 text-align: center;
                 /*para que mi botón esté bien en el centro*/
                 font-size: 30px;

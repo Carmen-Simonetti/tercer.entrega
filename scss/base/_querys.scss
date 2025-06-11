@@ -16,9 +16,9 @@
     }
 
     .nosotros {
-        .entrada {
+        .nosotros-centro {
             img {
-                width: 800px;
+                height: 280px;
             }
         }
     }
@@ -81,14 +81,6 @@
             div {
                 padding-bottom: 20px;
             }
-        }
-    }
-}
-
-.titulos-inicio {
-    .linea-divisoria {
-        div {
-            display: none;
         }
     }
 }
@@ -257,16 +249,19 @@
             grid-template-columns: 300px 300px;
         }
     }
+
     .mi-fondo {
         .experiencias {
             .peugeot {
-                    #modal { inset-inline-start: 300px;
-                        video {
-                            height: 400px;
-                            width: 450px;
-                        }
+                #modal {
+                    inset-inline-start: 300px;
+
+                    video {
+                        height: 400px;
+                        width: 450px;
                     }
-                
+                }
+
             }
         }
     }
@@ -312,7 +307,8 @@
         .nosotros-historia {
             .nosotros-centro {
                 img {
-                    width: 300px;
+                    width: 350px;
+                    height: 200px;
                 }
             }
         }
@@ -349,18 +345,19 @@
 }
 
 @media screen and (max-width: 900px) {
-    .nosotros {
-        .nosotros-historia {
-            div {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
+    .mi-fondo {
+        .nosotros {
+            .nosotros-historia {
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
             }
         }
     }
 
     .nosotros-historia p {
-        width: 600px;
         margin-bottom: 30px;
     }
 
@@ -406,8 +403,12 @@
         padding-bottom: 30px;
     }
 
-    .marcass img {
-        margin-left: 0;
+    .marcas {
+        .marcass {
+            img {
+                margin-left: 0px;
+            }
+        }
     }
 }
 
@@ -430,6 +431,19 @@
         height: 450px;
     }
 
+    .mi-fondo {
+        .nosotros {
+            .nosotros-historia {
+                .entrada {
+                    p {
+                        width: 700px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+
     .mapa {
         width: 300px;
     }
@@ -439,6 +453,18 @@
         justify-content: space-around;
         align-items: center;
         flex-direction: row-reverse;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .mi-fondo {
+        .marcas {
+            .marcass {
+                display: grid;
+                grid-template-columns: 100px 100px 100px;
+                gap: 20px;
+            }
+        }
     }
 }
 
@@ -488,13 +514,15 @@
     .mi-fondo {
         .experiencias {
             .peugeot {
-                    #modal { inset-inline-start: 200px;
-                        video {
-                            height: 340px;
-                            width: 350px;
-                        }
+                #modal {
+                    inset-inline-start: 200px;
+
+                    video {
+                        height: 340px;
+                        width: 350px;
                     }
-                
+                }
+
             }
         }
     }
@@ -530,6 +558,20 @@
     }
 }
 
+@media screen and (max-width: 693px) {
+    .mi-fondo {
+        .nosotros {
+            .nosotros-historia {
+                .entrada {
+                    p {
+                        width: 550px;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 649px) {
     .mi-fondo {
         .titulos-inicio {
@@ -548,14 +590,6 @@
     .nosotros-historia p {
         width: 500px;
         padding-bottom: 20px;
-    }
-
-    .entrada img {
-        width: 350px;
-    }
-
-    .marcas h3 {
-        width: 399px;
     }
 
     .mapa {
@@ -587,10 +621,6 @@
     .servicios p {
         text-align: center;
     }
-
-    .linea-divisoria {
-        display: none
-    }
 }
 
 @media screen and (max-width:600px) {
@@ -603,16 +633,42 @@
             }
         }
     }
+
     .mi-fondo {
         .experiencias {
             .peugeot {
-                    #modal { inset-inline-start: 140px;
-                        video {
-                            height: 340px;
-                            width: 300px;
-                        }
+                #modal {
+                    inset-inline-start: 140px;
+
+                    video {
+                        height: 340px;
+                        width: 300px;
                     }
-                
+                }
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width:558px) {
+    .mi-fondo {
+        .marcas {
+            .marcass {
+                display: grid;
+                grid-template-columns: 100px 100px;
+            }
+        }
+    }
+
+    .mi-fondo {
+        .nosotros {
+            .nosotros-historia {
+                .entrada {
+                    p {
+                        width: 450px;
+                    }
+                }
             }
         }
     }
@@ -636,7 +692,6 @@
             }
         }
     }
-
 
     .video-container video {
         display: none;
@@ -689,47 +744,68 @@
 }
 
 @media screen and (max-width: 499px) {
-    .titulos-inicio h3 {
-        margin-top: 0;
-    }
 
-    .mostrador img {
-        width: 350px;
-    }
 
-    .mostrador p {
-        width: 350px;
-    }
+    .mi-fondo {
+        .nosotros {
+            .nosotros-historia {
+                .mostrador {
+                    img {
+                        width: 350px;
+                        height: 300px;
+                    }
 
-    .nosotros-centro img {
-        width: 350px;
+                    p {
+                        width: 350px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
     }
 
     .nosotros-centro p {
         width: 349px;
-        display: grid;
-        display: flex;
-        /*alineo texto*/
-        justify-content: flex-start;
     }
 
-    .entrada img {
-        width: 350px;
+    .mi-fondo {
+        .nosotros {
+            .nosotros-historia {
+                .nosotros-centro {
+                    p {
+                        width: 350px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
     }
 
-    .entrada p {
-        width: 350px;
+    .mi-fondo {
+        .nosotros {
+            .nosotros-historia {
+                .entrada {
+                    p {
+                        width: 350px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
     }
 
-    .marcass {
-        display: grid;
-        grid-template-columns: 150px 150px;
-        gap: 10px;
-        padding-bottom: 10px;
+    .mi-fondo {
+        .marcas {
+            .marcass {
+                img {
+                    margin-left: 0;
+                }
+            }
+        }
     }
 
     .marcas h3 {
-        width: 300px;
+        text-align: center;
     }
 
     .mapa {
@@ -759,16 +835,19 @@
             }
         }
     }
+
     .mi-fondo {
         .experiencias {
             .peugeot {
-                    #modal { inset-inline-start: 60px;
-                        video {
-                            height: 340px;
-                            width: 250px;
-                        }
+                #modal {
+                    inset-inline-start: 60px;
+
+                    video {
+                        height: 340px;
+                        width: 250px;
                     }
-                
+                }
+
             }
         }
     }
@@ -810,17 +889,34 @@
         }
     }
 
-    .nosotros-historia {
-        margin-left: 0;
-        margin-right: 0;
-    }
-
     .golcito img {
         width: 350px;
     }
 
     .fitito img {
         width: 350px;
+    }
+
+
+    .nosotros {
+        .nosotros-historia {
+            .entrada {
+                img {
+                    width: 300px;
+                }
+            }
+        }
+    }
+
+    .mi-fondo {
+        .marcas {
+            .marcass {
+                img {
+                    height: 100px;
+                    width: 100px;
+                }
+            }
+        }
     }
 }
 
@@ -838,6 +934,17 @@
 
 /*!--- MEDIA QUARY 350 PARA ABAJO-------*/
 @media screen and (max-width:351px) {
+    .mi-fondo {
+        .nosotros {
+
+            h2 {
+                font-size: 20px;
+                width: 250px;
+                margin-left: 50px;
+            }
+        }
+    }
+
     .mi-fondo {
         .titulos-inicio {
             .div-aceites {
@@ -871,7 +978,13 @@
             content: "✨";
         }
     }
-
+.mi-fondo {
+    .hero-productos {
+        h1 {
+            font-size: 20px;
+        }
+    }
+}
     header .navbar {
         position: sticky;
     }
@@ -949,13 +1062,15 @@
     .mi-fondo {
         .experiencias {
             .peugeot {
-                    #modal { inset-inline-start: 25px;
-                        video {
-                            height: 340px;
-                            width: 300px;
-                        }
+                #modal {
+                    inset-inline-start: 25px;
+
+                    video {
+                        height: 340px;
+                        width: 300px;
                     }
-                
+                }
+
             }
         }
     }
