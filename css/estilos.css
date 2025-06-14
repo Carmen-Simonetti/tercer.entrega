@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.titulos-inicio a {
+.titulos-inicio a, .hero-productos a {
   font-size: 30px;
   background-color: brown;
   color: #fdf0d5;
@@ -10,6 +10,11 @@
   /*para que mi botón esté bien en el centro*/
   text-decoration: none;
   transition: background 1s linear;
+}
+
+.experiencias .peugeot #modal #closeModal:hover, .experiencias .peugeot #openModal:hover, .form-button:hover, .d-flex button:hover {
+  transition: background 1s linear;
+  background-color: rgba(6, 225, 6, 0.766);
 }
 
 * {
@@ -39,27 +44,40 @@ header nav .container-fluid a {
 header nav .container-fluid a:hover {
   color: rgba(6, 225, 6, 0.766);
 }
-header nav .container-fluid .d-flex input {
+
+.d-flex input {
   background-color: #000;
 }
-header nav .container-fluid .d-flex button {
-  background-color: brown;
-  color: white;
+.d-flex button {
+  color: #fdf0d5;
   border: 3px solid brown;
+  background-color: brown;
   transition: background 1s linear;
 }
-header nav .container-fluid .d-flex button:hover {
-  background-color: rgba(6, 225, 6, 0.766);
-  border: rgba(6, 225, 6, 0.766);
-}
-
-.btn-outline-sucess:hover {
-  background-color: rgba(6, 225, 6, 0.766);
+.d-flex button:hover {
   border: rgba(6, 225, 6, 0.766);
 }
 
 .mi-fondo {
   background-color: #003049;
+}
+
+h1 {
+  padding-top: 50px;
+  font-size: 70px;
+  text-align: center;
+  color: #c1121f;
+  font-weight: bold;
+  /*letra gorda*/
+  text-shadow: 2px 2px 0 black, -2px 2px 0 black, 2px -2px 0 black, -2px -2px 0 black;
+}
+
+h2 {
+  color: #c1121f;
+  text-align: center;
+  font-size: 50px;
+  text-shadow: 2px 2px 0 black, -2px 2px 0 black, 2px -2px 0 black, -2px -2px 0 black;
+  margin-bottom: 50px;
 }
 
 .experiencias p {
@@ -100,6 +118,7 @@ header nav .container-fluid .d-flex button:hover {
 
 .formulario div .contact-form {
   font-size: 30px;
+  padding: 5px;
 }
 
 .form-button {
@@ -107,10 +126,6 @@ header nav .container-fluid .d-flex button:hover {
   background: rgba(128, 128, 128, 0.545);
   border-radius: 10px;
 }
-.form-button:hover {
-  background-color: rgba(6, 225, 6, 0.766);
-}
-
 .form-input {
   width: 200px;
   height: 30px;
@@ -194,6 +209,7 @@ header nav .container-fluid .d-flex button:hover {
   font-size: 30px;
   text-align: center;
   margin-bottom: 20px;
+  color: #669bbc;
 }
 .hero-productos .div-productos {
   display: flex;
@@ -215,14 +231,17 @@ header nav .container-fluid .d-flex button:hover {
 .hero-productos .div-productos div h3 {
   font-size: 25px;
   text-align: center;
-  width: 40vh;
-  /*width con este vh para que el titulo quede en ese porcentaje respecto al hancho*/
+  width: 350px;
 }
 .hero-productos .div-productos div img {
+  transition: transform 0.3s ease;
   width: 250px;
   height: 250px;
 }
-.hero-productos .div-productos div a {
+.hero-productos .div-productos div img:hover {
+  transform: scale(1.2);
+}
+.hero-productos a {
   background-color: brown;
   color: #fdf0d5;
   margin: 15px;
@@ -233,11 +252,11 @@ header nav .container-fluid .d-flex button:hover {
   font-size: 30px;
   text-decoration: none;
 }
-.hero-productos .div-productos div a:hover {
+.hero-productos a:hover {
   background-color: rgba(6, 225, 6, 0.766);
 }
 
-.servicios h3 {
+.mi-fondo .servicios h3 {
   text-align: center;
   font-size: 30px;
   border-style: solid;
@@ -248,22 +267,33 @@ header nav .container-fluid .d-flex button:hover {
   text-shadow: 2px 2px 0 white, -2px 2px 0 white, 2px -2px 0 white, -2px -2px 0 white;
   margin-bottom: 50px;
 }
-.servicios div {
+.mi-fondo .servicios div {
   display: flex;
   justify-content: space-evenly;
   padding: 15px;
-}
-.servicios div .div {
-  display: flex;
   font-size: 20px;
 }
-.servicios div .div img {
+.mi-fondo .servicios div img {
   width: 250px;
   height: 250px;
 }
-.servicios div .div p {
+.mi-fondo .servicios div p {
   margin-left: 3px;
   color: #fdf0d5;
+}
+
+@keyframes moverArriba {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.servicios div {
+  animation: moverArriba 2s ease-out forwards;
 }
 
 @media screen and (max-width: 1500px) {
@@ -349,7 +379,7 @@ header nav .container-fluid .d-flex button:hover {
   }
 }
 @media screen and (max-width: 1200px) {
-  .titulos-inicio .div-aceites div h4 {
+  .titulos-inicio .div-aceites div h5 {
     width: 200px;
   }
   .titulos-inicio .div-aceites {
@@ -388,9 +418,12 @@ header nav .container-fluid .d-flex button:hover {
     padding-left: 50px;
     padding-right: 50px;
   }
-  .hero-productos .div-productos {
+  .mi-fondo .hero-productos .div-productos {
     display: grid;
     grid-template-columns: 300px 300px;
+  }
+  .mi-fondo .hero-productos .div-productos div h3 {
+    width: 250px;
   }
   .mi-fondo .experiencias .peugeot #modal {
     inset-inline-start: 300px;
@@ -462,6 +495,11 @@ header nav .container-fluid .d-flex button:hover {
     display: grid;
     grid-template-columns: 350px 350px;
   }
+  .servicios div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .div-aceites {
     display: grid;
     grid-template-columns: 300px 300px;
@@ -520,7 +558,23 @@ header nav .container-fluid .d-flex button:hover {
     gap: 20px;
   }
 }
+@media screen and (max-width: 754px) {
+  .mi-fondo .experiencias .peugeot #modal {
+    inset-inline-start: 200px;
+  }
+  .mi-fondo .experiencias .peugeot #modal video {
+    height: 340px;
+    width: 350px;
+  }
+  .marcass {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+  }
+}
 @media screen and (max-width: 714px) {
+  .mi-fondo .titulos-inicio h4 {
+    font-size: 40px;
+  }
   .mi-fondo .titulos-inicio .div-aceites {
     display: grid;
     grid-template-columns: 300px;
@@ -545,19 +599,6 @@ header nav .container-fluid .d-flex button:hover {
   }
   .servicios div {
     grid-template-columns: 300px 300px;
-  }
-}
-@media screen and (max-width: 754px) {
-  .mi-fondo .experiencias .peugeot #modal {
-    inset-inline-start: 200px;
-  }
-  .mi-fondo .experiencias .peugeot #modal video {
-    height: 340px;
-    width: 350px;
-  }
-  .marcass {
-    display: grid;
-    grid-template-columns: 30% 30% 30%;
   }
 }
 @media screen and (max-width: 700px) {
@@ -597,6 +638,10 @@ header nav .container-fluid .d-flex button:hover {
     display: grid;
     grid-template-columns: 250px 250px;
   }
+  .mi-fondo .hero-productos .div-productos {
+    display: grid;
+    grid-template-columns: 300px;
+  }
 }
 @media screen and (max-width: 638px) {
   .video-container video {
@@ -605,11 +650,6 @@ header nav .container-fluid .d-flex button:hover {
   .div-productos {
     display: grid;
     grid-template-columns: 250px 250px;
-  }
-  .servicios div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
   .servicios p {
     text-align: center;
@@ -673,6 +713,9 @@ header nav .container-fluid .d-flex button:hover {
     width: 250px;
     padding: 0;
   }
+  .mi-fondo .titulos-inicio h4 {
+    font-size: 30px;
+  }
   .mi-fondo .titulos-inicio .tres-img-texto {
     padding-left: 0;
     width: 380px;
@@ -735,6 +778,12 @@ header nav .container-fluid .d-flex button:hover {
   .mi-fondo .video-container h1 {
     font-size: 30px;
   }
+  .mi-fondo .hero-productos h1 {
+    font-size: 30px;
+  }
+  .mi-fondo .hero-productos h2 {
+    font-size: 20px;
+  }
   .mi-fondo .video-container h2 {
     font-size: 20px;
     width: 250px;
@@ -743,6 +792,9 @@ header nav .container-fluid .d-flex button:hover {
   .mi-fondo .titulos-inicio h3 {
     font-size: 30px;
     margin-top: 20px;
+  }
+  .mi-fondo .titulos-inicio h4 {
+    font-size: 20px;
   }
   .mi-fondo .titulos-inicio .div-aceites {
     margin-left: 0;
@@ -778,6 +830,9 @@ header nav .container-fluid .d-flex button:hover {
     width: 250px;
     margin-left: 50px;
   }
+  h2 {
+    font-size: 20px;
+  }
   .mi-fondo .titulos-inicio .div-aceites {
     margin-left: 50px;
   }
@@ -785,19 +840,27 @@ header nav .container-fluid .d-flex button:hover {
     font-size: 15px;
     padding: 5px;
   }
-  .video-container h1 {
-    font-size: 40px;
+  h1 {
     display: flex;
     justify-content: center;
   }
-  .video-container h1::after {
+  h1 {
+    font-size: 30px;
+  }
+  h1::after {
     content: "✨";
   }
-  .video-container h1::before {
+  h1::before {
     content: "✨";
   }
-  .mi-fondo .hero-productos h1 {
+  .mi-fondo .hero-productos p {
     font-size: 20px;
+  }
+  .mi-fondo .hero-productos .div-productos {
+    margin-left: 0;
+  }
+  .mi-fondo .hero-productos .div-productos div h3 {
+    width: 250px;
   }
   header .navbar {
     position: sticky;
@@ -805,9 +868,6 @@ header nav .container-fluid .d-flex button:hover {
   .header {
     position: sticky;
     top: 0;
-  }
-  .video-container h2 {
-    font-size: 30px;
   }
   .video-container video {
     display: none;
@@ -817,6 +877,7 @@ header nav .container-fluid .d-flex button:hover {
   }
   .mi-fondo .titulos-inicio .tres-img-texto {
     width: 250px;
+    font-size: 20px;
   }
   .mi-fondo .experiencias div p {
     width: 200px;
@@ -928,22 +989,6 @@ header nav .container-fluid .d-flex button:hover {
   align-items: center;
   flex-direction: column;
 }
-.video-container h1 {
-  padding-top: 50px;
-  font-size: 70px;
-  text-align: center;
-  color: #c1121f;
-  font-weight: bold;
-  /*letra gorda*/
-  text-shadow: 2px 2px 0 black, -2px 2px 0 black, 2px -2px 0 black, -2px -2px 0 black;
-}
-.video-container h2 {
-  color: #c1121f;
-  text-align: center;
-  font-size: 50px;
-  text-shadow: 2px 2px 0 black, -2px 2px 0 black, 2px -2px 0 black, -2px -2px 0 black;
-  margin-bottom: 50px;
-}
 
 .titulos-inicio h3 {
   margin-top: 50px;
@@ -964,6 +1009,15 @@ header nav .container-fluid .d-flex button:hover {
   margin: 45px;
   border-radius: 50px;
   font-weight: bold;
+}
+.titulos-inicio h4 {
+  color: #669bbc;
+  font-size: 50px;
+  text-align: center;
+  text-shadow: -7px -7px 2px rgba(0, 0, 0, 0.6);
+  color: #fdf0d5;
+  text-shadow: 0 0 5px #669bbc, 0 0 10px #669bbc, 0 0 15px #669bbc, 0 0 20px #669bbc, 0 0 25px #669bbc, 0 0 30px #669bbc;
+  padding-top: 50px;
 }
 .titulos-inicio .div-aceites {
   padding-top: 50px;
@@ -990,7 +1044,8 @@ header nav .container-fluid .d-flex button:hover {
 .titulos-inicio .div-aceites div:hover {
   background-color: #669bbc;
 }
-.titulos-inicio h4 {
+.titulos-inicio h5 {
+  color: #fdf0d5;
   font-size: 25px;
   text-align: center;
   width: 200px;
@@ -1008,6 +1063,7 @@ header nav .container-fluid .d-flex button:hover {
   text-align: center;
   font-style: italic;
   margin: 50px;
+  font-size: 25px;
 }
 
 .linea-divisoria {
@@ -1028,12 +1084,13 @@ header nav .container-fluid .d-flex button:hover {
   justify-items: center;
   font-size: 20px;
 }
-.experiencias .cambio-focos p {
-  width: 300px;
+.experiencias img {
+  box-shadow: -15px 15px 23px -3px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -15px 15px 23px -3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -15px 15px 23px -3px rgba(0, 0, 0, 0.75);
 }
-.experiencias .golcito p {
-  width: 300px;
-}
+.experiencias .cambio-focos p,
+.experiencias .golcito p,
 .experiencias .focus p {
   width: 300px;
 }
@@ -1051,9 +1108,6 @@ header nav .container-fluid .d-flex button:hover {
   color: #fdf0d5;
   cursor: pointer;
 }
-.experiencias .peugeot #openModal:hover {
-  background-color: rgba(6, 225, 6, 0.766);
-}
 .experiencias .peugeot #modal {
   background-color: rgba(0, 0, 0, 0.2431372549);
   inset-inline-start: 500px;
@@ -1064,15 +1118,12 @@ header nav .container-fluid .d-flex button:hover {
 }
 .experiencias .peugeot #modal #closeModal {
   display: flex;
-  padding: 10px 20px;
+  padding: 15px;
   border: none;
   border-radius: 5px;
   background-color: brown;
   color: white;
   cursor: pointer;
-}
-.experiencias .peugeot #modal #closeModal:hover {
-  background-color: rgba(6, 225, 6, 0.766);
 }
 
 /*# sourceMappingURL=estilos.css.map */

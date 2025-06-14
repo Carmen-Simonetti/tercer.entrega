@@ -10,31 +10,7 @@
     @include flex (flex, center);
     flex-direction: column;
 
-    h1 {
-        padding-top: 50px;
-        font-size: nth($font-size, 1);
-        text-align: center;
-        color: $color-terciario;
-        font-weight: bold;
-        /*letra gorda*/
-        text-shadow:
-            2px 2px 0 black,
-            -2px 2px 0 black,
-            2px -2px 0 black,
-            -2px -2px 0 black;
-    }
 
-    h2 {
-        color: $color-terciario;
-        text-align: center;
-        font-size: nth($font-size, 2);
-        text-shadow:
-            2px 2px 0 black,
-            -2px 2px 0 black,
-            2px -2px 0 black,
-            -2px -2px 0 black;
-        margin-bottom: 50px;
-    }
 }
 
 .titulos-inicio {
@@ -59,6 +35,17 @@
         border-radius: 50px;
         font-weight: bold;
     }
+    h4 {color: #669bbc;
+        font-size: 50px;
+        text-align: center;
+       text-shadow: -7px -7px 2px rgba(0,0,0,0.6);
+         color: #fdf0d5;
+  text-shadow: 0 0 5px #669bbc, 0 0 10px #669bbc,
+               0 0 15px #669bbc, 0 0 20px #669bbc,
+               0 0 25px #669bbc, 0 0 30px #669bbc;
+               padding-top: 50px;
+    }
+
 
     .div-aceites {
         padding-top: 50px;
@@ -82,6 +69,7 @@
             @include flex (flex, center);
             flex-direction: column;
             transition: width 5s ease, background-color 1s ease;
+            
 
             &:hover {
                 background-color: #669bbc;
@@ -90,11 +78,11 @@
 
     }
 
-    h4 {
+    h5 {
+        color: $color-principal;
         font-size: 25px;
         text-align: center;
         width: 200px;
-        ;
     }
 
     img {
@@ -117,6 +105,7 @@
     text-align: center;
     font-style: italic;
     margin: 50px;
+    font-size: 25px;
 }
 
 .linea-divisoria {
@@ -137,19 +126,13 @@
     padding-bottom: 50px;
     justify-items: center;
     font-size: nth($font-size, 4);
-
-    .cambio-focos {
-        p {
-            width: 300px;
-        }
-    }
-
-    .golcito {
-        p {
-            width: 300px;
-        }
-    }
-
+img {
+    box-shadow: -15px 15px 23px -3px rgba(0, 0, 0, 0.75);
+            -webkit-box-shadow: -15px 15px 23px -3px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: -15px 15px 23px -3px rgba(0, 0, 0, 0.75);
+}
+    .cambio-focos,
+    .golcito,
     .focus {
         p {
             width: 300px;
@@ -171,7 +154,7 @@
             cursor: pointer;
 
             &:hover {
-                background-color: rgba(6, 225, 6, 0.766);
+                @extend %boton-secundario;
             }
 
         }
@@ -186,7 +169,7 @@
             /* Efecto de desenfoque */
             #closeModal {
                 display: flex;
-                padding: 10px 20px;
+                padding: 15px;
                 border: none;
                 border-radius: 5px;
                 background-color: $color-secundario;
@@ -194,7 +177,7 @@
                 cursor: pointer;
 
                 &:hover {
-                    background-color: rgba(6, 225, 6, 0.766);
+                    @extend %boton-secundario;
                 }
             }
         }

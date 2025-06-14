@@ -29,40 +29,60 @@ header {
                     color: rgba(6, 225, 6, 0.766);
                 }
             }
+        }
+    }
 
-            .d-flex {
-                input {
-                    background-color: #000;
-                }
+}
 
-                button {
-                    background-color: brown;
-                    color: white;
-                    border: 3px solid brown;
-                    transition: background 1s linear;
+.d-flex {
+    input {
+        background-color: #000;
+    }
 
-                    &:hover {
-                        background-color: rgba(6, 225, 6, 0.766);
-                        border: rgba(6, 225, 6, 0.766);
+    button {
+        color: $color-principal;
+        border: 3px solid $color-secundario;
+        background-color:$color-secundario ;
+        transition: background 1s linear;
 
-                    }
-                }
-
-            }
+        &:hover {
+            @extend %boton-secundario;
+            border: rgba(6, 225, 6, 0.766);
         }
     }
 }
 
-.btn-outline-sucess {
- 
-    &:hover {
-        background-color: rgba(6, 225, 6, 0.766);
-        border: rgba(6, 225, 6, 0.766);
-    }
-}
+
+
 
 .mi-fondo {
     background-color: #003049;
+}
+
+h1 {
+    padding-top: 50px;
+    font-size: nth($font-size, 1);
+    text-align: center;
+    color: $color-terciario;
+    font-weight: bold;
+    /*letra gorda*/
+    text-shadow:
+        2px 2px 0 black,
+        -2px 2px 0 black,
+        2px -2px 0 black,
+        -2px -2px 0 black;
+}
+
+h2 {
+    color: $color-terciario;
+    text-align: center;
+    font-size: nth($font-size, 2);
+    text-shadow:
+        2px 2px 0 black,
+        -2px 2px 0 black,
+        2px -2px 0 black,
+        -2px -2px 0 black;
+    margin-bottom: 50px;
 }
 
 .experiencias {

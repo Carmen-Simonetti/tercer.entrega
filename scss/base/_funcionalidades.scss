@@ -26,6 +26,10 @@ $background-color: rgba(6, 225, 6, 0.766),
     text-decoration: none;
     transition: background 1s linear;
 }
+%boton-secundario {
+    transition: background 1s linear;
+    background-color: rgba(6, 225, 6, 0.766);
+}
 //* MIXIN 
 @mixin flex($flex, $align){
     display: $flex;

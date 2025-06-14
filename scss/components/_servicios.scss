@@ -1,38 +1,44 @@
-.servicios {
-    h3 {
-        text-align: center;
-        font-size: 30px;
-        border-style: solid;
-        color: #000;
-        background-color: nth($background-color, 2);
-        font-weight: bold;
-        /*letra gorda*/
-        text-shadow:
-            2px 2px 0 white,
-            -2px 2px 0 white,
-            2px -2px 0 white,
-            -2px -2px 0 white;
-        margin-bottom: 50px;
-    }
+.mi-fondo {
+    .servicios {
+        h3 {
+            text-align: center;
+            font-size: 30px;
+            border-style: solid;
+            color: #000;
+            background-color: nth($background-color, 2);
+            font-weight: bold;
+            /*letra gorda*/
+            text-shadow:
+                2px 2px 0 white,
+                -2px 2px 0 white,
+                2px -2px 0 white,
+                -2px -2px 0 white;
+            margin-bottom: 50px;
+        }
 
-    div {
-        display: flex;
-        justify-content: space-evenly;
-        padding: 15px;
-
-        .div {
+        div {
             display: flex;
-            font-size: 20px;
+            justify-content: space-evenly;
+            padding: 15px;
+font-size: 20px;
 
-            img {
-                width: 250px;
-                height: 250px;
-            }
+                img {
+                    width: 250px;
+                    height: 250px;
+                }
 
-            p {
-                margin-left: 3px;
-                color: $color-principal;
+                p {
+                    margin-left: 3px;
+                    color: $color-principal;
+                }
             }
         }
     }
+@keyframes moverArriba {
+  0% { transform: translateY(100px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+.servicios div{
+  animation: moverArriba 2s ease-out forwards;
 }
