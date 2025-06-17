@@ -111,4 +111,13 @@ h2 {
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
+    div {
+        display: flex;
+        align-items: center;
+   
+    }
+    a { padding-left: 50px;}
+    .mapa {
+         padding-left: 50px;
+    }
 }

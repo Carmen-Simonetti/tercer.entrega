@@ -35,15 +35,16 @@
         border-radius: 50px;
         font-weight: bold;
     }
-    h4 {color: #669bbc;
+
+    h4 {
         font-size: 50px;
         text-align: center;
-       text-shadow: -7px -7px 2px rgba(0,0,0,0.6);
-         color: #fdf0d5;
-  text-shadow: 0 0 5px #669bbc, 0 0 10px #669bbc,
-               0 0 15px #669bbc, 0 0 20px #669bbc,
-               0 0 25px #669bbc, 0 0 30px #669bbc;
-               padding-top: 50px;
+        text-shadow: -7px -7px 2px rgba(0, 0, 0, 0.6);
+        color: #fdf0d5;
+        text-shadow: 0 0 5px #669bbc, 0 0 10px #669bbc,
+            0 0 15px #669bbc, 0 0 20px #669bbc,
+            0 0 25px #669bbc, 0 0 30px #669bbc;
+        padding-top: 50px;
     }
 
 
@@ -69,7 +70,7 @@
             @include flex (flex, center);
             flex-direction: column;
             transition: width 5s ease, background-color 1s ease;
-            
+
 
             &:hover {
                 background-color: #669bbc;
@@ -126,11 +127,13 @@
     padding-bottom: 50px;
     justify-items: center;
     font-size: nth($font-size, 4);
-img {
-    box-shadow: -15px 15px 23px -3px rgba(0, 0, 0, 0.75);
-            -webkit-box-shadow: -15px 15px 23px -3px rgba(0, 0, 0, 0.75);
-            -moz-box-shadow: -15px 15px 23px -3px rgba(0, 0, 0, 0.75);
-}
+
+    img {
+        box-shadow: -15px 15px 23px -3px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: -15px 15px 23px -3px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: -15px 15px 23px -3px rgba(0, 0, 0, 0.75);
+    }
+
     .cambio-focos,
     .golcito,
     .focus {

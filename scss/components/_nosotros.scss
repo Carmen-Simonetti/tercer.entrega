@@ -1,7 +1,7 @@
-
-.nosotros { h1 {
+.nosotros {
+    h1 {
         padding-top: 50px;
-        font-size: nth($font-size,1);
+        font-size: nth($font-size, 1);
         text-align: center;
         color: $color-terciario;
         font-weight: bold;
@@ -16,16 +16,18 @@
     h2 {
         color: $color-terciario;
         text-align: center;
-        font-size: nth($font-size,2);
+        font-size: nth($font-size, 2);
         text-shadow:
             2px 2px 0 black,
             -2px 2px 0 black,
             2px -2px 0 black,
             -2px -2px 0 black;
         margin-bottom: 50px;
+        height: 100vh;
     }
+
     .nosotros-historia {
-        font-size: nth($font-size,3);
+        font-size: nth($font-size, 4);
         margin-left: 50px;
         margin-right: 50px;
 
@@ -39,8 +41,8 @@
             }
 
             p {
-                @include flex (flex,center);
-                margin-left: 30px;
+                @include flex (flex, center);
+                padding-left: 30px;
             }
         }
     }
@@ -56,7 +58,8 @@
         p {
             grid-row: 1;
             /*el texto está en primer fila y no abajo*/
-           @include flex (flex,center);
+            @include flex (flex, center);
+            padding-right: 50px;
         }
     }
 
@@ -65,22 +68,25 @@
         grid-template-columns: 1fr 2fr;
 
         p {
-            @include flex (flex,center);
-            margin-left: 30px;
+            @include flex (flex, center);
+            margin-left: 50px;
         }
     }
 
 }
 
 .marcas {
-    h3 {
-        margin-top: 50px;
-        text-align: center;
-        margin-bottom: 50px;
+    h3 {padding-top: 50px;
+        color: $color-principal;
+        font-size: 50px;
+        display: flex;
+        justify-content: center;
+        font-family: "Lora", serif;
+        padding-bottom: 50px;
     }
 
     .marcass {
-        @include flex-justify (flex,space-evenly);
+        @include flex-justify (flex, space-evenly);
         padding-bottom: 10px;
 
         img {

@@ -102,12 +102,22 @@ h2 {
   background-position: center;
   background-attachment: fixed;
 }
+.footer div {
+  display: flex;
+  align-items: center;
+}
+.footer a {
+  padding-left: 50px;
+}
+.footer .mapa {
+  padding-left: 50px;
+}
 
 .contacto p {
   color: #fdf0d5;
   font-size: 30px;
   text-align: center;
-  padding-top: 50px;
+  padding: 50px;
 }
 .contacto div {
   font-size: 30px;
@@ -149,7 +159,7 @@ h2 {
   margin-bottom: 50px;
 }
 .nosotros .nosotros-historia {
-  font-size: 30px;
+  font-size: 20px;
   margin-left: 50px;
   margin-right: 50px;
 }
@@ -164,7 +174,7 @@ h2 {
 .nosotros .nosotros-historia .mostrador p {
   display: flex;
   align-items: center;
-  margin-left: 30px;
+  padding-left: 30px;
 }
 .nosotros .nosotros-centro {
   display: grid;
@@ -178,6 +188,7 @@ h2 {
   /*el texto está en primer fila y no abajo*/
   display: flex;
   align-items: center;
+  padding-right: 50px;
 }
 .nosotros .entrada {
   display: grid;
@@ -186,13 +197,17 @@ h2 {
 .nosotros .entrada p {
   display: flex;
   align-items: center;
-  margin-left: 30px;
+  margin-left: 50px;
 }
 
 .marcas h3 {
-  margin-top: 50px;
-  text-align: center;
-  margin-bottom: 50px;
+  padding-top: 50px;
+  color: #fdf0d5;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  font-family: "Lora", serif;
+  padding-bottom: 50px;
 }
 .marcas .marcass {
   display: flex;
@@ -269,17 +284,34 @@ h2 {
 }
 .mi-fondo .servicios div {
   display: flex;
-  justify-content: space-evenly;
-  padding: 15px;
-  font-size: 20px;
+  justify-content: space-between;
+  font-size: 25px;
+}
+.mi-fondo .servicios div .div-servicios-cambio {
+  padding-left: 50px;
 }
 .mi-fondo .servicios div img {
-  width: 250px;
+  width: 230px;
   height: 250px;
 }
-.mi-fondo .servicios div p {
-  margin-left: 3px;
+.mi-fondo .servicios div ul {
   color: #fdf0d5;
+  list-style-type: none;
+}
+.mi-fondo .servicios div ul h5 {
+  font-size: 25px;
+  background-color: brown;
+}
+.mi-fondo .servicios div ul li {
+  color: #fdf0d5;
+  width: 215px;
+  padding-bottom: 7px;
+}
+.mi-fondo .servicios div .div-limpieza p {
+  color: #fdf0d5;
+  padding-left: 5px;
+  width: 230px;
+  padding-right: 50px;
 }
 
 @keyframes moverArriba {
@@ -332,6 +364,18 @@ h2 {
     width: 600px;
     height: 300px;
   }
+  .servicios div div {
+    flex-wrap: wrap;
+  }
+  .servicios div div img {
+    margin-left: 30px;
+  }
+  .servicios div div ul h5 {
+    margin-top: 15px;
+  }
+  .servicios div .div-limpieza img {
+    margin-left: 0;
+  }
 }
 @media screen and (max-width: 1365px) {
   .mi-fondo .experiencias {
@@ -363,9 +407,6 @@ h2 {
 @media screen and (max-width: 1251px) {
   .nosotros .entrada img {
     width: 400px;
-  }
-  .servicios div div {
-    flex-wrap: wrap;
   }
   .contacto div {
     font-size: 25px;
@@ -628,7 +669,7 @@ h2 {
     font-size: 50px;
   }
   .nosotros-historia p {
-    width: 500px;
+    /*width: 500px;*/
     padding-bottom: 20px;
   }
   .mapa {
@@ -726,18 +767,10 @@ h2 {
     width: 350px;
     height: 300px;
   }
-  .mi-fondo .nosotros .nosotros-historia .mostrador p {
-    width: 350px;
-    text-align: center;
-  }
   .nosotros-centro p {
     width: 349px;
   }
-  .mi-fondo .nosotros .nosotros-historia .nosotros-centro p {
-    width: 350px;
-    text-align: center;
-  }
-  .mi-fondo .nosotros .nosotros-historia .entrada p {
+  .mi-fondo .nosotros .nosotros-historia p {
     width: 350px;
     text-align: center;
   }
@@ -773,8 +806,14 @@ h2 {
     height: 340px;
     width: 250px;
   }
+  .mi-fondo .nosotros .nosotros-historia .entrada p {
+    width: 350px;
+  }
 }
 @media screen and (max-width: 399px) {
+  .mi-fondo .nosotros .nosotros-historia .entrada img {
+    width: 350px;
+  }
   .mi-fondo .video-container h1 {
     font-size: 30px;
   }
@@ -915,8 +954,8 @@ h2 {
     font-size: 20px;
     padding: 15px;
   }
-  .nosotros img {
-    width: 340px;
+  .mi-fondo .nosotros .nosotros-historia img {
+    width: 300px;
   }
   .mostrador {
     display: grid;
@@ -1011,7 +1050,6 @@ h2 {
   font-weight: bold;
 }
 .titulos-inicio h4 {
-  color: #669bbc;
   font-size: 50px;
   text-align: center;
   text-shadow: -7px -7px 2px rgba(0, 0, 0, 0.6);
