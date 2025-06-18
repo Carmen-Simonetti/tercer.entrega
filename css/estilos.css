@@ -156,7 +156,7 @@ h2 {
   text-align: center;
   font-size: 50px;
   text-shadow: 2px 2px 0 black, -2px 2px 0 black, 2px -2px 0 black, -2px -2px 0 black;
-  margin-bottom: 50px;
+  height: 30vh;
 }
 .nosotros .nosotros-historia {
   font-size: 20px;
@@ -201,13 +201,14 @@ h2 {
 }
 
 .marcas h3 {
-  padding-top: 50px;
   color: #fdf0d5;
   font-size: 50px;
   display: flex;
   justify-content: center;
   font-family: "Lora", serif;
-  padding-bottom: 50px;
+  height: 30vh;
+  align-items: flex-end;
+  margin-bottom: 30px;
 }
 .marcas .marcass {
   display: flex;
@@ -223,7 +224,7 @@ h2 {
 .hero-productos p {
   font-size: 30px;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   color: #669bbc;
 }
 .hero-productos .div-productos {
@@ -244,6 +245,7 @@ h2 {
   margin-bottom: 30px;
 }
 .hero-productos .div-productos div h3 {
+  color: #fdf0d5;
   font-size: 25px;
   text-align: center;
   width: 350px;
@@ -288,7 +290,7 @@ h2 {
   font-size: 25px;
 }
 .mi-fondo .servicios div .div-servicios-cambio {
-  padding-left: 50px;
+  padding-left: 20px;
 }
 .mi-fondo .servicios div img {
   width: 230px;
@@ -298,7 +300,7 @@ h2 {
   color: #fdf0d5;
   list-style-type: none;
 }
-.mi-fondo .servicios div ul h5 {
+.mi-fondo .servicios div ul li h5 {
   font-size: 25px;
   background-color: brown;
 }
@@ -309,7 +311,7 @@ h2 {
 }
 .mi-fondo .servicios div .div-limpieza p {
   color: #fdf0d5;
-  padding-left: 5px;
+  padding-left: 15px;
   width: 230px;
   padding-right: 50px;
 }
@@ -375,6 +377,9 @@ h2 {
   }
   .servicios div .div-limpieza img {
     margin-left: 0;
+  }
+  .servicios div .div-limpieza p {
+    margin-top: 15px;
   }
 }
 @media screen and (max-width: 1365px) {
@@ -525,6 +530,24 @@ h2 {
     display: grid;
     grid-template-columns: 150px 150px 150px 150px 150px;
   }
+  .mi-fondo .servicios div {
+    display: grid;
+    grid-template-columns: 350px 350px;
+  }
+  .mi-fondo .servicios div div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .mi-fondo .servicios div div ul li {
+    width: 300px;
+  }
+  .mi-fondo .servicios div .div-limpieza img {
+    margin-left: 50px;
+  }
+  .mi-fondo .servicios div .div-limpieza p {
+    margin-left: 50px;
+  }
 }
 @media screen and (max-width: 851px) {
   .contacto p {
@@ -532,15 +555,6 @@ h2 {
   }
 }
 @media screen and (max-width: 841px) {
-  .servicios div {
-    display: grid;
-    grid-template-columns: 350px 350px;
-  }
-  .servicios div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
   .div-aceites {
     display: grid;
     grid-template-columns: 300px 300px;
@@ -558,6 +572,10 @@ h2 {
   }
   .hero-productos p {
     padding-bottom: 30px;
+  }
+  .marcas h3 {
+    text-align: center;
+    font-size: 40px;
   }
   .marcas .marcass img {
     margin-left: 0px;
@@ -581,6 +599,10 @@ h2 {
   .mi-fondo .nosotros .nosotros-historia .entrada p {
     width: 700px;
     text-align: center;
+  }
+  .mi-fondo .marcas h3 {
+    height: 30vh;
+    padding: 15px;
   }
   .mapa {
     width: 300px;
@@ -643,16 +665,33 @@ h2 {
   }
 }
 @media screen and (max-width: 700px) {
-  .mi-fondo .experiencias {
-    display: grid;
-    grid-template-columns: 350px;
+  .mi-fondo .div-aceites {
+    margin: 0;
   }
   .mi-fondo .titulos-inicio .tres-img-texto {
     width: 500px;
     margin-left: 50px;
   }
-  .mi-fondo .div-aceites {
-    margin: 0;
+  .mi-fondo .experiencias {
+    display: grid;
+    grid-template-columns: 350px;
+  }
+  .mi-fondo .servicios div {
+    display: grid;
+    grid-template-columns: 300px;
+    justify-content: center;
+    padding-bottom: 50px;
+  }
+  .mi-fondo .servicios div .div-verificacion img {
+    margin-left: 50px;
+  }
+  .mi-fondo .servicios div .div-verificacion ul {
+    margin-left: 20px;
+  }
+  .mi-fondo .servicios div .div-limpieza p {
+    padding-right: 0;
+    padding-left: 0;
+    width: 250px;
   }
 }
 @media screen and (max-width: 693px) {
@@ -692,9 +731,6 @@ h2 {
     display: grid;
     grid-template-columns: 250px 250px;
   }
-  .servicios p {
-    text-align: center;
-  }
 }
 @media screen and (max-width: 600px) {
   .mi-fondo .titulos-inicio .tres-img-texto {
@@ -722,6 +758,9 @@ h2 {
   }
   .mi-fondo .nosotros .nosotros-historia .entrada p {
     width: 450px;
+  }
+  .footer div a {
+    padding-left: 0;
   }
 }
 @media screen and (max-width: 500px) {
@@ -809,6 +848,12 @@ h2 {
   .mi-fondo .nosotros .nosotros-historia .entrada p {
     width: 350px;
   }
+  .mi-fondo .servicios div {
+    font-size: 20px;
+  }
+  .mi-fondo .servicios div ul h5 {
+    margin-right: 30px;
+  }
 }
 @media screen and (max-width: 399px) {
   .mi-fondo .nosotros .nosotros-historia .entrada img {
@@ -838,18 +883,22 @@ h2 {
   .mi-fondo .titulos-inicio .div-aceites {
     margin-left: 0;
   }
-  .golcito img {
-    width: 350px;
-  }
-  .fitito img {
-    width: 350px;
-  }
   .nosotros .nosotros-historia .entrada img {
     width: 300px;
   }
   .mi-fondo .marcas .marcass img {
     height: 100px;
     width: 100px;
+  }
+  .mi-fondo .servicios div div ul {
+    padding-left: 0;
+  }
+  .mi-fondo .servicios div div ul h5 {
+    padding-right: 50px;
+  }
+  .mi-fondo .servicios div .div-limpieza p {
+    text-align: start;
+    margin-left: 30px;
   }
 }
 @media screen and (max-width: 379px) {
@@ -864,26 +913,27 @@ h2 {
 }
 /*!--- MEDIA QUARY 350 PARA ABAJO-------*/
 @media screen and (max-width: 351px) {
-  .mi-fondo .nosotros h2 {
-    font-size: 20px;
-    width: 250px;
-    margin-left: 50px;
-  }
   h2 {
     font-size: 20px;
+  }
+  .mi-fondo .titulos-inicio .tres-img-texto {
+    width: 250px;
+    font-size: 20px;
+    padding-top: 15px;
+  }
+  .mi-fondo .titulos-inicio p {
+    font-size: 15px;
+    margin: 15px;
   }
   .mi-fondo .titulos-inicio .div-aceites {
     margin-left: 50px;
   }
-  .mi-fondo .titulos-inicio p {
-    font-size: 15px;
-    padding: 5px;
+  .mi-fondo .titulos-inicio .div-aceites div {
+    width: 250px;
   }
   h1 {
     display: flex;
     justify-content: center;
-  }
-  h1 {
     font-size: 30px;
   }
   h1::after {
@@ -911,33 +961,17 @@ h2 {
   .video-container video {
     display: none;
   }
-  .mi-fondo .titulos-inicio p {
-    margin: 15px;
-  }
-  .mi-fondo .titulos-inicio .tres-img-texto {
-    width: 250px;
-    font-size: 20px;
-  }
   .mi-fondo .experiencias div p {
+    width: 200px;
+    font-size: 15px;
+  }
+  .mi-fondo .experiencias div img {
+    height: 200px;
     width: 200px;
   }
   .mi-fondo .experiencias .peugeot #openModal {
     width: 200px;
     padding: 5px;
-  }
-  .div-aceites div {
-    width: 250px;
-  }
-  .tres-img-texto {
-    padding-top: 15px;
-  }
-  .experiencias div img {
-    height: 200px;
-    width: 200px;
-  }
-  .experiencias div p {
-    font-size: 15px;
-    width: 200px;
   }
   .mi-fondo .experiencias .peugeot #modal {
     inset-inline-start: 25px;
@@ -946,34 +980,36 @@ h2 {
     height: 340px;
     width: 300px;
   }
-  #modal {
-    inset-inline-start: 30px;
-    /*direccionalidad*/
+  .mi-fondo .nosotros h1 {
+    font-size: 30px;
   }
-  .nosotros p {
+  .mi-fondo .nosotros h2 {
+    font-size: 20px;
+    width: 250px;
+    margin-left: 50px;
+    height: 100px;
+  }
+  .mi-fondo .nosotros p {
     font-size: 20px;
     padding: 15px;
   }
   .mi-fondo .nosotros .nosotros-historia img {
     width: 300px;
+    padding: 15px;
   }
-  .mostrador {
-    display: grid;
-    grid-template-columns: 300px;
+  .marcas h3 {
+    padding: 5px;
+    font-size: 30px;
   }
-  .marcass {
+  .marcas .marcass {
     display: grid;
     grid-template-columns: 100px 100px 100px;
     gap: 10px;
     padding-bottom: 10px;
   }
-  .marcass img {
+  .marcas img {
     width: 70px;
     height: 70px;
-  }
-  .marcas h3 {
-    margin-left: 25px;
-    margin-top: 30px;
   }
   .hero-productos .div-productos {
     display: grid;
@@ -983,22 +1019,6 @@ h2 {
   .hero-productos p {
     margin-bottom: 50px;
     padding: 5px;
-  }
-  .div-servicios-cambio img {
-    width: 300px;
-    margin-left: 30px;
-  }
-  .div-servicios-cambio img {
-    margin-left: 0;
-  }
-  .div-verificacion img {
-    width: 160px;
-  }
-  .div-limpieza img {
-    width: 200px;
-  }
-  .div-limpieza {
-    flex-wrap: wrap;
   }
   .contacto p {
     font-size: 20px;
@@ -1019,8 +1039,9 @@ h2 {
   .footer {
     padding: 5px;
   }
-  .mapa {
+  .footer .mapa {
     width: 180px;
+    padding-left: 5px;
   }
 }
 .video-container {

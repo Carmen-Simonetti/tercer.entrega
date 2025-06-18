@@ -72,9 +72,11 @@
         div {
             div {
                 flex-wrap: wrap;
+
                 img {
                     margin-left: 30px;
                 }
+
                 ul {
                     h5 {
                         margin-top: 15px;
@@ -85,6 +87,10 @@
             .div-limpieza {
                 img {
                     margin-left: 0;
+                }
+
+                p {
+                    margin-top: 15px;
                 }
             }
         }
@@ -388,6 +394,37 @@
         display: grid;
         grid-template-columns: 150px 150px 150px 150px 150px;
     }
+
+    .mi-fondo {
+        .servicios {
+            div {
+                display: grid;
+                grid-template-columns: 350px 350px;
+
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+
+                    ul {
+                        li {
+                            width: 300px;
+                        }
+                    }
+                }
+
+                .div-limpieza {
+                    img {
+                        margin-left: 50px;
+                    }
+
+                    p {
+                        margin-left: 50px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width:851px) {
@@ -397,16 +434,6 @@
 }
 
 @media screen and (max-width: 841px) {
-    .servicios div {
-        display: grid;
-        grid-template-columns: 350px 350px;
-    }
-
-    .servicios div {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
 
     .div-aceites {
         display: grid;
@@ -433,6 +460,11 @@
     }
 
     .marcas {
+        h3 {
+            text-align: center;
+            font-size: nth($font-size, 5);
+        }
+
         .marcass {
             img {
                 margin-left: 0px;
@@ -469,6 +501,13 @@
                         text-align: center;
                     }
                 }
+            }
+        }
+
+        .marcas {
+            h3 {
+                height: 30vh;
+                padding: 15px;
             }
         }
     }
@@ -569,11 +608,11 @@
 
 @media screen and (max-width: 700px) {
     .mi-fondo {
-        .experiencias {
-            display: grid;
-            grid-template-columns: 350px;
+        .div-aceites {
+            margin: 0;
         }
     }
+
 
     .mi-fondo {
         .titulos-inicio {
@@ -586,8 +625,40 @@
     }
 
     .mi-fondo {
-        .div-aceites {
-            margin: 0;
+        .experiencias {
+            display: grid;
+            grid-template-columns: 350px;
+        }
+    }
+
+    .mi-fondo {
+        .servicios {
+            div {
+                display: grid;
+                grid-template-columns: 300px;
+                justify-content: center;
+                padding-bottom: 50px;
+
+                .div-verificacion {
+                    img {
+                        margin-left: 50px;
+                    }
+
+                    ul {
+
+                        margin-left: 20px;
+
+                    }
+                }
+
+                .div-limpieza {
+                    p {
+                        padding-right: 0;
+                        padding-left: 0;
+                        width: 250px;
+                    }
+                }
+            }
         }
     }
 }
@@ -654,10 +725,6 @@
         display: grid;
         grid-template-columns: 250px 250px;
     }
-
-    .servicios p {
-        text-align: center;
-    }
 }
 
 @media screen and (max-width:600px) {
@@ -722,6 +789,14 @@
                         width: 450px;
                     }
                 }
+            }
+        }
+    }
+
+    .footer {
+        div {
+            a {
+                padding-left: 0;
             }
         }
     }
@@ -902,6 +977,20 @@
             }
         }
     }
+
+    .mi-fondo {
+        .servicios {
+            div {
+                font-size: 20px;
+
+                ul {
+                    h5 {
+                        margin-right: 30px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width:399px) {
@@ -968,15 +1057,6 @@
         }
     }
 
-    .golcito img {
-        width: 350px;
-    }
-
-    .fitito img {
-        width: 350px;
-    }
-
-
     .nosotros {
         .nosotros-historia {
             .entrada {
@@ -997,6 +1077,29 @@
             }
         }
     }
+
+    .mi-fondo {
+        .servicios {
+            div {
+                div {
+                    ul {
+                        padding-left: 0;
+
+                        h5 {
+                            padding-right: 50px;
+                        }
+                    }
+                }
+
+                .div-limpieza {
+                    p {
+                        text-align: start;
+                        margin-left: 30px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width:379px) {
@@ -1013,16 +1116,6 @@
 
 /*!--- MEDIA QUARY 350 PARA ABAJO-------*/
 @media screen and (max-width:351px) {
-    .mi-fondo {
-        .nosotros {
-
-            h2 {
-                font-size: 20px;
-                width: 250px;
-                margin-left: 50px;
-            }
-        }
-    }
 
     h2 {
         font-size: 20px;
@@ -1030,17 +1123,23 @@
 
     .mi-fondo {
         .titulos-inicio {
-            .div-aceites {
-                margin-left: 50px;
+            .tres-img-texto {
+                width: 250px;
+                font-size: 20px;
+                padding-top: 15px;
             }
-        }
-    }
 
-    .mi-fondo {
-        .titulos-inicio {
             p {
                 font-size: 15px;
-                padding: 5px;
+                margin: 15px;
+            }
+
+            .div-aceites {
+                margin-left: 50px;
+
+                div {
+                    width: 250px;
+                }
             }
         }
     }
@@ -1048,17 +1147,12 @@
     h1 {
         display: flex;
         justify-content: center;
-    }
-
-    h1 {
         font-size: 30px;
 
         &::after {
             content: "✨"
         }
-    }
 
-    h1 {
         &::before {
             content: "✨";
         }
@@ -1096,28 +1190,15 @@
     }
 
     .mi-fondo {
-        .titulos-inicio {
-            p {
-                margin: 15px;
-            }
-        }
-    }
-
-
-    .mi-fondo {
-        .titulos-inicio {
-            .tres-img-texto {
-                width: 250px;
-                font-size: 20px;
-            }
-        }
-    }
-
-    .mi-fondo {
         .experiencias {
             div {
                 p {
+                    width: 200px;
+                    font-size: 15px;
+                }
 
+                img {
+                    height: 200px;
                     width: 200px;
                 }
             }
@@ -1133,25 +1214,6 @@
                 }
             }
         }
-    }
-
-    .div-aceites div {
-        width: 250px;
-    }
-
-    .tres-img-texto {
-        padding-top: 15px;
-    }
-
-
-    .experiencias div img {
-        height: 200px;
-        width: 200px;
-    }
-
-    .experiencias div p {
-        font-size: 15px;
-        width: 200px;
     }
 
     .mi-fondo {
@@ -1170,46 +1232,51 @@
         }
     }
 
-    #modal {
-        inset-inline-start: 30px;
-        /*direccionalidad*/
-    }
-
-    .nosotros p {
-        font-size: 20px;
-        padding: 15px;
-    }
-
     .mi-fondo {
         .nosotros {
+            h1 {
+                font-size: nth($font-size, 3);
+            }
+
+            h2 {
+                font-size: 20px;
+                width: 250px;
+                margin-left: 50px;
+                height: 100px;
+            }
+
+            p {
+                font-size: 20px;
+                padding: 15px;
+            }
+
             .nosotros-historia {
                 img {
                     width: 300px;
+                    padding: 15px;
                 }
             }
         }
     }
 
-    .mostrador {
-        display: grid;
-        grid-template-columns: 300px;
-    }
+    .marcas {
+        h3 {
+            padding: 5px;
+            font-size: nth($font-size, 3);
+        }
 
-    .marcass {
-        display: grid;
-        grid-template-columns: 100px 100px 100px;
-        gap: 10px;
-        padding-bottom: 10px;
-    }
+        .marcass {
+            display: grid;
+            grid-template-columns: 100px 100px 100px;
+            gap: 10px;
+            padding-bottom: 10px;
+        }
 
-    .marcass img {
-        width: 70px;
-        height: 70px;
-    }
+        img {
+            width: 70px;
+            height: 70px;
+        }
 
-    .marcas h3 {
-        margin-left: 25px;
-        margin-top: 30px;
     }
 
     .hero-productos .div-productos {
@@ -1221,27 +1288,6 @@
     .hero-productos p {
         margin-bottom: 50px;
         padding: 5px;
-    }
-
-    .div-servicios-cambio img {
-        width: 300px;
-        margin-left: 30px;
-    }
-
-    .div-servicios-cambio img {
-        margin-left: 0;
-    }
-
-    .div-verificacion img {
-        width: 160px;
-    }
-
-    .div-limpieza img {
-        width: 200px;
-    }
-
-    .div-limpieza {
-        flex-wrap: wrap;
     }
 
     .contacto p {
@@ -1267,9 +1313,11 @@
 
     .footer {
         padding: 5px;
+
+        .mapa {
+            width: 180px;
+            padding-left: 5px;
+        }
     }
 
-    .mapa {
-        width: 180px;
-    }
 }

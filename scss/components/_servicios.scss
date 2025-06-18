@@ -1,5 +1,5 @@
 .mi-fondo {
-    .servicios { 
+    .servicios {
         h3 {
             text-align: center;
             font-size: 30px;
@@ -22,7 +22,7 @@
             font-size: 25px;
 
             .div-servicios-cambio {
-                padding-left: 50px;
+                padding-left: 20px;
             }
 
             img {
@@ -34,9 +34,11 @@
                 color: $color-principal;
                 list-style-type: none;
 
-                h5 {
-                    font-size: 25px;
-                    background-color: brown;
+                li {
+                    h5 {
+                        font-size: 25px;
+                        background-color: brown;
+                    }
                 }
 
                 li {
@@ -49,7 +51,7 @@
             .div-limpieza {
                 p {
                     color: $color-principal;
-                    padding-left: 5px;
+                    padding-left: 15px;
                     width: 230px;
                     padding-right: 50px;
                 }
