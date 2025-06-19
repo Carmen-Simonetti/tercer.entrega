@@ -283,11 +283,13 @@ h2 {
   /*letra gorda*/
   text-shadow: 2px 2px 0 white, -2px 2px 0 white, 2px -2px 0 white, -2px -2px 0 white;
   margin-bottom: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 .mi-fondo .servicios div {
   display: flex;
-  justify-content: space-between;
   font-size: 25px;
+  margin-left: 10px;
 }
 .mi-fondo .servicios div .div-servicios-cambio {
   padding-left: 20px;
@@ -296,17 +298,22 @@ h2 {
   width: 230px;
   height: 250px;
 }
-.mi-fondo .servicios div ul {
-  color: #fdf0d5;
-  list-style-type: none;
+.mi-fondo .servicios div .lista {
+  display: flex;
+  flex-direction: column;
 }
-.mi-fondo .servicios div ul li h5 {
+.mi-fondo .servicios div .lista h5 {
   font-size: 25px;
   background-color: brown;
 }
-.mi-fondo .servicios div ul li {
+.mi-fondo .servicios div .lista ul {
   color: #fdf0d5;
-  width: 215px;
+  list-style-type: none;
+  padding-left: 0;
+}
+.mi-fondo .servicios div .lista ul li {
+  color: #fdf0d5;
+  width: 230px;
   padding-bottom: 7px;
 }
 .mi-fondo .servicios div .div-limpieza p {
@@ -328,6 +335,63 @@ h2 {
 }
 .servicios div {
   animation: moverArriba 2s ease-out forwards;
+}
+
+.cotizacion {
+  margin-top: 50px;
+}
+.cotizacion h6 {
+  font-size: 35px;
+  color: #fdf0d5;
+  text-align: center;
+}
+.cotizacion .row {
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0;
+}
+.cotizacion .row .col-md-3 .form-label {
+  color: #fdf0d5;
+  font-size: 20px;
+}
+.cotizacion .col-12 {
+  display: flex;
+  justify-content: center;
+  max-width: 0;
+  margin-left: 40px;
+  margin-top: 45px;
+}
+.cotizacion .col-12 .btn {
+  border-color: brown;
+  background-color: brown;
+  font-size: 20px;
+  padding: 5px;
+}
+.cotizacion .col-12 .btn:hover {
+  background-color: rgba(6, 225, 6, 0.766);
+  transition: background 1s linear;
+}
+
+.medios-de-pago {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.medios-de-pago div p {
+  padding-bottom: 50px;
+  padding-top: 50px;
+  margin-bottom: 0;
+  color: #fdf0d5;
+  font-size: 35px;
+  text-align: center;
+  font-weight: 600;
+}
+.medios-de-pago div img {
+  display: flex;
+  justify-content: center;
+  width: 70px;
+  height: 50px;
 }
 
 @media screen and (max-width: 1500px) {
@@ -1183,6 +1247,20 @@ h2 {
   background-color: brown;
   color: white;
   cursor: pointer;
+}
+.mi-fondo .video {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row-reverse;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+.mi-fondo .video p {
+  color: #fdf0d5;
+  font-size: 30px;
+  font-weight: 600;
+  width: 400px;
+  font-style: italic;
 }
 
 /*# sourceMappingURL=estilos.css.map */

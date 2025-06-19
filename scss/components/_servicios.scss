@@ -14,12 +14,14 @@
                 2px -2px 0 white,
                 -2px -2px 0 white;
             margin-bottom: 50px;
+            margin-left: 50px;
+            margin-right: 50px;
         }
 
         div {
             display: flex;
-            justify-content: space-between;
             font-size: 25px;
+            margin-left: 10px;
 
             .div-servicios-cambio {
                 padding-left: 20px;
@@ -30,21 +32,23 @@
                 height: 250px;
             }
 
-            ul {
-                color: $color-principal;
-                list-style-type: none;
-
-                li {
-                    h5 {
-                        font-size: 25px;
-                        background-color: brown;
-                    }
+            .lista {display: flex;
+                flex-direction: column;
+                h5 {
+                    font-size: 25px;
+                    background-color: brown;
                 }
 
-                li {
+                ul {
                     color: $color-principal;
-                    width: 215px;
-                    padding-bottom: 7px;
+                    list-style-type: none;
+                    padding-left: 0;
+
+                    li {
+                        color: $color-principal;
+                        width: 230px;
+                        padding-bottom: 7px;
+                    }
                 }
             }
 
@@ -74,4 +78,73 @@
 
 .servicios div {
     animation: moverArriba 2s ease-out forwards;
+}
+
+.cotizacion {
+
+    margin-top: 50px;
+
+    h6 {
+        font-size: 35px;
+        color: $color-principal;
+        text-align: center;
+    }
+
+    .row {
+        height: 30vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0;
+
+        .col-md-3 {
+            .form-label {
+                color: $color-principal;
+                font-size: 20px;
+            }
+        }
+    }
+
+    .col-12 {
+        display: flex;
+        justify-content: center;
+        max-width: 0;
+        margin-left: 40px;
+        margin-top: 45px;
+
+
+        .btn {
+            border-color: $color-secundario;
+            background-color: $color-secundario;
+            font-size: 20px;
+            padding: 5px;
+
+            &:hover {
+                background-color: rgba(6, 225, 6, 0.766);
+                transition: background 1s linear;
+            }
+        }
+    }
+}
+
+.medios-de-pago {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    div {
+        p {padding-bottom: 50px;
+            padding-top: 50px;
+            margin-bottom: 0;
+            color: $color-principal;
+            font-size: 35px;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        img {display: flex;
+            justify-content: center;
+            width: 70px;
+            height: 50px;
+        }
+
+    }
 }

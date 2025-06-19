@@ -186,3 +186,21 @@
         }
     }
 }
+
+.mi-fondo {
+    .video {
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: row-reverse;
+            margin-bottom: 50px;
+            margin-top: 50px;
+            p {
+                color: $color-principal;
+                font-size: 30px;
+                font-weight: 600;
+                width: 400px;
+               font-style: italic;
+            }
+        
+    }
+}
