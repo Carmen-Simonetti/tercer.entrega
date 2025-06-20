@@ -291,8 +291,12 @@ h2 {
   font-size: 25px;
   margin-left: 10px;
 }
+.mi-fondo .servicios div .div-verificacion {
+  padding-right: 20px;
+}
 .mi-fondo .servicios div .div-servicios-cambio {
   padding-left: 20px;
+  padding-right: 20px;
 }
 .mi-fondo .servicios div img {
   width: 230px;
@@ -303,6 +307,7 @@ h2 {
   flex-direction: column;
 }
 .mi-fondo .servicios div .lista h5 {
+  color: #fdf0d5;
   font-size: 25px;
   background-color: brown;
 }
@@ -387,9 +392,11 @@ h2 {
   text-align: center;
   font-weight: 600;
 }
-.medios-de-pago div img {
+.medios-de-pago div .tarjetas {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+}
+.medios-de-pago div .tarjetas img {
   width: 70px;
   height: 50px;
 }
@@ -430,14 +437,17 @@ h2 {
     width: 600px;
     height: 300px;
   }
+  .servicios {
+    margin-left: 50px;
+  }
   .servicios div div {
     flex-wrap: wrap;
   }
-  .servicios div div img {
-    margin-left: 30px;
-  }
   .servicios div div ul h5 {
     margin-top: 15px;
+  }
+  .servicios div .lista {
+    margin-left: 0;
   }
   .servicios div .div-limpieza img {
     margin-left: 0;
@@ -596,7 +606,7 @@ h2 {
   }
   .mi-fondo .servicios div {
     display: grid;
-    grid-template-columns: 350px 350px;
+    grid-template-columns: 400px 400px;
   }
   .mi-fondo .servicios div div {
     display: flex;
@@ -607,10 +617,12 @@ h2 {
     width: 300px;
   }
   .mi-fondo .servicios div .div-limpieza img {
-    margin-left: 50px;
+    margin-left: 20px;
   }
   .mi-fondo .servicios div .div-limpieza p {
-    margin-left: 50px;
+    margin-left: 10px;
+    width: 300px;
+    margin-bottom: 50px;
   }
 }
 @media screen and (max-width: 851px) {
@@ -624,6 +636,9 @@ h2 {
     grid-template-columns: 300px 300px;
     gap: 50px;
     margin-left: 50px;
+  }
+  .mi-fondo .servicios div h5 {
+    width: 250px;
   }
 }
 @media screen and (max-width: 827px) {
@@ -684,6 +699,15 @@ h2 {
     grid-template-columns: 100px 100px 100px;
     gap: 20px;
   }
+  .mi-fondo .cotizacion {
+    margin: 50px;
+  }
+  .mi-fondo .medios-de-pago {
+    height: 60vh;
+    display: flex;
+    align-items: flex-end;
+    margin-left: 50px;
+  }
 }
 @media screen and (max-width: 754px) {
   .mi-fondo .experiencias .peugeot #modal {
@@ -696,6 +720,32 @@ h2 {
   .marcass {
     display: grid;
     grid-template-columns: 30% 30% 30%;
+  }
+}
+@media screen and (max-width: 720px) {
+  .mi-fondo .servicios div {
+    display: grid;
+    grid-template-columns: 300px;
+    justify-content: center;
+    padding-bottom: 50px;
+  }
+  .mi-fondo .servicios div .div-verificacion h5 {
+    margin-left: 20px;
+  }
+  .mi-fondo .servicios div .div-verificacion img {
+    margin-left: 20px;
+  }
+  .mi-fondo .servicios div .div-verificacion ul {
+    margin-left: 20px;
+  }
+  .mi-fondo .servicios div .div-limpieza img {
+    margin-left: 20px;
+  }
+  .mi-fondo .servicios div .div-limpieza p {
+    padding-right: 0;
+    padding-left: 0;
+    margin-left: 20px;
+    width: 250px;
   }
 }
 @media screen and (max-width: 714px) {
@@ -740,23 +790,6 @@ h2 {
     display: grid;
     grid-template-columns: 350px;
   }
-  .mi-fondo .servicios div {
-    display: grid;
-    grid-template-columns: 300px;
-    justify-content: center;
-    padding-bottom: 50px;
-  }
-  .mi-fondo .servicios div .div-verificacion img {
-    margin-left: 50px;
-  }
-  .mi-fondo .servicios div .div-verificacion ul {
-    margin-left: 20px;
-  }
-  .mi-fondo .servicios div .div-limpieza p {
-    padding-right: 0;
-    padding-left: 0;
-    width: 250px;
-  }
 }
 @media screen and (max-width: 693px) {
   .mi-fondo .nosotros .nosotros-historia .entrada p {
@@ -785,6 +818,9 @@ h2 {
   .mi-fondo .hero-productos .div-productos {
     display: grid;
     grid-template-columns: 300px;
+  }
+  .mi-fondo .medios-de-pago {
+    margin: 0;
   }
 }
 @media screen and (max-width: 638px) {

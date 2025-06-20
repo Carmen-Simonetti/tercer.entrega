@@ -23,8 +23,13 @@
             font-size: 25px;
             margin-left: 10px;
 
+            .div-verificacion {
+                padding-right: 20px;
+            }
+
             .div-servicios-cambio {
                 padding-left: 20px;
+                padding-right: 20px;
             }
 
             img {
@@ -32,9 +37,12 @@
                 height: 250px;
             }
 
-            .lista {display: flex;
+            .lista {
+                display: flex;
                 flex-direction: column;
+
                 h5 {
+                    color: $color-principal;
                     font-size: 25px;
                     background-color: brown;
                 }
@@ -130,8 +138,10 @@
 .medios-de-pago {
     padding-top: 50px;
     padding-bottom: 50px;
+
     div {
-        p {padding-bottom: 50px;
+        p {
+            padding-bottom: 50px;
             padding-top: 50px;
             margin-bottom: 0;
             color: $color-principal;
@@ -140,10 +150,14 @@
             font-weight: 600;
         }
 
-        img {display: flex;
-            justify-content: center;
-            width: 70px;
-            height: 50px;
+        .tarjetas {
+            display: flex;
+            justify-content: space-around;
+
+            img {
+                width: 70px;
+                height: 50px;
+            }
         }
 
     }

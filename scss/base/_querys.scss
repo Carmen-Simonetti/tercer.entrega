@@ -69,19 +69,21 @@
     }
 
     .servicios {
+        margin-left: 50px;
+
         div {
             div {
                 flex-wrap: wrap;
-
-                img {
-                    margin-left: 30px;
-                }
 
                 ul {
                     h5 {
                         margin-top: 15px;
                     }
                 }
+            }
+
+            .lista {
+                margin-left: 0;
             }
 
             .div-limpieza {
@@ -327,6 +329,16 @@
 }
 
 @media screen and (max-width:1000px) {
+    .mi-fondo {
+     
+            .video {
+                video {
+                    display: none;
+                }
+            }
+        
+    }
+
     .experiencias {
         display: grid;
         grid-template-columns: 470px 470px;
@@ -399,7 +411,7 @@
         .servicios {
             div {
                 display: grid;
-                grid-template-columns: 350px 350px;
+                grid-template-columns: 400px 400px;
 
                 div {
                     display: flex;
@@ -415,11 +427,13 @@
 
                 .div-limpieza {
                     img {
-                        margin-left: 50px;
+                        margin-left: 20px;
                     }
 
                     p {
-                        margin-left: 50px;
+                        margin-left: 10px;
+                        width: 300px;
+                        margin-bottom: 50px;
                     }
                 }
             }
@@ -440,6 +454,16 @@
         grid-template-columns: 300px 300px;
         gap: 50px;
         margin-left: 50px;
+    }
+
+    .mi-fondo {
+        .servicios {
+            div {
+                h5 {
+                    width: 250px;
+                }
+            }
+        }
     }
 }
 
@@ -534,6 +558,19 @@
             }
         }
     }
+
+    .mi-fondo {
+        .cotizacion {
+            margin: 50px;
+        }
+
+        .medios-de-pago {
+            height: 60vh;
+            display: flex;
+            align-items: flex-end;
+            margin-left: 50px;
+        }
+    }
 }
 
 
@@ -557,6 +594,48 @@
     .marcass {
         display: grid;
         grid-template-columns: 30% 30% 30%;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .mi-fondo {
+        .servicios {
+            div {
+                display: grid;
+                grid-template-columns: 300px;
+                justify-content: center;
+                padding-bottom: 50px;
+
+                .div-verificacion {
+                    h5 {
+                        margin-left: 20px;
+                    }
+
+                    img {
+                        margin-left: 20px;
+                    }
+
+                    ul {
+
+                        margin-left: 20px;
+
+                    }
+                }
+
+                .div-limpieza {
+                    img {
+                        margin-left: 20px;
+                    }
+
+                    p {
+                        padding-right: 0;
+                        padding-left: 0;
+                        margin-left: 20px;
+                        width: 250px;
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -630,37 +709,6 @@
             grid-template-columns: 350px;
         }
     }
-
-    .mi-fondo {
-        .servicios {
-            div {
-                display: grid;
-                grid-template-columns: 300px;
-                justify-content: center;
-                padding-bottom: 50px;
-
-                .div-verificacion {
-                    img {
-                        margin-left: 50px;
-                    }
-
-                    ul {
-
-                        margin-left: 20px;
-
-                    }
-                }
-
-                .div-limpieza {
-                    p {
-                        padding-right: 0;
-                        padding-left: 0;
-                        width: 250px;
-                    }
-                }
-            }
-        }
-    }
 }
 
 @media screen and (max-width: 693px) {
@@ -712,6 +760,12 @@
                 display: grid;
                 grid-template-columns: 300px;
             }
+        }
+    }
+
+    .mi-fondo {
+        .medios-de-pago {
+            margin: 0;
         }
     }
 }
