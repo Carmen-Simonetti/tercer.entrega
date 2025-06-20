@@ -330,13 +330,11 @@
 
 @media screen and (max-width:1000px) {
     .mi-fondo {
-     
-            .video {
-                video {
-                    display: none;
-                }
+        .video {
+            video {
+                width: 400px;
             }
-        
+        }
     }
 
     .experiencias {
@@ -469,6 +467,24 @@
 
 @media screen and (max-width:827px) {
     .mi-fondo {
+        .video {
+            display: flex;
+            flex-direction: column-reverse !important;
+            /*important para anular row-reverse*/
+            align-items: center;
+
+            video {
+                margin-top: 50px;
+                margin-bottom: 50px;
+            }
+
+            p {
+                text-align: center;
+                width: auto !important;
+                padding: 50px;
+            }
+        }
+
         .experiencias {
             display: grid;
             grid-template-columns: 350px 350px;
@@ -997,14 +1013,20 @@
     }
 
     .mi-fondo {
+        .video {
+            video {
+                display: none;
+            }
+            p {
+                font-size: 20px !important;
+            }
+        }
         .titulos-inicio {
             .tres-img-texto {
                 width: 340px;
             }
         }
-    }
 
-    .mi-fondo {
         .experiencias {
             .peugeot {
                 #modal {
@@ -1015,9 +1037,9 @@
                         width: 250px;
                     }
                 }
-
             }
         }
+
     }
 
     .mi-fondo {
@@ -1344,6 +1366,17 @@
         padding: 5px;
     }
 
+.mi-fondo {
+    .servicios {
+        margin-left: 0;
+        h3 {
+            font-size: 20px;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-bottom: 50px;
+        }
+    }
+}
     .contacto p {
         font-size: 20px;
     }

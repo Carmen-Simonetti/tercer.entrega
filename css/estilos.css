@@ -120,7 +120,8 @@ h2 {
   padding: 50px;
 }
 .contacto div {
-  font-size: 30px;
+  color: #fdf0d5;
+  font-size: 25px;
   margin: 50px;
   display: flex;
   justify-content: space-evenly;
@@ -567,6 +568,9 @@ h2 {
   }
 }
 @media screen and (max-width: 1000px) {
+  .mi-fondo .video video {
+    width: 400px;
+  }
   .experiencias {
     display: grid;
     grid-template-columns: 470px 470px;
@@ -642,6 +646,21 @@ h2 {
   }
 }
 @media screen and (max-width: 827px) {
+  .mi-fondo .video {
+    display: flex;
+    flex-direction: column-reverse !important;
+    /*important para anular row-reverse*/
+    align-items: center;
+  }
+  .mi-fondo .video video {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .mi-fondo .video p {
+    text-align: center;
+    width: auto !important;
+    padding: 50px;
+  }
   .mi-fondo .experiencias {
     display: grid;
     grid-template-columns: 350px 350px;
@@ -935,6 +954,12 @@ h2 {
   .formulario h2 {
     font-size: 30px;
   }
+  .mi-fondo .video video {
+    display: none;
+  }
+  .mi-fondo .video p {
+    font-size: 20px !important;
+  }
   .mi-fondo .titulos-inicio .tres-img-texto {
     width: 340px;
   }
@@ -1120,6 +1145,15 @@ h2 {
     margin-bottom: 50px;
     padding: 5px;
   }
+  .mi-fondo .servicios {
+    margin-left: 0;
+  }
+  .mi-fondo .servicios h3 {
+    font-size: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 50px;
+  }
   .contacto p {
     font-size: 20px;
   }
@@ -1144,6 +1178,21 @@ h2 {
     padding-left: 5px;
   }
 }
+.mi-fondo .video {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row-reverse;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+.mi-fondo .video p {
+  color: #fdf0d5;
+  font-size: 30px;
+  font-weight: 600;
+  width: 400px;
+  font-style: italic;
+}
+
 .video-container {
   display: flex;
   align-items: center;
@@ -1283,20 +1332,6 @@ h2 {
   background-color: brown;
   color: white;
   cursor: pointer;
-}
-.mi-fondo .video {
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: row-reverse;
-  margin-bottom: 50px;
-  margin-top: 50px;
-}
-.mi-fondo .video p {
-  color: #fdf0d5;
-  font-size: 30px;
-  font-weight: 600;
-  width: 400px;
-  font-style: italic;
 }
 
 /*# sourceMappingURL=estilos.css.map */
