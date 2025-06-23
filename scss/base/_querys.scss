@@ -29,7 +29,6 @@
                 width: 800px;
                 margin-bottom: 0;
                 padding-bottom: 0;
-                margin-left: 0;
             }
         }
     }
@@ -139,16 +138,25 @@
     .nosotros {
         .nosotros-centro {
             display: grid;
-            grid-template-columns: 700px 500px;
+            grid-template-columns: 1fr 1fr;
         }
     }
 }
 
 @media screen and (max-width:1251px) {
     .nosotros {
-        .entrada {
-            img {
-                width: 400px;
+        .nosotros-historia {
+            .mostrador {
+                img {
+                    width: 500px;
+                    height: 300px;
+                }
+            }
+
+            .entrada {
+                img {
+                    width: 400px;
+                }
             }
         }
     }
@@ -180,6 +188,25 @@
     }
 }
 
+@media screen and (max-width: 1215px) {
+    .mi-fondo {
+        .nosotros {
+            .nosotros-historia {
+                .nosotros-centro {
+                    display: grid;
+                    grid-template-columns: 600px 500px;
+                }
+
+                .marcas {
+                    h3 {
+                        font-size: 40px;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 1200px) {
     .titulos-inicio {
         .div-aceites {
@@ -191,27 +218,22 @@
         }
     }
 
-    .titulos-inicio {
-        .div-aceites {
-            display: grid;
-            grid-template-columns: 350px 350px;
-        }
-    }
-
-    .nosotros {
-        .nosotros-historia {
-            .mostrador {
-                img {
-                    width: 500px;
+    .mi-fondo {
+        .nosotros {
+            .nosotros-historia {
+                .mostrador {
+                    img {
+                        width: 500px;
+                    }
                 }
             }
         }
-    }
 
-    .nosotros {
-        .nosotros-centro {
-            display: grid;
-            grid-template-columns: 600px 500px;
+        .marcas {
+            h3 {
+                padding: 30px;
+                text-align: center;
+            }
         }
     }
 }
@@ -221,41 +243,26 @@
         flex-direction: column;
         margin: 20px;
     }
-
-    .titulos-inicio {
-        .div-aceites {
-            display: grid;
-            grid-template-columns: 350px 350px;
-        }
-    }
 }
 
 @media screen and (max-width:1121px) {
     .nosotros {
         .nosotros-historia {
-            .entrada {
-                p {
-                    padding-left: 5px;
-                }
-            }
-        }
-    }
-
-    .nosotros {
-        .nosotros-historia {
             .mostrador {
                 p {
-                    padding-left: 5px;
+                    padding-left: 30px;
                 }
             }
-        }
-    }
 
-    .nosotros {
-        .nosotros-historia {
             .nosotros-centro {
                 img {
                     width: 400px;
+                }
+            }
+
+            .entrada {
+                p {
+                    padding-left: 5px;
                 }
             }
         }
@@ -298,6 +305,19 @@
     }
 }
 
+@media screen and (max-width: 1065px) {
+    .mi-fondo {
+        .nosotros {
+            .nosotros-historia {
+                .nosotros-centro {
+                    display: grid;
+                    grid-template-columns: 500px 500px;
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 1051px) {
     .nosotros {
         .nosotros-historia {
@@ -317,19 +337,15 @@
             }
         }
     }
-
-    .nosotros {
-        .nosotros-historia {
-            .nosotros-centro {
-                display: grid;
-                grid-template-columns: 500px 500px;
-            }
-        }
-    }
 }
 
 @media screen and (max-width:1000px) {
     .mi-fondo {
+        .experiencias {
+            display: grid;
+            grid-template-columns: 470px 470px;
+        }
+
         .video {
             video {
                 width: 400px;
@@ -337,27 +353,28 @@
         }
     }
 
-    .experiencias {
-        display: grid;
-        grid-template-columns: 470px 470px;
-    }
-
-    .nosotros {
-        .nosotros-historia {
-            .nosotros-centro {
-                img {
-                    width: 350px;
-                    height: 200px;
+    .mi-fondo {
+        .nosotros {
+            .nosotros-historia {
+                .mostrador {
+                    img {
+                        width: 350px;
+                        height: 200px;
+                    }
                 }
-            }
-        }
-    }
 
-    .nosotros {
-        .nosotros-historia {
-            .entrada {
-                img {
-                    height: 200px;
+                .nosotros-centro {
+                    img {
+                        width: 350px;
+                        height: 200px;
+                    }
+                }
+
+                .entrada {
+                    img {
+                        width: 350px;
+                        height: 200px;
+                    }
                 }
             }
         }
@@ -368,10 +385,15 @@
     .navbar {
         display: flex;
         flex-direction: column;
+
+        .logo {
+            width: 75px;
+            height: 75px;
+        }
     }
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 975px) {
     .mi-fondo {
         .titulos-inicio {
             .div-aceites {
@@ -383,30 +405,52 @@
 
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 915px) {
     .mi-fondo {
         .nosotros {
             .nosotros-historia {
+                p {
+                    margin-top: 15px;
+                    margin-bottom: 30px;
+                }
+
                 div {
                     display: flex;
                     flex-direction: column;
-                    align-items: center;
+                    align-items: ce;
+                }
+
+                .mostrador {
+                    p {
+                        padding-left: 0;
+                    }
+                }
+
+                .nosotros-centro {
+                    display: flex;
+                    flex-direction: column !important;
+
+                    p {
+                        padding-right: 0;
+                    }
+                }
+
+                .entrada {
+                    p {
+                        margin-left: 0;
+                    }
                 }
             }
         }
     }
 
-    .nosotros-historia p {
-        margin-bottom: 30px;
-    }
-
-    .marcass {
+    .nosotros-historia .marcass {
         display: grid;
         grid-template-columns: 150px 150px 150px 150px 150px;
     }
 
     .mi-fondo {
-        .servicios {
+        .servicios {margin-left: 0;
             div {
                 display: grid;
                 grid-template-columns: 400px 400px;
@@ -415,6 +459,7 @@
                     display: flex;
                     flex-direction: column;
                     justify-content: flex-start;
+                    align-items: center;
 
                     ul {
                         li {
@@ -425,16 +470,35 @@
 
                 .div-limpieza {
                     img {
-                        margin-left: 20px;
+                        margin-left: 15px;
+                        margin-top: 30px;
                     }
 
                     p {
-                        margin-left: 10px;
+                        margin-left: 50px;
                         width: 300px;
                         margin-bottom: 50px;
                     }
                 }
             }
+        }
+    }
+
+    .mi-fondo {
+        .servicios {
+            div {
+                h5 {
+                    width: 230px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:875px) {
+    .mi-fondo {
+        .servicios {
+            margin-left: 0;
         }
     }
 }
@@ -446,21 +510,33 @@
 }
 
 @media screen and (max-width: 841px) {
-
-    .div-aceites {
-        display: grid;
-        grid-template-columns: 300px 300px;
-        gap: 50px;
-        margin-left: 50px;
+    .mi-fondo {
+        .titulos-inicio {
+            .div-aceites {
+                display: grid;
+                grid-template-columns: 300px;
+            }
+        }
     }
 
-    .mi-fondo {
-        .servicios {
-            div {
-                h5 {
-                    width: 250px;
-                }
+    .marcas {
+        h3 {
+            text-align: center;
+            font-size: nth($font-size, 5);
+        }
+
+        .marcass {
+            img {
+                margin-left: 0px;
             }
+        }
+    }
+}
+
+@media screen and (max-width:835px) {
+    .mi-fondo {
+        .experiencias {
+            gap: 0;
         }
     }
 }
@@ -498,20 +574,38 @@
     .hero-productos p {
         padding-bottom: 30px;
     }
-
-    .marcas {
-        h3 {
-            text-align: center;
-            font-size: nth($font-size, 5);
-        }
-
-        .marcass {
-            img {
-                margin-left: 0px;
+    .mi-fondo {
+        .servicios {margin-left: 0;
+            div {
+                display: grid;
+                grid-template-columns: 350px 350px;
             }
         }
     }
 }
+
+@media screen and (max-width: 815px) {
+    .mi-fondo {
+        .nosotros {
+            .nosotros-historia {
+                .entrada {
+                    p {
+                        width: auto;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+        .marcas {
+            .marcass {
+                display: grid;
+                grid-template-columns: 100px 100px 100px 100px;
+            }
+        }
+    }
+}
+
 
 @media screen and (max-width: 803px) {
     .experiencias p {
@@ -533,17 +627,6 @@
     }
 
     .mi-fondo {
-        .nosotros {
-            .nosotros-historia {
-                .entrada {
-                    p {
-                        width: 700px;
-                        text-align: center;
-                    }
-                }
-            }
-        }
-
         .marcas {
             h3 {
                 height: 30vh;
@@ -574,20 +657,27 @@
             }
         }
     }
+}
 
-    .mi-fondo {
-        .cotizacion {
-            margin: 50px;
-        }
+@media screen and (max-width: 768px) {
 
-        .medios-de-pago {
-            height: 60vh;
-            display: flex;
-            align-items: flex-end;
-            margin-left: 50px;
+    .cotizacion {
+        margin: 50px;
+
+        .col-12 {
+            margin-left: 0;
         }
     }
+
+    .medios-de-pago {
+        height: 60vh;
+        display: flex;
+        align-items: flex-end;
+        margin-left: 50px;
+
+    }
 }
+
 
 
 @media screen and (max-width: 754px) {
@@ -611,9 +701,14 @@
         display: grid;
         grid-template-columns: 30% 30% 30%;
     }
-}
 
-@media screen and (max-width: 720px) {
+    .footer {
+        .mapa {
+            height: 200px;
+        }
+    }
+}
+@media screen and (max-width: 725px) {
     .mi-fondo {
         .servicios {
             div {
@@ -621,6 +716,16 @@
                 grid-template-columns: 300px;
                 justify-content: center;
                 padding-bottom: 50px;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 720px) {
+    .mi-fondo {
+        .servicios {
+            div {
 
                 .div-verificacion {
                     h5 {
@@ -661,20 +766,13 @@
             h4 {
                 font-size: nth($font-size, 5);
             }
-
-            .div-aceites {
-                display: grid;
-                grid-template-columns: 300px;
-            }
         }
     }
 
     .mi-fondo {
-        .video-container {
-            h1 {
-                font-size: 50px;
-                padding-top: 30px;
-            }
+        h1 {
+            font-size: 50px;
+            padding-top: 30px;
         }
     }
 
@@ -713,8 +811,6 @@
         .titulos-inicio {
             .tres-img-texto {
                 width: 500px;
-                margin-left: 50px;
-
             }
         }
     }
@@ -722,7 +818,16 @@
     .mi-fondo {
         .experiencias {
             display: grid;
-            grid-template-columns: 350px;
+            grid-template-columns: 300px;
+        }
+    }
+
+    .mi-fondo {
+        .hero-productos {
+            p {
+                font-size: 25px;
+                padding-bottom: 0;
+            }
         }
     }
 }
@@ -743,17 +848,18 @@
 
 @media screen and (max-width: 649px) {
     .mi-fondo {
+        .video {
+            p {
+                padding-top: 0;
+            }
+        }
+
         .titulos-inicio {
             p {
                 font-size: 20px;
             }
         }
-    }
 
-
-    .nosotros h1,
-    h2 {
-        font-size: 50px;
     }
 
     .nosotros-historia p {
@@ -784,6 +890,14 @@
             margin: 0;
         }
     }
+
+    .mi-fondo {
+        .formulario {
+            div {
+                font-size: 25px;
+            }
+        }
+    }
 }
 
 @media screen and (max-width:638px) {
@@ -803,7 +917,6 @@
         .titulos-inicio {
             .tres-img-texto {
                 width: 450px;
-                padding-left: 50px;
             }
         }
     }
@@ -825,6 +938,48 @@
     }
 }
 
+@media screen and (max-width:565px) {
+    .mi-fondo {
+        .nosotros {
+            .nosotros-historia {
+                .entrada {
+                    p {
+                        padding-left: 0;
+                        width: 450px;
+                    }
+                }
+            }
+        }
+
+        .marcas {
+            .marcass {
+                display: grid;
+                grid-template-columns: 100px 100px;
+                align-items: center;
+
+                img {
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+        }
+    }
+
+    .footer {
+        div {
+            display: flex;
+            justify-content: flex-start !important;
+            padding: 30px;
+
+            .mapa {
+                height: 100px;
+                width: 200px;
+            }
+        }
+    }
+
+}
+
 @media screen and (max-width:558px) {
     .mi-fondo {
         .titulos-inicio {
@@ -843,10 +998,45 @@
     }
 
     .mi-fondo {
-        .marcas {
-            .marcass {
-                display: grid;
-                grid-template-columns: 100px 100px;
+        .medios-de-pago {
+            p {
+                font-size: 25px;
+                margin: 15px;
+            }
+
+            .tarjetas {
+                display: flex;
+                flex-wrap: wrap;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:515px) {
+    header {
+        nav {
+            .logo {
+                display: none;
+            }
+
+            .container-fluid {
+                a {
+                    font-size: 15px;
+                }
+
+                .d-flex {
+                    .btn {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+
+    .mi-fondo {
+        .titulos-inicio {
+            .tres-img-texto {
+                width: 400px;
             }
         }
     }
@@ -854,9 +1044,10 @@
     .mi-fondo {
         .nosotros {
             .nosotros-historia {
-                .entrada {
-                    p {
-                        width: 450px;
+                .mostrador {
+                    img {
+                        width: 400px;
+                        height: 300px;
                     }
                 }
             }
@@ -866,7 +1057,7 @@
     .footer {
         div {
             a {
-                padding-left: 0;
+                padding-left: 30px;
             }
         }
     }
@@ -874,11 +1065,11 @@
 
 @media screen and (max-width:500px) {
     .mi-fondo {
-        .video-container {
-            h1 {
-                font-size: 40px;
-            }
+
+        h1 {
+            font-size: 40px;
         }
+
     }
 
     .mi-fondo {
@@ -888,6 +1079,17 @@
                 width: 250px;
                 margin-bottom: 0;
             }
+        }
+    }
+
+    .mi-fondo {
+        .nosotros {
+
+            h2 {
+                font-size: 30px;
+                height: 5vh;
+            }
+
         }
     }
 
@@ -945,21 +1147,42 @@
     }
 }
 
-@media screen and (max-width: 499px) {
-
-
+@media screen and (max-width: 465px) {
     .mi-fondo {
         .nosotros {
             .nosotros-historia {
-                .mostrador {
-                    img {
+                .entrada {
+                    p {
                         width: 350px;
-                        height: 300px;
                     }
                 }
             }
         }
     }
+
+    .mi-fondo {
+        .formulario {
+            div {
+                font-size: 20px;
+
+                .contact-form {
+                    div {
+                        .form-input {
+                            height: 20px;
+                            width: 100px;
+                        }
+                    }
+
+                    .form-button {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 499px) {
 
     .nosotros-centro p {
         width: 349px;
@@ -992,11 +1215,6 @@
         text-align: center;
     }
 
-    .mapa {
-        width: 200px;
-        height: 200px;
-    }
-
     .div-productos {
         display: grid;
         grid-template-columns: 250px;
@@ -1017,10 +1235,12 @@
             video {
                 display: none;
             }
+
             p {
                 font-size: 20px !important;
             }
         }
+
         .titulos-inicio {
             .tres-img-texto {
                 width: 340px;
@@ -1043,18 +1263,6 @@
     }
 
     .mi-fondo {
-        .nosotros {
-            .nosotros-historia {
-                .entrada {
-                    p {
-                        width: 350px;
-                    }
-                }
-            }
-        }
-    }
-
-    .mi-fondo {
         .servicios {
             div {
                 font-size: 20px;
@@ -1067,12 +1275,65 @@
             }
         }
     }
+
+    .footer {
+        div {
+            a {
+                padding-left: 10px;
+            }
+        }
+    }
 }
 
-@media screen and (max-width:399px) {
+@media screen and (max-width:435px) {
+    .mi-fondo {
+        .medios-de-pago {
+            p {
+                padding-bottom: 0;
+            }
+        }
+    }
+
+    .mi-fondo {
+        .servicios {
+            h3 {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:415px) {
+    .mi-fondo {
+        .titulos-inicio {
+            .tres-img-texto {
+                width: 300px;
+            }
+        }
+    }
+
     .mi-fondo {
         .nosotros {
             .nosotros-historia {
+                p {
+
+                    width: 300px;
+                }
+
+                .mostrador {
+                    img {
+                        width: 300px;
+                        height: 250px;
+                    }
+                }
+
+                .nosotros-centro {
+
+                    img {
+                        width: 300px;
+                    }
+                }
+
                 .entrada {
                     img {
                         width: 350px;
@@ -1082,6 +1343,9 @@
         }
     }
 
+}
+
+@media screen and (max-width:399px) {
     .mi-fondo {
         .video-container {
             h1 {
@@ -1098,6 +1362,66 @@
 
             h2 {
                 font-size: nth($font-size, 4);
+            }
+
+            p {
+                font-size: 20px;
+                padding-bottom: 0;
+            }
+
+            .div-productos {
+                display: grid;
+                grid-template-columns: 240px;
+
+                div {
+                    h3 {
+                        font-size: 20px;
+                        width: 200px;
+                    }
+
+                    img {
+                        width: 150px;
+                        height: 150px;
+                    }
+
+                    a {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    .mi-fondo {
+        .titulos-inicio {
+
+            p {
+                font-size: 20px;
+                padding-bottom: 0;
+            }
+
+            .div-aceites {
+                display: grid;
+                grid-template-columns: 240px;
+                grid-template-rows: 300px;
+
+                div {
+                    height: 45vh;
+
+                    h5 {
+                        font-size: 20px;
+                        width: 200px;
+                    }
+
+                    img {
+                        width: 150px;
+                        height: 150px;
+                    }
+
+                    a {
+                        font-size: 20px;
+                    }
+                }
             }
         }
     }
@@ -1135,6 +1459,12 @@
 
     .nosotros {
         .nosotros-historia {
+            .mostrador {
+                img {
+                    width: 300px;
+                }
+            }
+
             .entrada {
                 img {
                     width: 300px;
@@ -1176,11 +1506,54 @@
             }
         }
     }
+
+    .footer {
+        div {
+            a {
+                padding-left: 5px;
+            }
+        }
+    }
 }
 
 @media screen and (max-width:379px) {
+    .mi-fondo {
+        .titulos-inicio {
+            .tres-img-texto {
+                width: auto;
+                font-size: 20px;
+            }
+        }
+    }
+
     .cambio-focos img {
         width: 350px;
+    }
+
+    .footer {
+        .mapa {
+            width: 100px !important;
+            padding-left: 0;
+        }
+    }
+
+}
+
+@media screen and (max-width:365px) {
+    .mi-fondo {
+        .nosotros {
+            .nosotros-historia {
+                .entrada {
+                    img {
+                        width: 300px;
+                    }
+
+                    p {
+                        width: 300px;
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -1198,10 +1571,13 @@
     }
 
     .mi-fondo {
+        .video {
+            margin-bottom: 0 !important;
+        }
+
         .titulos-inicio {
             .tres-img-texto {
                 width: 250px;
-                font-size: 20px;
                 padding-top: 15px;
             }
 
@@ -1211,8 +1587,6 @@
             }
 
             .div-aceites {
-                margin-left: 50px;
-
                 div {
                     width: 250px;
                 }
@@ -1287,6 +1661,7 @@
                 #openModal {
                     width: 200px;
                     padding: 5px;
+                    font-size: 15px;
                 }
             }
         }
@@ -1299,8 +1674,13 @@
                     inset-inline-start: 25px;
 
                     video {
-                        height: 340px;
-                        width: 300px;
+                        height: 300px;
+                        width: 250px;
+                    }
+
+                    #closeModal {
+                        font-size: 15px;
+                        padding: 10px;
                     }
                 }
 
@@ -1322,22 +1702,26 @@
             }
 
             p {
-                font-size: 20px;
-                padding: 15px;
+                font-size: 15px;
+
             }
 
             .nosotros-historia {
+                p {
+                    margin-top: 0;
+                }
                 img {
                     width: 300px;
                     padding: 15px;
                 }
+
             }
         }
     }
 
     .marcas {
         h3 {
-            padding: 5px;
+            height: 20vh !important;
             font-size: nth($font-size, 3);
         }
 
@@ -1366,18 +1750,121 @@
         padding: 5px;
     }
 
-.mi-fondo {
-    .servicios {
-        margin-left: 0;
-        h3 {
-            font-size: 20px;
-            margin-left: 10px;
-            margin-right: 10px;
-            margin-bottom: 50px;
+    .mi-fondo {
+        .servicios {
+            margin-left: 0;
+
+            h3 {
+                margin-left: 10px;
+                margin-right: 10px;
+                margin-bottom: 50px;
+            }
+
+            div {
+                .div-servicios-cambio {
+                    padding: 0;
+
+                    img {
+                        width: 200px;
+                        height: 200px;
+                    }
+
+                    .lista {
+                        h5 {
+                            width: 200px;
+                        }
+
+                        ul {
+                            li {
+                                width: 200px;
+                                font-size: 15px;
+                            }
+                        }
+                    }
+                }
+
+                .div-verificacion {
+                    padding-right: 0;
+                    padding-bottom: 0;
+
+                    img {
+                        width: 200px;
+                        height: 200px;
+                        margin: 0;
+                    }
+
+                    .lista {
+                        h5 {
+                            width: 200px;
+                            margin-left: 0;
+                        }
+
+                        ul {
+                            margin-left: 0;
+
+                            li {
+                                width: 200px;
+                                font-size: 15px;
+
+                            }
+                        }
+                    }
+                }
+
+                .div-limpieza {
+                    img {
+                        width: 200px;
+                        height: 200px;
+                        margin: 0;
+                    }
+
+                    p {
+                        margin: 0;
+                        width: 200px;
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+
+        .cotizacion {
+            margin-top: 0;
+            margin-bottom: 0;
+
+            h6 {
+                font-size: 25px;
+            }
+
+            .row {
+                height: auto;
+
+                .col-md-3 {
+                    .form-label {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+
+        .medios-de-pago {
+            height: auto;
+            padding-top: 0;
+
+            .tarjetas {
+                img {
+                    padding-top: 5px;
+                }
+            }
         }
     }
-}
+
     .contacto p {
+        font-size: 20px;
+        padding: 15px;
+        padding-top: 30px;
+    }
+
+    .contacto div div {
         font-size: 20px;
     }
 
@@ -1398,13 +1885,11 @@
         padding: 3px;
     }
 
-    .footer {
-        padding: 5px;
-
-        .mapa {
-            width: 180px;
-            padding-left: 5px;
+    footer {
+        div {
+            a {
+                margin-left: 10px;
+            }
         }
     }
-
 }
