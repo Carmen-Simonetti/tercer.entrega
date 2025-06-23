@@ -1,4 +1,4 @@
-.contacto { 
+.contacto {
     p {
         color: $color-principal;
         font-size: 30px;
@@ -17,20 +17,23 @@
 
 .formulario {
     div {
-        .contact-form {
+        .contact-form {padding: 50px;
+            display: grid;
+            grid-template-columns: 450px 450px 450px;
+            grid-template-rows: 70px;
             font-size: 30px;
-            padding: 5px;
         }
     }
 }
 
-.form-button {
+.form-button {width: 70px !important;
     font-size: 25px;
     background: rgba(128, 128, 128, 0.545);
     border-radius: 10px;
-    
 
-    &:hover {@extend %boton-secundario;
+
+    &:hover {
+        @extend %boton-secundario;
     }
 }
 
@@ -38,4 +41,43 @@
     width: 200px;
     height: 30px;
     background: rgba(128, 128, 128, 0.545);
+}
+
+.preguntas-frecuentes {
+    padding: 50px;
+    h3 {
+        text-align: center;
+        color: $color-principal;
+        font-size: 30px;
+    }
+
+    .accordion-flush {
+        padding: 50px;
+        border-right: 15px;
+        border-left: 15px;
+        border-radius: 15px;
+
+        .accordion-item {
+            border-right: 15px;
+            border-left: 15px;
+            border-radius: 15px;
+            background-color: #669bbc;
+
+            .accordion-header {
+                background-color: #669bbc;
+                border-right: 15px;
+                border-left: 15px;
+                border-radius: 15px;
+
+                .accordion-button {
+                    border-right: 15px;
+                    border-left: 15px;
+                    border-radius: 15px;
+                    color: $color-secundario;
+                    font-weight: 500;
+                }
+            }
+        }
+
+    }
 }

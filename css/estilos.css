@@ -125,11 +125,15 @@ h2 {
 }
 
 .formulario div .contact-form {
+  padding: 50px;
+  display: grid;
+  grid-template-columns: 450px 450px 450px;
+  grid-template-rows: 70px;
   font-size: 30px;
-  padding: 5px;
 }
 
 .form-button {
+  width: 70px !important;
   font-size: 25px;
   background: rgba(128, 128, 128, 0.545);
   border-radius: 10px;
@@ -138,6 +142,40 @@ h2 {
   width: 200px;
   height: 30px;
   background: rgba(128, 128, 128, 0.545);
+}
+
+.preguntas-frecuentes {
+  padding: 50px;
+}
+.preguntas-frecuentes h3 {
+  text-align: center;
+  color: #fdf0d5;
+  font-size: 30px;
+}
+.preguntas-frecuentes .accordion-flush {
+  padding: 50px;
+  border-right: 15px;
+  border-left: 15px;
+  border-radius: 15px;
+}
+.preguntas-frecuentes .accordion-flush .accordion-item {
+  border-right: 15px;
+  border-left: 15px;
+  border-radius: 15px;
+  background-color: #669bbc;
+}
+.preguntas-frecuentes .accordion-flush .accordion-item .accordion-header {
+  background-color: #669bbc;
+  border-right: 15px;
+  border-left: 15px;
+  border-radius: 15px;
+}
+.preguntas-frecuentes .accordion-flush .accordion-item .accordion-header .accordion-button {
+  border-right: 15px;
+  border-left: 15px;
+  border-radius: 15px;
+  color: brown;
+  font-weight: 500;
 }
 
 .nosotros h1 {
