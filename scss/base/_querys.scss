@@ -450,7 +450,9 @@
     }
 
     .mi-fondo {
-        .servicios {margin-left: 0;
+        .servicios {
+            margin-left: 0;
+
             div {
                 display: grid;
                 grid-template-columns: 400px 400px;
@@ -574,8 +576,11 @@
     .hero-productos p {
         padding-bottom: 30px;
     }
+
     .mi-fondo {
-        .servicios {margin-left: 0;
+        .servicios {
+            margin-left: 0;
+
             div {
                 display: grid;
                 grid-template-columns: 350px 350px;
@@ -708,6 +713,7 @@
         }
     }
 }
+
 @media screen and (max-width: 725px) {
     .mi-fondo {
         .servicios {
@@ -1371,21 +1377,30 @@
 
             .div-productos {
                 display: grid;
-                grid-template-columns: 240px;
+                grid-template-columns: 200px;
 
-                div {
-                    h3 {
-                        font-size: 20px;
-                        width: 200px;
+                .card {
+                    display: grid;
+                    grid-template-columns: 200px;
+                    width: 12.8rem;
+
+                    .card-body {
+                        padding: 10px;
+                        h3 {
+                            font-size: 15px;
+                            width: 200px;
+                            padding-right: 15px;
+                        }
                     }
 
                     img {
+                        margin-left: 20px;
                         width: 150px;
                         height: 150px;
                     }
 
                     a {
-                        font-size: 20px;
+                        font-size: 10px;
                     }
                 }
             }
@@ -1710,6 +1725,7 @@
                 p {
                     margin-top: 0;
                 }
+
                 img {
                     width: 300px;
                     padding: 15px;
