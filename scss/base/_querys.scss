@@ -185,6 +185,18 @@
             }
         }
     }
+
+    .mi-fondo {
+        .servicios {
+            div {
+                .div-limpieza {
+                    p {
+                        padding-left: 0;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 1215px) {
@@ -490,6 +502,7 @@
                     }
 
                     p {
+                        padding-left: 15px;
                         margin-left: 50px;
                         width: 300px;
                         margin-bottom: 50px;
@@ -584,11 +597,13 @@
                 padding: 50px;
             }
         }
-.titulos-inicio {
-    h3 {
-        padding-top: 0;
-    }
-}
+
+        .titulos-inicio {
+            h3 {
+                padding-top: 0;
+            }
+        }
+
         .experiencias {
             display: grid;
             grid-template-columns: 350px 350px;
@@ -704,10 +719,16 @@
     .mi-fondo {
         .servicios {
             div {
-                display: grid;
-                grid-template-columns: 300px;
+               
                 justify-content: center;
                 padding-bottom: 50px;
+
+                .div-limpieza {
+                    margin: 0;
+                    p {
+                        margin-left: 0px;
+                    }
+                }
             }
         }
     }
@@ -921,6 +942,7 @@
             }
         }
     }
+
     .mi-fondo {
         .preguntas-frecuentes {
             padding: 0;
@@ -1020,8 +1042,8 @@
     header {
         nav {
             .logo {
-            width: 50px !important;
-            height: 50px !important;
+                width: 50px !important;
+                height: 50px !important;
             }
 
             .container-fluid {
@@ -1107,7 +1129,7 @@
             .peugeot {
                 #openModal {
                     width: 250px;
-
+padding: 0;
                 }
             }
         }
@@ -1199,6 +1221,14 @@
             }
         }
     }
+    .mi-fondo {
+        .hero-productos {
+            p {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 499px) {
@@ -1238,6 +1268,7 @@
         display: grid;
         grid-template-columns: 250px;
     }
+
     .medios-de-pago {
         .tarjetas {
             img {
@@ -1286,13 +1317,15 @@
             }
         }
     }
-.mi-fondo {
-    .marcas {
-        h3 {
-            font-size: 30px;
+
+    .mi-fondo {
+        .marcas {
+            h3 {
+                font-size: 30px;
+            }
         }
     }
-}
+
     .mi-fondo {
         .servicios {
             div {
@@ -1340,6 +1373,7 @@
             p {
                 padding: 10px;
             }
+
             .tres-img-texto {
                 width: 300px;
             }
@@ -1435,13 +1469,15 @@
             }
         }
     }
-     .medios-de-pago {
+
+    .medios-de-pago {
         .tarjetas {
             img {
                 padding-top: 10px;
             }
         }
     }
+
     .mi-fondo {
         .titulos-inicio {
 
@@ -1545,17 +1581,19 @@
                 .div-limpieza {
                     p {
                         text-align: start;
-                        margin-left: 40px;
+                        margin-left: 50px;
                     }
                 }
             }
         }
     }
-.formulario {
-    h2 {
-        font-size: 25px;
+
+    .formulario {
+        h2 {
+            font-size: 25px;
+        }
     }
-}
+
     .footer {
         div {
             a {

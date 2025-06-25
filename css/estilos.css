@@ -282,17 +282,18 @@ h2 {
   width: 18rem;
   margin-bottom: 30px;
   border: 3px solid black;
-  background-color: #003049;
+  background-color: #fdf0d5;
   border-radius: 15px;
+  transition: transform 0.3s ease;
+  align-items: center;
+}
+.hero-productos .div-productos .card:hover {
+  transform: scale(1.1);
 }
 .hero-productos .div-productos .card img {
-  transition: transform 0.3s ease;
   width: 250px;
   height: 250px;
   padding-bottom: 10px;
-}
-.hero-productos .div-productos .card img:hover {
-  transform: scale(1.2);
 }
 .hero-productos .div-productos .card .card-body {
   background-color: #669bbc;
@@ -544,6 +545,9 @@ h2 {
   .contacto div div img {
     width: 40px;
   }
+  .mi-fondo .servicios div .div-limpieza p {
+    padding-left: 0;
+  }
 }
 @media screen and (max-width: 1215px) {
   .mi-fondo .nosotros .nosotros-historia .nosotros-centro {
@@ -700,6 +704,7 @@ h2 {
     margin-top: 30px;
   }
   .mi-fondo .servicios div .div-limpieza p {
+    padding-left: 15px;
     margin-left: 50px;
     width: 300px;
     margin-bottom: 50px;
@@ -833,10 +838,14 @@ h2 {
 }
 @media screen and (max-width: 725px) {
   .mi-fondo .servicios div {
-    display: grid;
-    grid-template-columns: 300px;
     justify-content: center;
     padding-bottom: 50px;
+  }
+  .mi-fondo .servicios div .div-limpieza {
+    margin: 0;
+  }
+  .mi-fondo .servicios div .div-limpieza p {
+    margin-left: 0px;
   }
 }
 @media screen and (max-width: 720px) {
@@ -1034,6 +1043,7 @@ h2 {
   }
   .mi-fondo .experiencias .peugeot #openModal {
     width: 250px;
+    padding: 0;
   }
   .experiencias div {
     margin-left: 0;
@@ -1074,6 +1084,10 @@ h2 {
   }
   .mi-fondo .formulario div .contact-form .form-button {
     font-size: 20px;
+  }
+  .mi-fondo .hero-productos p {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 @media screen and (max-width: 499px) {
@@ -1260,7 +1274,7 @@ h2 {
   }
   .mi-fondo .servicios div .div-limpieza p {
     text-align: start;
-    margin-left: 40px;
+    margin-left: 50px;
   }
   .formulario h2 {
     font-size: 25px;
@@ -1621,6 +1635,9 @@ h2 {
   box-shadow: -15px 15px 23px -3px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: -15px 15px 23px -3px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -15px 15px 23px -3px rgba(0, 0, 0, 0.75);
+}
+.experiencias p {
+  padding-top: 15px;
 }
 .experiencias .cambio-focos p,
 .experiencias .golcito p,
