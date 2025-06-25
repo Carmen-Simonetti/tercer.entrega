@@ -1020,7 +1020,8 @@
     header {
         nav {
             .logo {
-                display: none;
+            width: 50px !important;
+            height: 50px !important;
             }
 
             .container-fluid {
