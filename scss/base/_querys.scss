@@ -36,8 +36,7 @@
     .marcas {
         .marcass {
             display: flex;
-            justify-content: space-evenly;
-            padding-bottom: 10px;
+            justify-content: space-around;
         }
     }
 }
@@ -378,8 +377,27 @@
                 }
             }
         }
+
+        .marcas {
+            .marcass {
+                #multiCarousel {
+                    .carousel-inner {
+                        .carousel-item {
+                            .row {
+                                .col {
+                                    .w-100 {
+                                        height: 70px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
+
 
 @media screen and (max-width:992px) {
     .navbar {
@@ -417,7 +435,7 @@
                 div {
                     display: flex;
                     flex-direction: column;
-                    align-items: ce;
+                    align-items: center;
                 }
 
                 .mostrador {
@@ -442,11 +460,6 @@
                 }
             }
         }
-    }
-
-    .nosotros-historia .marcass {
-        display: grid;
-        grid-template-columns: 150px 150px 150px 150px 150px;
     }
 
     .mi-fondo {
@@ -505,6 +518,21 @@
     }
 }
 
+@media screen and (max-width: 866px) {
+    .mi-fondo {
+        .nosotros {
+            .nosotros-historia {
+                .entrada {
+                    p {
+                        width: auto;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width:851px) {
     .contacto p {
         font-size: 20px;
@@ -525,12 +553,6 @@
         h3 {
             text-align: center;
             font-size: nth($font-size, 5);
-        }
-
-        .marcass {
-            img {
-                margin-left: 0px;
-            }
         }
     }
 }
@@ -589,29 +611,6 @@
     }
 }
 
-@media screen and (max-width: 815px) {
-    .mi-fondo {
-        .nosotros {
-            .nosotros-historia {
-                .entrada {
-                    p {
-                        width: auto;
-                        text-align: center;
-                    }
-                }
-            }
-        }
-
-        .marcas {
-            .marcass {
-                display: grid;
-                grid-template-columns: 100px 100px 100px 100px;
-            }
-        }
-    }
-}
-
-
 @media screen and (max-width: 803px) {
     .experiencias p {
         padding-bottom: 30px;
@@ -652,18 +651,6 @@
     }
 }
 
-@media screen and (max-width: 767px) {
-    .mi-fondo {
-        .marcas {
-            .marcass {
-                display: grid;
-                grid-template-columns: 100px 100px 100px;
-                gap: 20px;
-            }
-        }
-    }
-}
-
 @media screen and (max-width: 768px) {
 
     .cotizacion {
@@ -700,11 +687,6 @@
 
             }
         }
-    }
-
-    .marcass {
-        display: grid;
-        grid-template-columns: 30% 30% 30%;
     }
 
     .footer {
@@ -865,7 +847,6 @@
                 font-size: 20px;
             }
         }
-
     }
 
     .nosotros-historia p {
@@ -915,6 +896,32 @@
         display: grid;
         grid-template-columns: 250px 250px;
     }
+
+    .mi-fondo {
+        .marcas {
+            .marcass {
+                #multiCarousel {
+                    .carousel-inner {
+                        .carousel-item {
+                            .row {
+                                .col {
+                                    .w-100 {
+                                        width: 50px !important;
+                                        height: 50px !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .mi-fondo {
+        .preguntas-frecuentes {
+            padding: 0;
+        }
+    }
 }
 
 @media screen and (max-width:600px) {
@@ -953,19 +960,6 @@
                         padding-left: 0;
                         width: 450px;
                     }
-                }
-            }
-        }
-
-        .marcas {
-            .marcass {
-                display: grid;
-                grid-template-columns: 100px 100px;
-                align-items: center;
-
-                img {
-                    width: 100px;
-                    height: 100px;
                 }
             }
         }
@@ -1166,6 +1160,20 @@
         }
     }
 
+    .marcas {
+        .marcass {
+            #multiCarousel {
+                .carousel-inner {
+                    .carousel-item {
+                        .row {
+                            --bs-gutter-x: 0.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     .mi-fondo {
         .formulario {
             div {
@@ -1224,6 +1232,13 @@
     .div-productos {
         display: grid;
         grid-template-columns: 250px;
+    }
+    .medios-de-pago {
+        .tarjetas {
+            img {
+                padding: 5px;
+            }
+        }
     }
 }
 
@@ -1386,6 +1401,7 @@
 
                     .card-body {
                         padding: 10px;
+
                         h3 {
                             font-size: 15px;
                             width: 200px;
@@ -1406,7 +1422,13 @@
             }
         }
     }
-
+     .medios-de-pago {
+        .tarjetas {
+            img {
+                padding-top: 10px;
+            }
+        }
+    }
     .mi-fondo {
         .titulos-inicio {
 
@@ -1488,14 +1510,9 @@
         }
     }
 
-    .mi-fondo {
-        .marcas {
-            .marcass {
-                img {
-                    height: 100px;
-                    width: 100px;
-                }
-            }
+    .marcas {
+        .marcass {
+            padding: 20px;
         }
     }
 
@@ -1515,7 +1532,7 @@
                 .div-limpieza {
                     p {
                         text-align: start;
-                        margin-left: 30px;
+                        margin-left: 40px;
                     }
                 }
             }
@@ -1543,6 +1560,20 @@
 
     .cambio-focos img {
         width: 350px;
+    }
+
+    .marcas {
+        .marcass {
+            #multiCarousel {
+                .carousel-inner {
+                    .carousel-item {
+                        .row {
+                            --bs-gutter-y: 0.5rem;
+                        }
+                    }
+                }
+            }
+        }
     }
 
     .footer {
@@ -1576,6 +1607,23 @@
     .cambio-focos p {
         width: 340px;
     }
+
+    .mi-fondo {
+        .titulos-inicio {
+            p {
+                font-size: 15px;
+                margin: 15px;
+            }
+        }
+    }
+
+    .mi-fondo {
+        .hero-productos {
+            p {
+                padding: 20px;
+            }
+        }
+    }
 }
 
 /*!--- MEDIA QUARY 350 PARA ABAJO-------*/
@@ -1594,11 +1642,6 @@
             .tres-img-texto {
                 width: 250px;
                 padding-top: 15px;
-            }
-
-            p {
-                font-size: 15px;
-                margin: 15px;
             }
 
             .div-aceites {
@@ -1737,22 +1780,10 @@
 
     .marcas {
         h3 {
-            height: 20vh !important;
-            font-size: nth($font-size, 3);
+            height: 15vh !important;
+            font-size: nth($font-size, 4);
+            margin-bottom: 0;
         }
-
-        .marcass {
-            display: grid;
-            grid-template-columns: 100px 100px 100px;
-            gap: 10px;
-            padding-bottom: 10px;
-        }
-
-        img {
-            width: 70px;
-            height: 70px;
-        }
-
     }
 
     .hero-productos .div-productos {
@@ -1865,12 +1896,6 @@
         .medios-de-pago {
             height: auto;
             padding-top: 0;
-
-            .tarjetas {
-                img {
-                    padding-top: 5px;
-                }
-            }
         }
     }
 
