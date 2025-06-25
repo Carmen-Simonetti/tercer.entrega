@@ -19,6 +19,7 @@
                 font-weight: 600;
                 width: 400px;
                font-style: italic;
+               text-shadow: -15px 15px 15px rgba(0, 0, 0, 0.75) /*para darle una sombra negra*/; 
             }
         
     }
@@ -30,6 +31,7 @@
 
 .titulos-inicio {
     h3 {
+        padding-top: 50px;
         margin-top: 50px;
         text-align: center;
         font-size: nth($font-size, 5);

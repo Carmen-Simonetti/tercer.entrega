@@ -128,9 +128,6 @@ h2 {
   padding: 50px;
   font-size: 30px;
 }
-.formulario div .contact-form div label {
-  color: #fdf0d5;
-}
 
 .form-button {
   width: 70px !important;
@@ -745,6 +742,9 @@ h2 {
     width: auto !important;
     padding: 50px;
   }
+  .mi-fondo .titulos-inicio h3 {
+    padding-top: 0;
+  }
   .mi-fondo .experiencias {
     display: grid;
     grid-template-columns: 350px 350px;
@@ -1107,6 +1107,9 @@ h2 {
     height: 340px;
     width: 250px;
   }
+  .mi-fondo .marcas h3 {
+    font-size: 30px;
+  }
   .mi-fondo .servicios div {
     font-size: 20px;
   }
@@ -1126,6 +1129,9 @@ h2 {
   }
 }
 @media screen and (max-width: 415px) {
+  .mi-fondo .titulos-inicio p {
+    padding: 10px;
+  }
   .mi-fondo .titulos-inicio .tres-img-texto {
     width: 300px;
   }
@@ -1241,6 +1247,9 @@ h2 {
   .mi-fondo .servicios div .div-limpieza p {
     text-align: start;
     margin-left: 40px;
+  }
+  .formulario h2 {
+    font-size: 25px;
   }
   .footer div a {
     padding-left: 5px;
@@ -1371,8 +1380,9 @@ h2 {
     padding: 15px;
   }
   .marcas h3 {
-    height: 15vh !important;
-    font-size: 20px;
+    height: 20vh !important;
+    font-size: 25px !important;
+    margin-bottom: 0;
   }
   .hero-productos .div-productos {
     display: grid;
@@ -1490,6 +1500,7 @@ h2 {
   font-weight: 600;
   width: 400px;
   font-style: italic;
+  text-shadow: -15px 15px 15px rgba(0, 0, 0, 0.75);
 }
 
 .video-container {
@@ -1499,6 +1510,7 @@ h2 {
 }
 
 .titulos-inicio h3 {
+  padding-top: 50px;
   margin-top: 50px;
   text-align: center;
   font-size: 40px;

@@ -584,7 +584,11 @@
                 padding: 50px;
             }
         }
-
+.titulos-inicio {
+    h3 {
+        padding-top: 0;
+    }
+}
         .experiencias {
             display: grid;
             grid-template-columns: 350px 350px;
@@ -1280,9 +1284,14 @@
                 }
             }
         }
-
     }
-
+.mi-fondo {
+    .marcas {
+        h3 {
+            font-size: 30px;
+        }
+    }
+}
     .mi-fondo {
         .servicios {
             div {
@@ -1327,6 +1336,9 @@
 @media screen and (max-width:415px) {
     .mi-fondo {
         .titulos-inicio {
+            p {
+                padding: 10px;
+            }
             .tres-img-texto {
                 width: 300px;
             }
@@ -1538,7 +1550,11 @@
             }
         }
     }
-
+.formulario {
+    h2 {
+        font-size: 25px;
+    }
+}
     .footer {
         div {
             a {
@@ -1780,8 +1796,8 @@
 
     .marcas {
         h3 {
-            height: 15vh !important;
-            font-size: nth($font-size, 4);
+            height: 20vh !important;
+            font-size: 25px !important;
             margin-bottom: 0;
         }
     }
