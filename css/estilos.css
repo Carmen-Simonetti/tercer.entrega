@@ -45,6 +45,14 @@ header nav .container-fluid a:hover {
   color: rgba(6, 225, 6, 0.766);
 }
 
+header .navbar .container-fluid .navbar-toggler .navbar-toggler-icon span {
+  background-color: white !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='red' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
 .d-flex button {
   color: #fdf0d5;
   border: 3px solid brown;
@@ -224,12 +232,22 @@ h2 {
   align-items: center;
   padding-left: 30px;
 }
+@media (min-width: 1500px) {
+  .nosotros .nosotros-historia .mostrador p {
+    margin-left: 0;
+  }
+}
 .nosotros .nosotros-centro {
   display: grid;
   grid-template-columns: 2fr 1fr;
 }
 .nosotros .nosotros-centro img {
   width: 500px;
+}
+@media (min-width: 1500px) {
+  .nosotros .nosotros-centro img {
+    height: 280px;
+  }
 }
 .nosotros .nosotros-centro p {
   grid-row: 1;
@@ -241,6 +259,11 @@ h2 {
 .nosotros .entrada {
   display: grid;
   grid-template-columns: 1fr 2fr;
+}
+@media (min-width: 1500px) {
+  .nosotros .entrada {
+    display: flex;
+  }
 }
 .nosotros .entrada p {
   display: flex;
@@ -392,7 +415,8 @@ h2 {
   margin-top: 50px;
 }
 .cotizacion h6 {
-  font-size: 35px;
+  padding-top: 50px;
+  font-size: 50px;
   color: #fdf0d5;
   text-align: center;
   /*background: linear-gradient(90deg, #669bbc, #003049);*/
@@ -464,15 +488,27 @@ h2 {
   }
 }
 @media screen and (max-width: 1500px) {
-  .nosotros .nosotros-historia .mostrador p {
-    margin-left: 0;
-  }
-  .nosotros .entrada {
-    display: flex;
-  }
-  .nosotros .nosotros-centro img {
-    height: 280px;
-  }
+  /*.nosotros {
+      .nosotros-historia {
+          .mostrador {
+              p {
+                  margin-left: 0;
+              }
+          }
+      }
+  }*/
+  /*.nosotros {
+      .entrada {
+          display: flex;
+      }
+  }*/
+  /*.nosotros {
+      .nosotros-centro {
+          img {
+              height: 280px;
+          }
+      }
+  }*/
   .nosotros .entrada p {
     width: 800px;
     margin-bottom: 0;

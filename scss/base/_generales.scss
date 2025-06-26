@@ -31,15 +31,27 @@ header {
             }
         }
     }
-
 }
+
+
+    header {
+        .navbar {
+            .container-fluid {
+                .navbar-toggler {
+                    .navbar-toggler-icon span {
+                        background-color: red !important;
+                    }
+                }
+            }
+        }
+    }
 
 .d-flex {
 
     button {
         color: $color-principal;
         border: 3px solid $color-secundario;
-        background-color:$color-secundario ;
+        background-color: $color-secundario ;
         transition: background 1s linear;
 
         &:hover {
@@ -108,13 +120,18 @@ h2 {
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
+
     div {
         display: flex;
         align-items: center;
-   
+
     }
-    a { padding-left: 50px;}
+
+    a {
+        padding-left: 50px;
+    }
+
     .mapa {
-         padding-left: 50px;
+        padding-left: 50px;
     }
 }
