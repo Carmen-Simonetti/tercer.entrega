@@ -504,7 +504,7 @@
                     p {
                         padding-left: 15px;
                         margin-left: 50px;
-                        width: 300px;
+                        width: 260px;
                         margin-bottom: 50px;
                     }
                 }
@@ -719,12 +719,16 @@
     .mi-fondo {
         .servicios {
             div {
-               
+               display: grid;
+               grid-template-columns: 350px;
                 justify-content: center;
                 padding-bottom: 50px;
 
                 .div-limpieza {
                     margin: 0;
+                    img {
+                        margin-left: 0;
+                    }
                     p {
                         margin-left: 0px;
                     }
