@@ -184,11 +184,9 @@ p {
         #modal {
             background-color: #0000003e;
             inset-inline-start: 500px;
-            /*no pude distribuirlo ni con grid ni con flexbox xq sino el video aparecía antes de apretar video*/
             margin-top: 50px;
-            backdrop-filter: blur(5px);
-
-            /* Efecto de desenfoque */
+            backdrop-filter: blur(5px); /* Efecto de desenfoque */
+            
             #closeModal {
                 display: flex;
                 padding: 15px;
