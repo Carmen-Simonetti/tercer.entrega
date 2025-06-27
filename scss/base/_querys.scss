@@ -97,7 +97,7 @@
     }
 }*/
 
-@media screen and (max-width: 1381px) {
+/*@media screen and (max-width: 1381px) {
     .mi-fondo {
         .experiencias {
             gap: 0;
@@ -112,16 +112,16 @@
             grid-template-columns: 500px 500px;
             justify-content: center;
             /*para que mis img estén bien en el centro*/
-            padding-top: 30px;
+/*padding-top: 30px;
 
             div {
                 padding-bottom: 20px;
             }
         }
     }
-}
+}*/
 
-@media screen and (max-width: 1348px) {
+/*@media screen and (max-width: 1348px) {
    /* .nosotros {
         .nosotros-centro {
             img {
@@ -130,7 +130,7 @@
         }
     }*/
 
-    .mi-fondo {
+/*.mi-fondo {
         .titulos-inicio {
             .div-aceites {
                 display: grid;
@@ -138,7 +138,7 @@
             }
         }
     }
-}
+}*/
 
 /*@media screen and (max-width: 1300px) {
 
@@ -226,7 +226,7 @@
     }
 }*/
 
-@media screen and (max-width: 1200px) {
+/*@media screen and (max-width: 1200px) {
     .titulos-inicio {
         .div-aceites {
             div {
@@ -255,7 +255,7 @@
             }
         }
     }*/
-}
+
 
 @media screen and (max-width:1190px) {
     .contacto div {
@@ -324,13 +324,13 @@
     }
 }
 
-@media screen and (max-width: 1101px) {
+/*@media screen and (max-width: 1101px) {
     .video {
         video {
             width: 400px;
         }
     }
-}
+}*/
 
 /*@media screen and (max-width: 1065px) {
     .mi-fondo {
@@ -366,7 +366,7 @@
     }
 }*/
 
-@media screen and (max-width:1000px) {
+/*@media screen and (max-width:1000px) {
     .mi-fondo {
         .experiencias {
             display: grid;
@@ -418,7 +418,7 @@
             }
         }
     }*/
-}
+
 
 
 @media screen and (max-width:992px) {
@@ -433,7 +433,7 @@
     }
 }
 
-@media screen and (max-width: 975px) {
+/*@media screen and (max-width: 975px) {
     .mi-fondo {
         .titulos-inicio {
             .div-aceites {
@@ -442,8 +442,7 @@
             }
         }
     }
-
-}
+}*/
 
 @media screen and (max-width: 915px) {
     /*.mi-fondo {
@@ -581,7 +580,7 @@
     }*/
 }
 
-@media screen and (max-width:835px) {
+/*@media screen and (max-width:835px) {
     .mi-fondo {
         .experiencias {
             gap: 0;
@@ -595,15 +594,15 @@
             }
         }
     }
-}
+}*/
 
 @media screen and (max-width:827px) {
-    .mi-fondo {
+    /*.mi-fondo {
         .video {
             display: flex;
             flex-direction: column-reverse !important;
             /*important para anular row-reverse*/
-            align-items: center;
+    /*align-items: center;
 
             video {
                 margin-top: 50px;
@@ -627,7 +626,7 @@
             display: grid;
             grid-template-columns: 350px 350px;
         }
-    }
+    }*/
 
     h2 {
         font-size: 40px;
@@ -650,7 +649,7 @@
 }
 
 @media screen and (max-width: 803px) {
-    .experiencias p {
+    /*.experiencias p {
         padding-bottom: 30px;
     }
 
@@ -666,16 +665,16 @@
     #modal video {
         width: 350px;
         height: 450px;
-    }
+    }*/
 
-    .mi-fondo {
+    /*.mi-fondo {
         .marcas {
             h3 {
                 height: 30vh;
                 padding: 15px;
             }
         }
-    }
+    }*/
 
     .mapa {
         width: 300px;
@@ -711,7 +710,7 @@
 
 
 @media screen and (max-width: 754px) {
-    .mi-fondo {
+    /*.mi-fondo {
         .experiencias {
             .peugeot {
                 #modal {
@@ -725,7 +724,7 @@
 
             }
         }
-    }
+    }*/
 
     .mi-fondo {
         .servicios {
@@ -815,7 +814,7 @@
 }
 
 @media screen and (max-width: 714px) {
-    .mi-fondo {
+    /*.mi-fondo {
         .titulos-inicio {
             h4 {
                 font-size: nth($font-size, 5);
@@ -828,7 +827,7 @@
             font-size: 50px;
             padding-top: 30px;
         }
-    }
+    }*/
 
     /*.nosotros-historia div {
         display: flex;
@@ -854,7 +853,7 @@
 }
 
 @media screen and (max-width: 700px) {
-    .mi-fondo {
+    /*.mi-fondo {
         .div-aceites {
             margin: 0;
         }
@@ -874,7 +873,7 @@
             display: grid;
             grid-template-columns: 300px;
         }
-    }
+    }*/
 
     .mi-fondo {
         .hero-productos {
@@ -886,7 +885,7 @@
     }
 }
 
-@media screen and (max-width: 693px) {
+/*@media screen and (max-width: 693px) {
     .mi-fondo {
         .nosotros {
             .nosotros-historia {
@@ -898,10 +897,10 @@
             }
         }
     }
-}
+}*/
 
 @media screen and (max-width: 649px) {
-    .mi-fondo {
+    /*.mi-fondo {
         .video {
             p {
                 padding-top: 0;
@@ -913,21 +912,21 @@
                 font-size: 20px;
             }
         }
-    }
+    }*/
 
     /*.nosotros-historia p {*/
-        /*width: 500px;*/
-        /*padding-bottom: 20px;
+    /*width: 500px;*/
+    /*padding-bottom: 20px;
     }*/
 
     .mapa {
         width: 250px;
     }
 
-    .div-aceites {
+    /*.div-aceites {
         display: grid;
         grid-template-columns: 250px 250px;
-    }
+    }*/
 
     .mi-fondo {
         .hero-productos {
@@ -954,14 +953,14 @@
 }
 
 @media screen and (max-width:638px) {
-    .video-container video {
+    /*.video-container video {
         width: 500px;
     }
 
     .div-productos {
         display: grid;
         grid-template-columns: 250px 250px;
-    }
+    }*/
 
     /*.mi-fondo {
         .marcas {
@@ -992,8 +991,7 @@
 }
 
 @media screen and (max-width:600px) {
-
-    .mi-fondo {
+    /*.mi-fondo {
         .titulos-inicio {
             .tres-img-texto {
                 width: 450px;
@@ -1015,7 +1013,7 @@
 
             }
         }
-    }
+    }*/
 
     .mi-fondo {
         .cotizacion {
@@ -1056,7 +1054,7 @@
 }
 
 @media screen and (max-width:558px) {
-    .mi-fondo {
+    /*.mi-fondo {
         .titulos-inicio {
             .linea-divisoria {
                 display: none;
@@ -1070,7 +1068,7 @@
                 padding-left: 0;
             }
         }
-    }
+    }*/
 
     .mi-fondo {
         .medios-de-pago {
@@ -1109,13 +1107,13 @@
         }
     }
 
-    .mi-fondo {
+    /*.mi-fondo {
         .titulos-inicio {
             .tres-img-texto {
                 width: 400px;
             }
         }
-    }
+    }*/
 
     .footer {
         div {
@@ -1135,7 +1133,7 @@
 
     }
 
-    .mi-fondo {
+    /*.mi-fondo {
         .video-container {
             h2 {
                 font-size: 30px;
@@ -1143,18 +1141,18 @@
                 margin-bottom: 0;
             }
         }
-    }
+    }*/
 
-    .mi-fondo {
+    /*.mi-fondo {
         .nosotros {
             h2 {
                 font-size: 30px;
                 height: 15vh;
             }
         }
-    }
+    }*/
 
-    .video-container video {
+    /* .video-container video {
         display: none;
     }
 
@@ -1205,7 +1203,7 @@
                 width: 380px;
             }
         }
-    }
+    }*/
 }
 
 @media screen and (max-width: 465px) {
@@ -1314,15 +1312,15 @@
 }
 
 @media screen and (max-width:451px) {
-    .focus img {
+    /*.focus img {
         width: 350px;
-    }
+    }*/
 
     .formulario h2 {
         font-size: 30px;
     }
 
-    .mi-fondo {
+    /*.mi-fondo {
         .video {
             video {
                 display: none;
@@ -1337,9 +1335,9 @@
             .tres-img-texto {
                 width: 340px;
             }
-        }
+        }*/
 
-        .experiencias {
+    /*.experiencias {
             .peugeot {
                 #modal {
                     inset-inline-start: 60px;
@@ -1351,7 +1349,7 @@
                 }
             }
         }
-    }
+    }*/
 
     /*.mi-fondo {
         .marcas {
@@ -1403,7 +1401,7 @@
 }
 
 @media screen and (max-width:415px) {
-    .mi-fondo {
+    /*.mi-fondo {
         .titulos-inicio {
             p {
                 padding: 10px;
@@ -1413,7 +1411,7 @@
                 width: 300px;
             }
         }
-    }
+    }*/
 
     /*.mi-fondo {
         .nosotros {
@@ -1448,13 +1446,13 @@
 }
 
 @media screen and (max-width:399px) {
-    .mi-fondo {
+    /*.mi-fondo {
         .video-container {
             h1 {
                 font-size: 30px;
             }
         }
-    }
+    }*/
 
     .mi-fondo {
         .hero-productos {
@@ -1512,7 +1510,7 @@
         }
     }
 
-    .mi-fondo {
+    /*.mi-fondo {
         .titulos-inicio {
 
             p {
@@ -1544,9 +1542,9 @@
                 }
             }
         }
-    }
+    }*/
 
-    .mi-fondo {
+    /*.mi-fondo {
         .video-container {
             h2 {
                 font-size: 20px;
@@ -1575,7 +1573,7 @@
                 margin-left: 0;
             }
         }
-    }
+    }*/
 
     /*.nosotros {
         .nosotros-historia {
@@ -1638,7 +1636,7 @@
 }
 
 @media screen and (max-width:379px) {
-    .mi-fondo {
+    /*.mi-fondo {
         .titulos-inicio {
             .tres-img-texto {
                 width: auto;
@@ -1649,7 +1647,7 @@
 
     .cambio-focos img {
         width: 350px;
-    }
+    }*/
 
     .mi-fondo {
         .servicios {
@@ -1703,7 +1701,7 @@
 }*/
 
 @media screen and (max-width:360px) {
-    .cambio-focos p {
+    /*.cambio-focos p {
         width: 340px;
     }
 
@@ -1714,7 +1712,7 @@
                 margin: 15px;
             }
         }
-    }
+    }*/
 
     .mi-fondo {
         .hero-productos {
@@ -1731,7 +1729,7 @@
         font-size: 20px;
     }
 
-    .mi-fondo {
+    /*.mi-fondo {
         .video {
             margin-bottom: 0 !important;
         }
@@ -1748,7 +1746,7 @@
                 }
             }
         }
-    }
+    }*/
 
     h1 {
         display: flex;
@@ -1791,11 +1789,7 @@
         top: 0;
     }
 
-    .video-container video {
-        display: none;
-    }
-
-    .mi-fondo {
+    /*.mi-fondo {
         .experiencias {
             div {
                 p {
@@ -1809,9 +1803,9 @@
                 }
             }
         }
-    }
+    }*/
 
-    .mi-fondo {
+    /*.mi-fondo {
         .experiencias {
             .peugeot {
                 #openModal {
@@ -1842,7 +1836,7 @@
 
             }
         }
-    }
+    }*/
 
     /*.mi-fondo {
         .nosotros {

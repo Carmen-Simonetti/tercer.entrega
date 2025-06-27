@@ -395,6 +395,17 @@
     }
 }
 
+@media screen and (max-width: 803px) {
+.mi-fondo {
+        .marcas {
+            h3 {
+                height: 30vh;
+                padding: 15px;
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 714px) {
     .nosotros-historia div {
         display: flex;

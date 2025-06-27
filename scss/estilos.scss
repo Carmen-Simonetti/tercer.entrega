@@ -8,22 +8,26 @@
 
 .mi-fondo {
     .video {
-            display: flex;
-            justify-content: space-evenly;
-            flex-direction: row-reverse;
-            margin-bottom: 50px;
-            margin-top: 50px;
-            p {
-                color: $color-principal;
-                font-size: 30px;
-                font-weight: 600;
-                width: 400px;
-               font-style: italic;
-               text-shadow: -15px 15px 15px rgba(0, 0, 0, 0.75) /*para darle una sombra negra*/; 
-            }
-        
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row-reverse;
+        margin-bottom: 50px;
+        margin-top: 50px;
+
+        p {
+            color: $color-principal;
+            font-size: 30px;
+            font-weight: 600;
+            width: 400px;
+            font-style: italic;
+            text-shadow: -15px 15px 15px rgba(0, 0, 0, 0.75)
+                /*para darle una sombra negra*/
+            ;
+        }
+
     }
 }
+
 .video-container {
     @include flex (flex, center);
     flex-direction: column;
@@ -150,9 +154,11 @@
         -webkit-box-shadow: -15px 15px 23px -3px rgba(0, 0, 0, 0.75);
         -moz-box-shadow: -15px 15px 23px -3px rgba(0, 0, 0, 0.75);
     }
-p {
-    padding-top: 15px;
-}
+
+    p {
+        padding-top: 15px;
+    }
+
     .cambio-focos,
     .golcito,
     .focus {
@@ -185,8 +191,9 @@ p {
             background-color: #0000003e;
             inset-inline-start: 500px;
             margin-top: 50px;
-            backdrop-filter: blur(5px); /* Efecto de desenfoque */
-            
+            backdrop-filter: blur(5px);
+            /* Efecto de desenfoque */
+
             #closeModal {
                 display: flex;
                 padding: 15px;
@@ -199,6 +206,609 @@ p {
                 &:hover {
                     @extend %boton-secundario;
                 }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1381px) {
+    .mi-fondo {
+        .experiencias {
+            gap: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 1365px) {
+    .mi-fondo {
+        .experiencias {
+            display: grid;
+            grid-template-columns: 500px 500px;
+            justify-content: center;
+            /*para que mis img estén bien en el centro*/
+            padding-top: 30px;
+
+            div {
+                padding-bottom: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1348px) {
+
+    .mi-fondo {
+        .titulos-inicio {
+            .div-aceites {
+                display: grid;
+                grid-template-columns: 300px 300px 300px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .titulos-inicio {
+        .div-aceites {
+            div {
+                h5 {
+                    width: 200px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1121px) {
+    .mi-fondo {
+        .experiencias {
+            .peugeot {
+                #modal {
+                    inset-inline-start: 300px;
+
+                    video {
+                        height: 400px;
+                        width: 450px;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1101px) {
+    .video {
+        video {
+            width: 400px;
+        }
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .mi-fondo {
+        .experiencias {
+            display: grid;
+            grid-template-columns: 470px 470px;
+        }
+    }
+}
+
+@media screen and (max-width: 975px) {
+    .mi-fondo {
+        .titulos-inicio {
+            .div-aceites {
+                display: grid;
+                grid-template-columns: 300px 300px;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 841px) {
+    .mi-fondo {
+        .titulos-inicio {
+            .div-aceites {
+                display: grid;
+                grid-template-columns: 300px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:835px) {
+    .mi-fondo {
+        .experiencias {
+            gap: 0;
+        }
+    }
+
+    .mi-fondo {
+        .servicios {
+            div {
+                padding-left: 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:827px) {
+    .mi-fondo {
+        .video {
+            display: flex;
+            flex-direction: column-reverse !important;
+            /*important para anular row-reverse*/
+            align-items: center;
+
+            video {
+                margin-top: 50px;
+                margin-bottom: 50px;
+            }
+
+            p {
+                text-align: center;
+                width: auto !important;
+                padding: 50px;
+            }
+        }
+
+        .titulos-inicio {
+            h3 {
+                padding-top: 0;
+            }
+        }
+
+        .experiencias {
+            display: grid;
+            grid-template-columns: 350px 350px;
+        }
+    }
+}
+
+@media screen and (max-width: 803px) {
+    .experiencias p {
+        padding-bottom: 30px;
+    }
+
+    .peugeot {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #modal {
+        inset-inline-start: 230px;
+    }
+
+    #modal video {
+        width: 350px;
+        height: 450px;
+    }
+}
+
+@media screen and (max-width: 754px) {
+    .mi-fondo {
+        .experiencias {
+            .peugeot {
+                #modal {
+                    inset-inline-start: 200px;
+
+                    video {
+                        height: 340px;
+                        width: 350px;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 714px) {
+    .mi-fondo {
+        .titulos-inicio {
+            h4 {
+                font-size: nth($font-size, 5);
+            }
+        }
+    }
+
+    .mi-fondo {
+        h1 {
+            font-size: 50px;
+            padding-top: 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .mi-fondo {
+        .div-aceites {
+            margin: 0;
+        }
+    }
+
+
+    .mi-fondo {
+        .titulos-inicio {
+            .tres-img-texto {
+                width: 500px;
+            }
+        }
+    }
+
+    .mi-fondo {
+        .experiencias {
+            display: grid;
+            grid-template-columns: 300px;
+        }
+    }
+}
+
+@media screen and (max-width: 649px) {
+    .mi-fondo {
+        .video {
+            p {
+                padding-top: 0;
+            }
+        }
+
+        .titulos-inicio {
+            p {
+                font-size: 20px;
+            }
+        }
+    }
+
+    .div-aceites {
+        display: grid;
+        grid-template-columns: 250px 250px;
+    }
+}
+
+@media screen and (max-width:638px) {
+    .video-container video {
+        width: 500px;
+    }
+
+    .div-productos {
+        display: grid;
+        grid-template-columns: 250px 250px;
+    }
+}
+
+@media screen and (max-width:600px) {
+
+    .mi-fondo {
+        .titulos-inicio {
+            .tres-img-texto {
+                width: 450px;
+            }
+        }
+    }
+
+    .mi-fondo {
+        .experiencias {
+            .peugeot {
+                #modal {
+                    inset-inline-start: 140px;
+
+                    video {
+                        height: 340px;
+                        width: 300px;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width:558px) {
+    .mi-fondo {
+        .titulos-inicio {
+            .linea-divisoria {
+                display: none;
+            }
+        }
+    }
+
+    .mi-fondo {
+        .titulos-inicio {
+            .tres-img-texto {
+                padding-left: 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:515px) {
+    .mi-fondo {
+        .titulos-inicio {
+            .tres-img-texto {
+                width: 400px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:500px) {
+    .mi-fondo {
+        .video-container {
+            h2 {
+                font-size: 30px;
+                width: 250px;
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .mi-fondo {
+        .experiencias {
+            .peugeot {
+                #openModal {
+                    width: 250px;
+                    padding: 0;
+                }
+            }
+        }
+    }
+
+    .experiencias div {
+        margin-left: 0;
+    }
+
+    .experiencias div img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .mi-fondo {
+        .experiencias {
+            div {
+                p {
+                    width: 250px;
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+
+    #openModal {
+        width: 250px;
+        padding: 0;
+    }
+
+    .mi-fondo {
+        .titulos-inicio {
+            h4 {
+                font-size: nth($font-size, 3);
+            }
+
+            .tres-img-texto {
+                padding-left: 0;
+                width: 380px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:451px) {
+    .mi-fondo {
+        .video {
+            video {
+                display: none;
+            }
+
+            p {
+                font-size: 20px !important;
+            }
+        }
+
+        .titulos-inicio {
+            .tres-img-texto {
+                width: 340px;
+            }
+        }
+
+        .focus img {
+            width: 350px;
+        }
+        .experiencias {
+            .peugeot {
+                #modal {
+                    inset-inline-start: 60px;
+
+                    video {
+                        height: 340px;
+                        width: 250px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:415px) {
+    .mi-fondo {
+        .titulos-inicio {
+            p {
+                padding: 10px;
+            }
+
+            .tres-img-texto {
+                width: 300px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:399px) {
+    .mi-fondo {
+        .video-container {
+            h1 {
+                font-size: 30px;
+            }
+        }
+    }
+    .mi-fondo {
+        .titulos-inicio {
+
+            p {
+                font-size: 20px;
+                padding-bottom: 0;
+            }
+
+            .div-aceites {
+                display: grid;
+                grid-template-columns: 240px;
+                grid-template-rows: 300px;
+
+                div {
+                    height: 45vh;
+
+                    h5 {
+                        font-size: 20px;
+                        width: 200px;
+                    }
+
+                    img {
+                        width: 150px;
+                        height: 150px;
+                    }
+
+                    a {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+    .mi-fondo {
+        .video-container {
+            h2 {
+                font-size: 20px;
+                width: 250px;
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .mi-fondo {
+        .titulos-inicio {
+            h3 {
+                font-size: 30px;
+                margin-top: 20px;
+            }
+        }
+    }
+
+    .mi-fondo {
+        .titulos-inicio {
+            h4 {
+                font-size: nth($font-size, 4);
+            }
+
+            .div-aceites {
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:379px) {
+    .mi-fondo {
+        .titulos-inicio {
+            .tres-img-texto {
+                width: auto;
+                font-size: 20px;
+            }
+        }
+    }
+
+    .cambio-focos img {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width:360px) {
+    .cambio-focos p {
+        width: 340px;
+    }
+
+    .mi-fondo {
+        .titulos-inicio {
+            p {
+                font-size: 15px;
+                margin: 15px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:351px) {
+      .mi-fondo {
+        .video {
+            margin-bottom: 0 !important;
+        }
+
+        .titulos-inicio {
+            .tres-img-texto {
+                width: 250px;
+                padding-top: 15px;
+            }
+
+            .div-aceites {
+                div {
+                    width: 250px;
+                }
+            }
+        }
+    }
+    .mi-fondo {
+        .experiencias {
+            div {
+                p {
+                    width: 200px;
+                    font-size: 15px;
+                }
+
+                img {
+                    height: 200px;
+                    width: 200px;
+                }
+            }
+        }
+    }
+    .mi-fondo {
+        .experiencias {
+            .peugeot {
+                #openModal {
+                    width: 200px;
+                    padding: 5px;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+
+    .mi-fondo {
+        .experiencias {
+            .peugeot {
+                #modal {
+                    inset-inline-start: 25px;
+
+                    video {
+                        height: 300px;
+                        width: 250px;
+                    }
+
+                    #closeModal {
+                        font-size: 15px;
+                        padding: 10px;
+                    }
+                }
+
             }
         }
     }
