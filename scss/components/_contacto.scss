@@ -96,3 +96,134 @@
         background-position: 100% 50%;
     }
 }
+
+@media screen and (max-width:1251px) {
+    .contacto {
+        div {
+            font-size: 25px;
+        }
+    }
+
+    .contacto {
+        div {
+            div {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }
+
+    .contacto {
+        div {
+            div {
+                img {
+                    width: 40px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1190px) {
+    .contacto div {
+        flex-direction: column;
+        margin: 20px;
+    }
+}
+
+@media screen and (max-width:1121px) {
+    .contacto p {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media screen and (max-width:851px) {
+    .contacto p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 649px) {
+    .mi-fondo {
+        .formulario {
+            div {
+                font-size: 25px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:638px) {
+    .mi-fondo {
+        .preguntas-frecuentes {
+            padding: 0;
+        }
+    }
+}
+
+@media screen and (max-width:465px) {
+    .mi-fondo {
+        .formulario {
+            div {
+                font-size: 20px;
+
+                .contact-form {
+                    div {
+                        .form-input {
+                            height: 20px;
+                            width: 100px;
+                        }
+                    }
+
+                    .form-button {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:451px) {
+    .formulario h2 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:399px){
+.formulario {
+        h2 {
+            font-size: 25px;
+        }
+    }
+}
+
+@media screen and (max-width:351px) {
+    .contacto p {
+        font-size: 20px;
+        padding: 15px;
+        padding-top: 30px;
+    }
+
+    .contacto div div {
+        font-size: 20px;
+    }
+
+    .contact-form {
+        font-size: 20px;
+    }
+
+    .contact-form div input {
+        width: 130px;
+        height: 20px;
+    }
+
+    .form-button {
+        font-size: 20px;
+    }
+
+    .contact-form div {
+        padding: 3px;
+    }
+}
