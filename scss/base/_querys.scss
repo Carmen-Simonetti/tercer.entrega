@@ -1,5 +1,5 @@
 @media screen and (max-width: 1500px) {
-    /*.nosotros {
+    .nosotros {
         .nosotros-historia {
             .mostrador {
                 p {
@@ -7,21 +7,21 @@
                 }
             }
         }
-    }*/
+    }
 
-    /*.nosotros {
+    .nosotros {
         .entrada {
             display: flex;
         }
-    }*/
+    }
 
-    /*.nosotros {
+    .nosotros {
         .nosotros-centro {
             img {
                 height: 280px;
             }
         }
-    }*/
+    }
 
     .nosotros {
         .entrada {
@@ -93,6 +93,14 @@
                     margin-top: 15px;
                 }
             }
+        }
+    }
+}
+
+@media screen and (max-width: 1381px) {
+    .mi-fondo {
+        .experiencias {
+            gap: 0;
         }
     }
 }
@@ -316,6 +324,14 @@
     }
 }
 
+@media screen and (max-width: 1101px) {
+    .video {
+        video {
+            width: 400px;
+        }
+    }
+}
+
 @media screen and (max-width: 1065px) {
     .mi-fondo {
         .nosotros {
@@ -355,12 +371,6 @@
         .experiencias {
             display: grid;
             grid-template-columns: 470px 470px;
-        }
-
-        .video {
-            video {
-                width: 400px;
-            }
         }
     }
 
@@ -481,6 +491,7 @@
             div {
                 display: grid;
                 grid-template-columns: 400px 400px;
+                justify-content: center;
 
                 div {
                     display: flex;
@@ -574,6 +585,14 @@
     .mi-fondo {
         .experiencias {
             gap: 0;
+        }
+    }
+
+    .mi-fondo {
+        .servicios {
+            div {
+                padding-left: 0;
+            }
         }
     }
 }
@@ -708,6 +727,22 @@
         }
     }
 
+    .mi-fondo {
+        .servicios {
+            div {
+                padding-left: 0px;
+            }
+        }
+    }
+
+    .mi-fondo {
+        .cotizacion {
+            h6 {
+                padding-bottom: 20px;
+            }
+        }
+    }
+
     .footer {
         .mapa {
             height: 200px;
@@ -719,16 +754,18 @@
     .mi-fondo {
         .servicios {
             div {
-               display: grid;
-               grid-template-columns: 350px;
+                display: grid;
+                grid-template-columns: 350px;
                 justify-content: center;
                 padding-bottom: 50px;
 
                 .div-limpieza {
                     margin: 0;
+
                     img {
                         margin-left: 0;
                     }
+
                     p {
                         margin-left: 0px;
                     }
@@ -768,7 +805,7 @@
                     p {
                         padding-right: 0;
                         padding-left: 0;
-                        margin-left: 20px;
+                        margin-left: 40px;
                         width: 250px;
                     }
                 }
@@ -979,6 +1016,14 @@
             }
         }
     }
+
+    .mi-fondo {
+        .cotizacion {
+            h6 {
+                font-size: nth($font-size, 5);
+            }
+        }
+    }
 }
 
 @media screen and (max-width:565px) {
@@ -1072,19 +1117,6 @@
         }
     }
 
-    .mi-fondo {
-        .nosotros {
-            .nosotros-historia {
-                .mostrador {
-                    img {
-                        width: 400px;
-                        height: 300px;
-                    }
-                }
-            }
-        }
-    }
-
     .footer {
         div {
             a {
@@ -1118,7 +1150,7 @@
 
             h2 {
                 font-size: 30px;
-                height: 5vh;
+                height: 15vh;
             }
 
         }
@@ -1133,7 +1165,7 @@
             .peugeot {
                 #openModal {
                     width: 250px;
-padding: 0;
+                    padding: 0;
                 }
             }
         }
@@ -1225,6 +1257,7 @@ padding: 0;
             }
         }
     }
+
     .mi-fondo {
         .hero-productos {
             p {
@@ -1619,6 +1652,16 @@ padding: 0;
 
     .cambio-focos img {
         width: 350px;
+    }
+
+    .mi-fondo {
+        .servicios {
+            div {
+                display: grid;
+                grid-template-columns: 300px;
+                padding-bottom: 0;
+            }
+        }
     }
 
     .marcas {

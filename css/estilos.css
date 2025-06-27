@@ -45,12 +45,8 @@ header nav .container-fluid a:hover {
   color: rgba(6, 225, 6, 0.766);
 }
 
-header .navbar .container-fluid .navbar-toggler .navbar-toggler-icon span {
-  background-color: white !important;
-}
-
 .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='red' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='brown' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
 .d-flex button {
@@ -232,22 +228,12 @@ h2 {
   align-items: center;
   padding-left: 30px;
 }
-@media (min-width: 1500px) {
-  .nosotros .nosotros-historia .mostrador p {
-    margin-left: 0;
-  }
-}
 .nosotros .nosotros-centro {
   display: grid;
   grid-template-columns: 2fr 1fr;
 }
 .nosotros .nosotros-centro img {
   width: 500px;
-}
-@media (min-width: 1500px) {
-  .nosotros .nosotros-centro img {
-    height: 280px;
-  }
 }
 .nosotros .nosotros-centro p {
   grid-row: 1;
@@ -259,11 +245,6 @@ h2 {
 .nosotros .entrada {
   display: grid;
   grid-template-columns: 1fr 2fr;
-}
-@media (min-width: 1500px) {
-  .nosotros .entrada {
-    display: flex;
-  }
 }
 .nosotros .entrada p {
   display: flex;
@@ -358,7 +339,6 @@ h2 {
 .mi-fondo .servicios div {
   display: flex;
   font-size: 25px;
-  margin-left: 10px;
 }
 .mi-fondo .servicios div .div-verificacion {
   padding-right: 20px;
@@ -488,27 +468,15 @@ h2 {
   }
 }
 @media screen and (max-width: 1500px) {
-  /*.nosotros {
-      .nosotros-historia {
-          .mostrador {
-              p {
-                  margin-left: 0;
-              }
-          }
-      }
-  }*/
-  /*.nosotros {
-      .entrada {
-          display: flex;
-      }
-  }*/
-  /*.nosotros {
-      .nosotros-centro {
-          img {
-              height: 280px;
-          }
-      }
-  }*/
+  .nosotros .nosotros-historia .mostrador p {
+    margin-left: 0;
+  }
+  .nosotros .entrada {
+    display: flex;
+  }
+  .nosotros .nosotros-centro img {
+    height: 280px;
+  }
   .nosotros .entrada p {
     width: 800px;
     margin-bottom: 0;
@@ -550,6 +518,11 @@ h2 {
   }
   .servicios div .div-limpieza p {
     margin-top: 15px;
+  }
+}
+@media screen and (max-width: 1381px) {
+  .mi-fondo .experiencias {
+    gap: 0;
   }
 }
 @media screen and (max-width: 1365px) {
@@ -657,6 +630,11 @@ h2 {
     width: 450px;
   }
 }
+@media screen and (max-width: 1101px) {
+  .video video {
+    width: 400px;
+  }
+}
 @media screen and (max-width: 1065px) {
   .mi-fondo .nosotros .nosotros-historia .nosotros-centro {
     display: grid;
@@ -676,9 +654,6 @@ h2 {
   .mi-fondo .experiencias {
     display: grid;
     grid-template-columns: 470px 470px;
-  }
-  .mi-fondo .video video {
-    width: 400px;
   }
   .mi-fondo .nosotros .nosotros-historia .mostrador img {
     width: 350px;
@@ -741,6 +716,7 @@ h2 {
   .mi-fondo .servicios div {
     display: grid;
     grid-template-columns: 400px 400px;
+    justify-content: center;
   }
   .mi-fondo .servicios div div {
     display: flex;
@@ -794,6 +770,9 @@ h2 {
 @media screen and (max-width: 835px) {
   .mi-fondo .experiencias {
     gap: 0;
+  }
+  .mi-fondo .servicios div {
+    padding-left: 0;
   }
 }
 @media screen and (max-width: 827px) {
@@ -884,6 +863,12 @@ h2 {
     height: 340px;
     width: 350px;
   }
+  .mi-fondo .servicios div {
+    padding-left: 0px;
+  }
+  .mi-fondo .cotizacion h6 {
+    padding-bottom: 20px;
+  }
   .footer .mapa {
     height: 200px;
   }
@@ -921,7 +906,7 @@ h2 {
   .mi-fondo .servicios div .div-limpieza p {
     padding-right: 0;
     padding-left: 0;
-    margin-left: 20px;
+    margin-left: 40px;
     width: 250px;
   }
 }
@@ -1028,6 +1013,9 @@ h2 {
     height: 340px;
     width: 300px;
   }
+  .mi-fondo .cotizacion h6 {
+    font-size: 40px;
+  }
 }
 @media screen and (max-width: 565px) {
   .mi-fondo .nosotros .nosotros-historia .entrada p {
@@ -1074,10 +1062,6 @@ h2 {
   .mi-fondo .titulos-inicio .tres-img-texto {
     width: 400px;
   }
-  .mi-fondo .nosotros .nosotros-historia .mostrador img {
-    width: 400px;
-    height: 300px;
-  }
   .footer div a {
     padding-left: 30px;
   }
@@ -1093,7 +1077,7 @@ h2 {
   }
   .mi-fondo .nosotros h2 {
     font-size: 30px;
-    height: 5vh;
+    height: 15vh;
   }
   .video-container video {
     display: none;
@@ -1347,6 +1331,11 @@ h2 {
   }
   .cambio-focos img {
     width: 350px;
+  }
+  .mi-fondo .servicios div {
+    display: grid;
+    grid-template-columns: 300px;
+    padding-bottom: 0;
   }
   .marcas .marcass #multiCarousel .carousel-inner .carousel-item .row {
     --bs-gutter-y: 0.5rem;
