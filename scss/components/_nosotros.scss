@@ -30,6 +30,10 @@
         margin-left: 50px;
         margin-right: 50px;
 
+        p {
+            color: #fdf0d5;
+        }
+
         .mostrador {
             display: grid;
             grid-template-columns: 1fr 2fr;
@@ -89,12 +93,13 @@
     .marcass {
         padding: 50px;
 
-        img {    
+        img {
             height: 100px;
             width: 100px;
         }
     }
 }
+
 @media screen and (max-width: 1500px) {
     .nosotros {
         .nosotros-historia {
@@ -175,6 +180,7 @@
             }
         }
     }
+
     .mi-fondo {
         .servicios {
             div {
@@ -187,6 +193,7 @@
         }
     }
 }
+
 @media screen and (max-width: 1215px) {
     .mi-fondo {
         .nosotros {
@@ -205,6 +212,7 @@
         }
     }
 }
+
 @media screen and (max-width: 1200px) {
     .mi-fondo {
         .nosotros {
@@ -396,7 +404,7 @@
 }
 
 @media screen and (max-width: 803px) {
-.mi-fondo {
+    .mi-fondo {
         .marcas {
             h3 {
                 height: 30vh;
@@ -448,7 +456,7 @@
 }
 
 @media screen and (max-width:638px) {
-     .mi-fondo {
+    .mi-fondo {
         .marcas {
             .marcass {
                 #multiCarousel {
@@ -592,8 +600,9 @@
 
                 .entrada {
                     img {
-                        width: 350px; 
+                        width: 350px;
                     }
+
                     p {
                         width: auto !important;
                     }
@@ -643,7 +652,7 @@
     }
 }
 
-@media screen and (max-width:365px)  {
+@media screen and (max-width:365px) {
     .mi-fondo {
         .nosotros {
             .nosotros-historia {
@@ -662,7 +671,7 @@
 }
 
 @media screen and (max-width:351px) {
-.mi-fondo {
+    .mi-fondo {
         .nosotros {
             h1 {
                 font-size: nth($font-size, 3);

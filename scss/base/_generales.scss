@@ -85,25 +85,6 @@ h2 {
     margin-bottom: 50px;
 }
 
-.experiencias {
-    p {
-        font-size: 25px;
-        color: #fdf0d5;
-        text-align: center;
-    }
-
-    img {
-        width: 300px;
-        height: 300px;
-    }
-}
-
-.nosotros-historia {
-    p {
-        color: #fdf0d5;
-    }
-}
-
 .footer {
     display: block;
     background-image: url(../img/posible\ footer.avif);
@@ -124,5 +105,163 @@ h2 {
 
     .mapa {
         padding-left: 50px;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+
+        .logo {
+            width: 75px;
+            height: 75px;
+        }
+    }
+}
+
+@media screen and (max-width: 803px) {
+    .mapa {
+        width: 300px;
+    }
+
+    .footer div {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+}
+
+@media screen and (max-width: 754px) {
+    .footer {
+        .mapa {
+            height: 200px;
+        }
+    }
+}
+
+@media screen and (max-width: 649px) {
+    .mapa {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width:565px) {
+    .footer {
+        div {
+            display: flex;
+            justify-content: flex-start !important;
+            padding: 30px;
+
+            .mapa {
+                height: 100px;
+                width: 200px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:515px) {
+    header {
+        nav {
+            .logo {
+                width: 50px !important;
+                height: 50px !important;
+            }
+
+            .container-fluid {
+                a {
+                    font-size: 15px;
+                }
+
+                .d-flex {
+                    .btn {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+    .footer {
+        div {
+            a {
+                padding-left: 30px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:500px) {
+    .mi-fondo {
+        h1 {
+            font-size: 40px;
+        }
+    }
+}
+
+@media screen and (max-width:451px) {
+    .footer {
+        div {
+            a {
+                padding-left: 10px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:399px) {
+    .footer {
+        div {
+            a {
+                padding-left: 5px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:379px) {
+    .footer {
+        .mapa {
+            width: 100px !important;
+            padding-left: 0;
+        }
+    }
+}
+
+@media screen and (max-width:351px) {
+    
+    header .navbar {
+        position: sticky;
+    }
+
+    .header {
+        position: sticky;
+        top: 0;
+    }
+    h1 {
+        display: flex;
+        justify-content: center;
+        font-size: 30px;
+
+        &::after {
+            content: "✨"
+        }
+
+        &::before {
+            content: "✨";
+        }
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+    
+    footer {
+        div {
+            a {
+                margin-left: 10px;
+            }
+        }
     }
 }

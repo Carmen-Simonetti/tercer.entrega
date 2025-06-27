@@ -150,8 +150,8 @@
     }
 }*/
 
-@media screen and (max-width:1251px) {
-    /*.nosotros {
+/*@media screen and (max-width:1251px) {
+    .nosotros {
         .nosotros-historia {
             .mostrador {
                 img {
@@ -204,8 +204,8 @@
                 }
             }
         }
-    }*/
-}
+    }
+}*/
 
 /*@media screen and (max-width: 1215px) {
     .mi-fondo {
@@ -421,7 +421,7 @@
 
 
 
-@media screen and (max-width:992px) {
+/*@media screen and (max-width:992px) {
     .navbar {
         display: flex;
         flex-direction: column;
@@ -431,7 +431,7 @@
             height: 75px;
         }
     }
-}
+}*/
 
 /*@media screen and (max-width: 975px) {
     .mi-fondo {
@@ -562,8 +562,8 @@
     }
 }*/
 
-@media screen and (max-width: 841px) {
-    /*.mi-fondo {
+/*@media screen and (max-width: 841px) {
+    .mi-fondo {
         .titulos-inicio {
             .div-aceites {
                 display: grid;
@@ -577,8 +577,8 @@
             text-align: center;
             font-size: nth($font-size, 5);
         }
-    }*/
-}
+    }
+}*/
 
 /*@media screen and (max-width:835px) {
     .mi-fondo {
@@ -648,8 +648,8 @@
     }
 }
 
-@media screen and (max-width: 803px) {
-    /*.experiencias p {
+/*@media screen and (max-width: 803px) {
+    .experiencias p {
         padding-bottom: 30px;
     }
 
@@ -676,7 +676,7 @@
         }
     }*/
 
-    .mapa {
+    /*.mapa {
         width: 300px;
     }
 
@@ -705,7 +705,7 @@
         margin-left: 50px;
 
     }
-}
+}*/
 
 
 
@@ -742,11 +742,11 @@
         }
     }
 
-    .footer {
+    /*.footer {
         .mapa {
             height: 200px;
         }
-    }
+    }*/
 }
 
 @media screen and (max-width: 725px) {
@@ -919,9 +919,9 @@
     /*padding-bottom: 20px;
     }*/
 
-    .mapa {
+    /*.mapa {
         width: 250px;
-    }
+    }*/
 
     /*.div-aceites {
         display: grid;
@@ -952,8 +952,8 @@
     }*/
 }
 
-@media screen and (max-width:638px) {
-    /*.video-container video {
+/*@media screen and (max-width:638px) {
+    .video-container video {
         width: 500px;
     }
 
@@ -987,8 +987,8 @@
         .preguntas-frecuentes {
             padding: 0;
         }
-    }*/
-}
+    }
+}*/
 
 @media screen and (max-width:600px) {
     /*.mi-fondo {
@@ -1024,8 +1024,8 @@
     }
 }
 
-@media screen and (max-width:565px) {
-    /*.mi-fondo {
+/*@media screen and (max-width:565px) {
+    .mi-fondo {
         .nosotros {
             .nosotros-historia {
                 .entrada {
@@ -1038,7 +1038,7 @@
         }
     }*/
 
-    .footer {
+    /*.footer {
         div {
             display: flex;
             justify-content: flex-start !important;
@@ -1050,8 +1050,7 @@
             }
         }
     }
-
-}
+}*/
 
 @media screen and (max-width:558px) {
     /*.mi-fondo {
@@ -1085,7 +1084,7 @@
     }
 }
 
-@media screen and (max-width:515px) {
+/*@media screen and (max-width:515px) {
     header {
         nav {
             .logo {
@@ -1105,7 +1104,7 @@
                 }
             }
         }
-    }
+    }*/
 
     /*.mi-fondo {
         .titulos-inicio {
@@ -1113,7 +1112,7 @@
                 width: 400px;
             }
         }
-    }*/
+    }
 
     .footer {
         div {
@@ -1122,7 +1121,7 @@
             }
         }
     }
-}
+}*/
 
 @media screen and (max-width:500px) {
     .mi-fondo {
@@ -1373,13 +1372,13 @@
         }
     }
 
-    .footer {
+    /*.footer {
         div {
             a {
                 padding-left: 10px;
             }
         }
-    }
+    }*/
 }
 
 @media screen and (max-width:435px) {
@@ -1626,13 +1625,13 @@
         }
     }*/
 
-    .footer {
+    /*.footer {
         div {
             a {
                 padding-left: 5px;
             }
         }
-    }
+    }*/
 }
 
 @media screen and (max-width:379px) {
@@ -1673,12 +1672,12 @@
         }
     }*/
 
-    .footer {
+    /*.footer {
         .mapa {
             width: 100px !important;
             padding-left: 0;
         }
-    }
+    }*/
 
 }
 
@@ -1725,9 +1724,9 @@
 
 @media screen and (max-width:351px) {
 
-    h2 {
+    /*h2 {
         font-size: 20px;
-    }
+    }*/
 
     /*.mi-fondo {
         .video {
@@ -1748,7 +1747,7 @@
         }
     }*/
 
-    h1 {
+    /*h1 {
         display: flex;
         justify-content: center;
         font-size: 30px;
@@ -1760,7 +1759,7 @@
         &::before {
             content: "✨";
         }
-    }
+    }*/
 
     .mi-fondo {
         .hero-productos {
@@ -1780,14 +1779,14 @@
         }
     }
 
-    header .navbar {
+    /*header .navbar {
         position: sticky;
     }
 
     .header {
         position: sticky;
         top: 0;
-    }
+    }*/
 
     /*.mi-fondo {
         .experiencias {
@@ -2018,11 +2017,11 @@
         padding: 3px;
     }*/
 
-    footer {
+    /*footer {
         div {
             a {
                 margin-left: 10px;
             }
         }
-    }
+    }*/
 }
