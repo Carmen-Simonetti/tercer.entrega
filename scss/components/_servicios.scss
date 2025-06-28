@@ -40,7 +40,7 @@
                 display: flex;
                 flex-direction: column;
 
-                h5 {
+                h4 {
                     color: $color-principal;
                     font-size: 25px;
                     background-color: brown;
@@ -91,7 +91,7 @@
 
     margin-top: 50px;
 
-    h6 {
+    h5 {
         padding-top: 50px;
         font-size: 50px;
         color: $color-principal;
@@ -148,7 +148,7 @@
     padding-bottom: 50px;
 
     div {
-        p {
+        h6 {
             padding-bottom: 50px;
             padding-top: 50px;
             margin-bottom: 0;
@@ -181,17 +181,32 @@
     }
 }
 
-@media screen and (max-width:1121px) {
-    .mi-fondo {
-        .hero-productos {
-            .div-productos {
-                display: grid;
-                grid-template-columns: 300px 300px;
+@media screen and (max-width: 1455px) {
+    .servicios {
+        margin-left: 50px;
 
-                div {
-                    h3 {
-                        width: 250px;
+        div {
+            div {
+                flex-wrap: wrap;
+
+                ul {
+                    h5 {
+                        margin-top: 15px;
                     }
+                }
+            }
+
+            .lista {
+                margin-left: 0;
+            }
+
+            .div-limpieza {
+                img {
+                    margin-left: 0;
+                }
+
+                p {
+                    margin-top: 15px;
                 }
             }
         }
@@ -208,11 +223,16 @@
                 grid-template-columns: 400px 400px;
                 justify-content: center;
 
+
                 div {
                     display: flex;
                     flex-direction: column;
                     justify-content: flex-start;
                     align-items: center;
+
+                    h4 {
+                        width: 230px;
+                    }
 
                     ul {
                         li {
@@ -233,16 +253,6 @@
                         width: 260px;
                         margin-bottom: 50px;
                     }
-                }
-            }
-        }
-    }
-
-    .mi-fondo {
-        .servicios {
-            div {
-                h5 {
-                    width: 230px;
                 }
             }
         }
@@ -270,6 +280,18 @@
     }
 }
 
+@media screen and (max-width: 768px) {
+    .mi-fondo {
+        .cotizacion {
+            .row {
+                padding: 50px;
+                height: auto;
+            }
+        }
+    }
+}
+
+
 @media screen and (max-width: 754px) {
     .mi-fondo {
         .servicios {
@@ -277,11 +299,9 @@
                 padding-left: 0px;
             }
         }
-    }
 
-    .mi-fondo {
         .cotizacion {
-            h6 {
+            h5 {
                 padding-bottom: 20px;
             }
         }
@@ -319,7 +339,7 @@
             div {
 
                 .div-verificacion {
-                    h5 {
+                    h4 {
                         margin-left: 20px;
                     }
 
@@ -378,7 +398,7 @@
 @media screen and (max-width:558px) {
     .mi-fondo {
         .medios-de-pago {
-            p {
+            h6 {
                 font-size: 25px;
                 margin: 15px;
             }
@@ -408,7 +428,7 @@
                 font-size: 20px;
 
                 ul {
-                    h5 {
+                    h4 {
                         margin-right: 30px;
                     }
                 }
@@ -424,11 +444,9 @@
                 font-size: 20px;
             }
         }
-    }
 
-    .mi-fondo {
         .medios-de-pago {
-            p {
+            h6 {
                 padding-bottom: 0;
             }
         }
@@ -443,7 +461,7 @@
                     ul {
                         padding-left: 0;
 
-                        h5 {
+                        h4 {
                             padding-right: 50px;
                         }
                     }
@@ -457,12 +475,27 @@
                 }
             }
         }
-    }
 
-    .medios-de-pago {
-        .tarjetas {
-            img {
-                padding-top: 10px;
+        .cotizacion {
+            .row {
+                padding: 50px;
+                height: 65vh;
+
+                .col-12 {
+                    .btn {
+                        margin-right: 40px;
+                    }
+                }
+            }
+        }
+
+        .medios-de-pago {
+            padding-top: 0;
+
+            .tarjetas {
+                img {
+                    padding-top: 10px;
+                }
             }
         }
     }
@@ -501,7 +534,7 @@
                     }
 
                     .lista {
-                        h5 {
+                        h4 {
                             width: 200px;
                         }
 
@@ -525,7 +558,7 @@
                     }
 
                     .lista {
-                        h5 {
+                        h4 {
                             width: 200px;
                             margin-left: 0;
                         }
@@ -562,7 +595,7 @@
             margin-top: 0;
             margin-bottom: 0;
 
-            h6 {
+            h5 {
                 font-size: 25px;
             }
 

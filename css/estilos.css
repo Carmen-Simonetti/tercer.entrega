@@ -786,6 +786,15 @@ h2 {
   background-color: rgba(6, 225, 6, 0.766);
 }
 
+@media screen and (max-width: 1121px) {
+  .mi-fondo .hero-productos .div-productos {
+    display: grid;
+    grid-template-columns: 300px 300px;
+  }
+  .mi-fondo .hero-productos .div-productos div h3 {
+    width: 250px;
+  }
+}
 @media screen and (max-width: 827px) {
   .hero-productos p {
     padding-bottom: 30px;
@@ -909,7 +918,7 @@ h2 {
   display: flex;
   flex-direction: column;
 }
-.mi-fondo .servicios div .lista h5 {
+.mi-fondo .servicios div .lista h4 {
   color: #fdf0d5;
   font-size: 25px;
   background-color: brown;
@@ -948,7 +957,7 @@ h2 {
 .cotizacion {
   margin-top: 50px;
 }
-.cotizacion h6 {
+.cotizacion h5 {
   padding-top: 50px;
   font-size: 50px;
   color: #fdf0d5;
@@ -995,7 +1004,7 @@ h2 {
   padding-top: 50px;
   padding-bottom: 50px;
 }
-.medios-de-pago div p {
+.medios-de-pago div h6 {
   padding-bottom: 50px;
   padding-top: 50px;
   margin-bottom: 0;
@@ -1021,13 +1030,24 @@ h2 {
     background-position: 100% 50%;
   }
 }
-@media screen and (max-width: 1121px) {
-  .mi-fondo .hero-productos .div-productos {
-    display: grid;
-    grid-template-columns: 300px 300px;
+@media screen and (max-width: 1455px) {
+  .servicios {
+    margin-left: 50px;
   }
-  .mi-fondo .hero-productos .div-productos div h3 {
-    width: 250px;
+  .servicios div div {
+    flex-wrap: wrap;
+  }
+  .servicios div div ul h5 {
+    margin-top: 15px;
+  }
+  .servicios div .lista {
+    margin-left: 0;
+  }
+  .servicios div .div-limpieza img {
+    margin-left: 0;
+  }
+  .servicios div .div-limpieza p {
+    margin-top: 15px;
   }
 }
 @media screen and (max-width: 915px) {
@@ -1045,6 +1065,9 @@ h2 {
     justify-content: flex-start;
     align-items: center;
   }
+  .mi-fondo .servicios div div h4 {
+    width: 230px;
+  }
   .mi-fondo .servicios div div ul li {
     width: 300px;
   }
@@ -1057,9 +1080,6 @@ h2 {
     margin-left: 50px;
     width: 260px;
     margin-bottom: 50px;
-  }
-  .mi-fondo .servicios div h5 {
-    width: 230px;
   }
 }
 @media screen and (max-width: 875px) {
@@ -1076,11 +1096,17 @@ h2 {
     grid-template-columns: 350px 350px;
   }
 }
+@media screen and (max-width: 768px) {
+  .mi-fondo .cotizacion .row {
+    padding: 50px;
+    height: auto;
+  }
+}
 @media screen and (max-width: 754px) {
   .mi-fondo .servicios div {
     padding-left: 0px;
   }
-  .mi-fondo .cotizacion h6 {
+  .mi-fondo .cotizacion h5 {
     padding-bottom: 20px;
   }
 }
@@ -1102,7 +1128,7 @@ h2 {
   }
 }
 @media screen and (max-width: 720px) {
-  .mi-fondo .servicios div .div-verificacion h5 {
+  .mi-fondo .servicios div .div-verificacion h4 {
     margin-left: 20px;
   }
   .mi-fondo .servicios div .div-verificacion img {
@@ -1137,7 +1163,7 @@ h2 {
   }
 }
 @media screen and (max-width: 558px) {
-  .mi-fondo .medios-de-pago p {
+  .mi-fondo .medios-de-pago h6 {
     font-size: 25px;
     margin: 15px;
   }
@@ -1155,7 +1181,7 @@ h2 {
   .mi-fondo .servicios div {
     font-size: 20px;
   }
-  .mi-fondo .servicios div ul h5 {
+  .mi-fondo .servicios div ul h4 {
     margin-right: 30px;
   }
 }
@@ -1163,7 +1189,7 @@ h2 {
   .mi-fondo .servicios h3 {
     font-size: 20px;
   }
-  .mi-fondo .medios-de-pago p {
+  .mi-fondo .medios-de-pago h6 {
     padding-bottom: 0;
   }
 }
@@ -1171,14 +1197,24 @@ h2 {
   .mi-fondo .servicios div div ul {
     padding-left: 0;
   }
-  .mi-fondo .servicios div div ul h5 {
+  .mi-fondo .servicios div div ul h4 {
     padding-right: 50px;
   }
   .mi-fondo .servicios div .div-limpieza p {
     text-align: start;
     margin-left: 50px;
   }
-  .medios-de-pago .tarjetas img {
+  .mi-fondo .cotizacion .row {
+    padding: 50px;
+    height: 65vh;
+  }
+  .mi-fondo .cotizacion .row .col-12 .btn {
+    margin-right: 40px;
+  }
+  .mi-fondo .medios-de-pago {
+    padding-top: 0;
+  }
+  .mi-fondo .medios-de-pago .tarjetas img {
     padding-top: 10px;
   }
 }
@@ -1205,7 +1241,7 @@ h2 {
     width: 200px;
     height: 200px;
   }
-  .mi-fondo .servicios div .div-servicios-cambio .lista h5 {
+  .mi-fondo .servicios div .div-servicios-cambio .lista h4 {
     width: 200px;
   }
   .mi-fondo .servicios div .div-servicios-cambio .lista ul li {
@@ -1221,7 +1257,7 @@ h2 {
     height: 200px;
     margin: 0;
   }
-  .mi-fondo .servicios div .div-verificacion .lista h5 {
+  .mi-fondo .servicios div .div-verificacion .lista h4 {
     width: 200px;
     margin-left: 0;
   }
@@ -1246,7 +1282,7 @@ h2 {
     margin-top: 0;
     margin-bottom: 0;
   }
-  .mi-fondo .cotizacion h6 {
+  .mi-fondo .cotizacion h5 {
     font-size: 25px;
   }
   .mi-fondo .cotizacion .row {
