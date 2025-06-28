@@ -62,3 +62,139 @@
         }
     }
 }
+
+@media screen and (max-width:827px) {
+    .hero-productos p {
+        padding-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .mi-fondo {
+        .hero-productos {
+            p {
+                font-size: 25px;
+                padding-bottom: 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 649px) {
+    .mi-fondo {
+        .hero-productos {
+            .div-productos {
+                display: grid;
+                grid-template-columns: 300px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 499px) {
+    .div-productos {
+        display: grid;
+        grid-template-columns: 250px;
+    }
+}
+
+@media screen and (max-width: 465px) {
+    .mi-fondo {
+        .hero-productos {
+            p {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:399px) {
+    .mi-fondo {
+        .hero-productos {
+            h1 {
+                font-size: nth($font-size, 3);
+            }
+
+            h2 {
+                font-size: nth($font-size, 4);
+            }
+
+            p {
+                font-size: 20px;
+                padding-bottom: 0;
+            }
+
+            .div-productos {
+                display: grid;
+                grid-template-columns: 200px;
+
+                .card {
+                    display: grid;
+                    grid-template-columns: 200px;
+                    width: 12.8rem;
+
+                    .card-body {
+                        padding: 10px;
+
+                        h3 {
+                            font-size: 15px;
+                            width: 200px;
+                            padding-right: 15px;
+                        }
+                    }
+
+                    img {
+                        margin-left: 20px;
+                        width: 150px;
+                        height: 150px;
+                    }
+
+                    a {
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:360px) {
+    .mi-fondo {
+        .hero-productos {
+            p {
+                padding: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:351px) {
+    .mi-fondo {
+        .hero-productos {
+            p {
+                font-size: nth($font-size , 4);
+            }
+
+            .div-productos {
+                margin-left: 0;
+
+                div {
+                    h3 {
+                        width: 250px;
+                    }
+                }
+            }
+        }
+    }
+      .hero-productos .div-productos {
+        display: grid;
+        grid-template-columns: 300px;
+        margin-left: 25px;
+    }
+
+    .hero-productos p {
+        margin-bottom: 50px;
+        padding: 5px;
+    }
+}

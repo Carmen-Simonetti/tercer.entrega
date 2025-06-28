@@ -98,12 +98,12 @@
         text-align: center;
         /*background: linear-gradient(90deg, #669bbc, #003049);*/
         background: #C1121F;
-background: linear-gradient(90deg, #C1121F 0%, rgba(253, 29, 29, 1) 50%, rgba(242, 241, 240, 1) 100%);
-    background-size: 200% 200%;
-    animation: gradientAnimation 2s infinite alternate;
-    background-clip: text;
-    color: transparent;
-    font-weight: 1000;
+        background: linear-gradient(90deg, #C1121F 0%, rgba(253, 29, 29, 1) 50%, rgba(242, 241, 240, 1) 100%);
+        background-size: 200% 200%;
+        animation: gradientAnimation 2s infinite alternate;
+        background-clip: text;
+        color: transparent;
+        font-weight: 1000;
     }
 
     .row {
@@ -170,11 +170,416 @@ background: linear-gradient(90deg, #C1121F 0%, rgba(253, 29, 29, 1) 50%, rgba(24
 
     }
 }
+
 @keyframes gradientAnimation {
     0% {
         background-position: 0% 50%;
     }
+
     100% {
         background-position: 100% 50%;
+    }
+}
+
+@media screen and (max-width:1121px) {
+    .mi-fondo {
+        .hero-productos {
+            .div-productos {
+                display: grid;
+                grid-template-columns: 300px 300px;
+
+                div {
+                    h3 {
+                        width: 250px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 915px) {
+    .mi-fondo {
+        .servicios {
+            margin-left: 0;
+
+            div {
+                display: grid;
+                grid-template-columns: 400px 400px;
+                justify-content: center;
+
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: center;
+
+                    ul {
+                        li {
+                            width: 300px;
+                        }
+                    }
+                }
+
+                .div-limpieza {
+                    img {
+                        margin-left: 15px;
+                        margin-top: 30px;
+                    }
+
+                    p {
+                        padding-left: 15px;
+                        margin-left: 50px;
+                        width: 260px;
+                        margin-bottom: 50px;
+                    }
+                }
+            }
+        }
+    }
+
+    .mi-fondo {
+        .servicios {
+            div {
+                h5 {
+                    width: 230px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:875px) {
+    .mi-fondo {
+        .servicios {
+            margin-left: 0;
+        }
+    }
+}
+
+@media screen and (max-width:827px) {
+    .mi-fondo {
+        .servicios {
+            margin-left: 0;
+
+            div {
+                display: grid;
+                grid-template-columns: 350px 350px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 754px) {
+    .mi-fondo {
+        .servicios {
+            div {
+                padding-left: 0px;
+            }
+        }
+    }
+
+    .mi-fondo {
+        .cotizacion {
+            h6 {
+                padding-bottom: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 725px) {
+    .mi-fondo {
+        .servicios {
+            div {
+                display: grid;
+                grid-template-columns: 350px;
+                justify-content: center;
+                padding-bottom: 50px;
+
+                .div-limpieza {
+                    margin: 0;
+
+                    img {
+                        margin-left: 0;
+                    }
+
+                    p {
+                        margin-left: 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .mi-fondo {
+        .servicios {
+            div {
+
+                .div-verificacion {
+                    h5 {
+                        margin-left: 20px;
+                    }
+
+                    img {
+                        margin-left: 20px;
+                    }
+
+                    ul {
+
+                        margin-left: 20px;
+
+                    }
+                }
+
+                .div-limpieza {
+                    img {
+                        margin-left: 20px;
+                    }
+
+                    p {
+                        padding-right: 0;
+                        padding-left: 0;
+                        margin-left: 40px;
+                        width: 250px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 714px) {
+    .servicios div {
+        grid-template-columns: 300px 300px;
+    }
+}
+
+@media screen and (max-width: 649px) {
+    .mi-fondo {
+        .medios-de-pago {
+            margin: 0;
+        }
+    }
+}
+
+@media screen and (max-width:600px) {
+    .mi-fondo {
+        .cotizacion {
+            h6 {
+                font-size: nth($font-size, 5);
+            }
+        }
+    }
+}
+
+@media screen and (max-width:558px) {
+    .mi-fondo {
+        .medios-de-pago {
+            p {
+                font-size: 25px;
+                margin: 15px;
+            }
+
+            .tarjetas {
+                display: flex;
+                flex-wrap: wrap;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 499px) {
+    .medios-de-pago {
+        .tarjetas {
+            img {
+                padding: 5px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 451px) {
+    .mi-fondo {
+        .servicios {
+            div {
+                font-size: 20px;
+
+                ul {
+                    h5 {
+                        margin-right: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:435px) {
+    .mi-fondo {
+        .servicios {
+            h3 {
+                font-size: 20px;
+            }
+        }
+    }
+
+    .mi-fondo {
+        .medios-de-pago {
+            p {
+                padding-bottom: 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:399px) {
+    .mi-fondo {
+        .servicios {
+            div {
+                div {
+                    ul {
+                        padding-left: 0;
+
+                        h5 {
+                            padding-right: 50px;
+                        }
+                    }
+                }
+
+                .div-limpieza {
+                    p {
+                        text-align: start;
+                        margin-left: 50px;
+                    }
+                }
+            }
+        }
+    }
+
+    .medios-de-pago {
+        .tarjetas {
+            img {
+                padding-top: 10px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:379px) {
+    .mi-fondo {
+        .servicios {
+            div {
+                display: grid;
+                grid-template-columns: 300px;
+                padding-bottom: 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:351px) {
+    .mi-fondo {
+        .servicios {
+            margin-left: 0;
+
+            h3 {
+                margin-left: 10px;
+                margin-right: 10px;
+                margin-bottom: 50px;
+            }
+
+            div {
+                .div-servicios-cambio {
+                    padding: 0;
+
+                    img {
+                        width: 200px;
+                        height: 200px;
+                    }
+
+                    .lista {
+                        h5 {
+                            width: 200px;
+                        }
+
+                        ul {
+                            li {
+                                width: 200px;
+                                font-size: 15px;
+                            }
+                        }
+                    }
+                }
+
+                .div-verificacion {
+                    padding-right: 0;
+                    padding-bottom: 0;
+
+                    img {
+                        width: 200px;
+                        height: 200px;
+                        margin: 0;
+                    }
+
+                    .lista {
+                        h5 {
+                            width: 200px;
+                            margin-left: 0;
+                        }
+
+                        ul {
+                            margin-left: 0;
+
+                            li {
+                                width: 200px;
+                                font-size: 15px;
+
+                            }
+                        }
+                    }
+                }
+
+                .div-limpieza {
+                    img {
+                        width: 200px;
+                        height: 200px;
+                        margin: 0;
+                    }
+
+                    p {
+                        margin: 0;
+                        width: 200px;
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+
+        .cotizacion {
+            margin-top: 0;
+            margin-bottom: 0;
+
+            h6 {
+                font-size: 25px;
+            }
+
+            .row {
+                height: auto;
+
+                .col-md-3 {
+                    .form-label {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+
+        .medios-de-pago {
+            height: auto;
+            padding-top: 0;
+        }
     }
 }
