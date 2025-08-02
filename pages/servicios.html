@@ -123,17 +123,19 @@
                 </div>
                 <div class="col-md-3">
                     <label for="validationCustom04" class="form-label">Kilometraje</label>
-                    <select class="form-select" id="validationCustom04" required>
+                    <select class="form-select" id="kilometraje" required>
                         <option selected disabled value="">Seleccionar</option>
-                        <option>5000 km</option>
-                        <option>10000 km</option>
-                        <option>15000 km</option>
-                        <option>20000 km</option>
-                        <option>30000 km</option>
+                        <option value="2500">2500 km</option>
+                        <option value="5000">5000 km</option>
+                        <option value="10000">10000 km</option>
+                        <option value="15000">15000 km</option>
+                        <option value="20000">20000 km</option>
+                        <option value="30000">30000 km</option>
+                        <option value="50000">50000 km</option>
                     </select>
                 </div>
                 <div class="col-12">
-                    <button class="btn btn-primary" onclick="verificarKm()" type="submit" >Cotizar</button>
+                    <button class="btn btn-primary" onclick="mostrarMensaje(event)" type="submit" >Cotizar</button>
                 </div>
             </form>
         </section>

@@ -1,7 +1,17 @@
-let producto = {
-    nombre: "cambio de aceite sintético",
-    precio: "$119.999",
-    stock: "100 lts",
-    filtros: "de aceite y de aire",
-};
-console.log(producto);
+
+function agregarProducto (producto) { 
+    alert ("Producto agregado al carrito");
+}
+
+const funcionPregunta= function () { 
+    console.log(`¿Qué andas buscando ${this.nombre}?`);
+}
+
+let comprador = {
+    nombre: "juan",
+    pregunta: funcionPregunta,
+ };
+//el método siempre está ligado a un objeto 
+comprador.pregunta ();
+comprador.nombre = "juanita";
+comprador.pregunta ();
