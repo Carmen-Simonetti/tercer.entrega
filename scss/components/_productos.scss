@@ -20,6 +20,7 @@
             border-radius: 15px;
             transition: transform 0.3s ease;
             align-items: center;
+            height: 350px !important;
 
                     &:hover {
                         transform: scale(1.1);
@@ -195,7 +196,7 @@
             .div-productos {
                 margin-left: 0;
 
-                div {
+                div { 
                     h3 {
                         width: 250px;
                     }

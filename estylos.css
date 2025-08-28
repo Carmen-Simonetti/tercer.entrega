@@ -1,0 +1,24 @@
+
+.productos-carrito {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding-bottom: 50px;
+}
+.mi-fondo h1 {
+  color: #c1121f;
+}
+.mi-fondo h2 {
+  color: #c1121f;
+  padding-bottom: 50px;
+}
+
+.carrito-combos {
+  display: flex;
+  gap: 30px;
+  padding: 50px;
+}
+
+

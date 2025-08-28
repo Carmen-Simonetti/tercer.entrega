@@ -6,105 +6,179 @@ function mostrarMensaje() {
   const selectKm = document.getElementById('kilometraje');
   const km = Number(selectKm.value);
 
-  if (km === 5000 || km < 5000 ) {
-   alert ("Sólo control general");
+  if (km === 5000 || km < 5000) {
+    alert("Sólo control general");
   } else if (km <= 15000) {
-    alert ("Cambio de aceite Sintético y filtro de aire");
+    alert("Cambio de aceite Sintético y filtro de aire");
   } else if (km <= 20000) {
-    alert ("Cambio de aceite Semi-sintético y filtro de aire");
+    alert("Cambio de aceite Semi-sintético y filtro de aire");
   } else if (km <= 30000) {
-    alert ("Cambio de aceite Mineral, filtro de aire y de habitáculo");
+    alert("Cambio de aceite Mineral, filtro de aire y de habitáculo");
   } else if (km <= 50000) {
-    alert ("Mantenimiento completo: aceite, filtros, frenos, alineación");
+    alert("Mantenimiento completo: aceite, filtros, frenos, alineación");
   }
-}
-
-
-//MIS OBJETOS 
-
-let pastillasDeFrenosUno = {
-  nombre: "pastillas de freno Semimetálicas",
-  materiales: "metal y otros minerales",
-  ventajas: "buena durabilidad y rendimiento",
-  precio: "20.000",
-
 };
 
-let pastillasDeFrenosDos = {
-  nombre: "pastillas de freno Orgánicas",
-  materiales: "fibra y caucho",
-  ventajas: "silenciosas y generan menos desgaste en los discos",
-  precio: "15.000",
-};
 
-let pastillasDeFrenosTres = {
-  nombre: "pastillas de freno de Cerámica",
-  ventajas: "rendimiento silencioso y menos agresivas para los discos",
-  precio: "10.000",
-};
+class Aceite {
+  constructor (nombre, graduacion, litros, kilometraje, precio) {
+    this.nombre = nombre;
+    this.graduacion = graduacion; 
+    this.litros = litros;
+    this.kilometraje = kilometraje;
+    this.precio = precio;
+  }
+  
+}
 
-let BujíaUno = {
-  nombre: "Bujías frias", precio: "5000"
-}
-let BujíaDos = {
-  nombre: "Bujías de platino", precio: "5000"
-}
-let BujíasTres = {
-  nombre: "Bujías incandescentes", precio: "5000"
-}
-let BujíasCuatro = {
-  nombre: "Bujías multielectrodo",precio: "15000"
-}
-let BujíasCinco = {
-  nombre: "Bujías calientes", precio: "15000"
-}
-let BujíasSeis = {
-  nombre: "Bujías de iridio", precio: "15000"
-}
-let BujíasSiete = {
-  nombre: "Bujías de resistencia desnuda", precio: "15000"
-}
-let BujíasOcho = {
-  nombre: "Bujías de cobre", precio: "15000"
-}
-let BujíasNueve = {
-  nombre: "Bujías para gas", precio: "15000"
-}
-let BujíasDiez = {
-  nombre: "Bujías de resistencia protegida", precio: "20000"
-}
-//ARRAY 
-const ProductosParaElAuto = [
-  { nombreUno: "pastillas de freno Semimetálicas", precio: "20.000" },
-  { nombreDos: "pastillas de freno Orgánicas", precio: "15.000" },
-  { nombreTres: "Bujías frias", precio: "5000"},
-  { nombreCuatro: "Bujías de platino", precio: "5000"},
-  { nombreCinco: "Bujías incandescentes", precio: "5000"},
-  { nombreSeis: "Bujías multielectrodo", precio: "15000"},
-  { nombreSiete: "Bujías calientes", precio: "15000"},
-  { nombreOcho: "Bujías de iridio", precio: "15000"},
-  { nombreNueve: "Bujías de resistencia desnuda", precio: "15000"},
-  { nombreDiez: "Bujías de cobre", precio: "15000"},
-  { nombreOnce: "Bujías para gas", precio: "15000"},
-  { nombreDoce: "Bujías de resistencia protegida", precio: "20000"}
+//instanciar una class 
+let aceite1 = new Aceite ("Helix", "5w30", "1litro", "20.000 km", "30.000");
+let aceite2 = new Aceite ("Helix", "10w40", "1litro", "35.000 km", "25.000");
+let aceite3 = new Aceite ("Helix", "15w40", "1litro", "50.000 km", "17.000");
+console.log(aceite1, aceite2, aceite3);
+
+const AceitesSintético = [
+{nombre: "Helix 5w40", precio: "30000"},
+{nombre: "Elaion 5w40", precio: "28000"},
+{nombre: "Castrol 5w40", precio: "25000"},
+{nombre: "Liqui-Moly 5w40", precio: "22000"},
+{nombre: "Petronas Syntium 5w40", precio: "19000"},
 ];
-console.log(ProductosParaElAuto);
-
-ProductosParaElAuto.unshift(pastillasDeFrenosTres);
-//con 'unshift' agrego un nuevo elemento al principio de mi array
-console.log(ProductosParaElAuto);
-
-console.log(ProductosParaElAuto[5]);
-//accedo/muestro al elemento pastillas de freno orgánicas 
-
-ProductosParaElAuto.push ({nombre: "escobillas delanteras marca Bosch", precio: "12000"});
-//agrego un nuevo producto a mi lista
 
 
-//!------------ESTE ES EL FOR QUE ME DA ACCESO A CADA ELEMENTO
-for (let i = 0; i < ProductosParaElAuto.length; i++) { //i = 0 recorro el array desde el primer elemento xq empieza en 0 ; hasta el ultimo elemento por su longitud i < nombre.length; ++ cambia el valor de i 
-  ProductosParaElAuto[i].madeIn = "China"; //agrego A CADA elemento del array
+const AceitesSemi = [
+{nombre: "Helix 10w40", precio: "25000"},
+{nombre: "Elaion 10w40", precio: "23000"},
+{nombre: "Castrol 10w40", precio: "20000"},
+{nombre: "Liqui-Moly 10w40", precio: "18000"},
+{nombre: "Petronas Syntium 10w40", precio: "17000"},
+];
+
+const AceitesMineral = [
+{nombre: "Helix 15w40", precio: "20000", id: "54512"},
+{nombre: "Elaion 15w40", precio: "17000", id: "54513"},
+{nombre: "Castrol 15w40", precio: "14000", id: "54511"},
+{nombre: "Liqui-Moly 15w40", precio: "12000", id: "54510"},
+{nombre: "Petronas Syntium 15w40", precio: "10000", id: "54509"},
+];
+
+//?------------------CARRITO DE COMPRAS
+const carrito = {
+  AceitesMineral : [
+{nombre: "Helix 15w40", precio: "20000", id: "54512", cantidad: "2"},
+{nombre: "Elaion 15w40", precio: "17000", id: "54513", cantidad: "1"},],
+SumarProductos: function () {
+  let total = 0;
+  for (let i = 0; i < this.AceitesMineral.length; i++) {
+    let producto = this.AceitesMineral[i]; // accedemos al producto en esa posición
+    total += Number(producto.precio) * Number(producto.cantidad);
+  }
+  return total;
+}
 }
 
-// manipular un objeto
-ProductosParaElAuto.nombreUno = "Bujía transparente";
+localStorage.setItem('carrito', JSON.stringify(carrito));
+const carritoParseado = JSON.parse(localStorage.getItem('carrito'));
+console.log(carritoParseado);
+
+carritoParseado.SumarProductos = function () {
+  let total = 0;
+  for (let i = 0; i < this.AceitesMineral.length; i++) {//Recorro mi array; luego THIS (carrito) OBJETO; Luego .AceitesMineral porque ingreso a una propiedad de mi objeto this .length xq recorro todo mi array hasta el final
+    let producto = this.AceitesMineral[i]; // accedo a la posición de esa propiedad de mi array
+    total += Number(producto.precio) * Number(producto.cantidad); //paso de string a Number para poder sumar. Ingresar al precio del producto (producto.precio) multiplico x las cantidad (producto..cantidad) 
+  }
+  return total;
+}
+
+console.log("Total:", carritoParseado.SumarProductos());
+
+carritoParseado.SumarProductos = function () {
+  let total = 0;
+  AceitesMineral.nombre + AceitesMineral.nombre
+  return total
+}
+
+const persona = {nombre:"caca", edad: 27, ciudad: "Buenos Aires"};
+console.log(persona.nombre);
+console.log(persona.edad);
+
+const frutas = [
+  {nombre:"mango", precio: "200"},
+  {nombre:"frutilla", precio: "100"},
+  {nombre:"banana", precio: "50"}
+]
+console.log(frutas);
+
+for (let i = 0; i < frutas.length; i++) {
+  let hola = frutas[i];
+  console.log(hola);
+}
+
+let SumarFrutas = (nombre, precio) => {
+  const nuevaFruta = {nombre: nombre, precio: precio}; //creo EL OBJETO
+  frutas.push(nuevaFruta); //agrego a mi array la nueva fruta que anteriormente cree
+};
+
+//ya dejé lista mi funcion ahora la utilizo y si quiero vuelvo a reutilizar
+SumarFrutas("manzana", "120"); //le paso los argumentos escribiendo dentro de los ()
+console.log(frutas);
+
+let total = 0;
+
+for (let i = 0; i < frutas.length; i++) {
+  total += Number(frutas[i].precio); // convierto a número y lo sumo
+}
+
+console.log("total:", total);
+
+const carritoo = {
+  productos : [],
+  agregarProductoo : function (nombre, precio, cantidad)  {
+  // Crear un objeto producto
+    const producto = {
+      nombre: nombre,
+      precio: precio,
+      cantidad: cantidad,
+    };
+    // Agregarlo al array "productos"
+    this.productos.push(producto);
+}
+}
+// Ejemplo de uso:
+carritoo.agregarProductoo("Rosa", 10, 2);
+carritoo.agregarProductoo("Girasol", 5, 1);
+
+console.log(carritoo.productos);
+//!-----Sumar productos de un carrito Agrega un método calcularTotal() al objeto carrito que recorra productos y devuelva el total (precio * cantidad de cada producto).
+
+const carritu = [
+  {nombre: "pepe", precio: "500" },
+  {nombre: "monchito", precio: "300"}
+]
+
+
+let tootal = 0;
+
+for (let i = 0; i < carritu.length; i++) {
+ tootal += Number(carritu[i].precio);
+} 
+
+console.log("total:",tootal);
+
+//codigo corregido 
+const carrite = {
+  productos: [
+    { nombre: "pepe", precio: 500, cantidad: 2 },
+    { nombre: "monchito", precio: 300, cantidad: 1 }
+  ],
+
+  calcularTotal: function () {
+    let total = 0;
+    for (let i = 0; i < this.productos.length; i++) {
+      total += this.productos[i].precio * this.productos[i].cantidad;
+    } //¿por qué this? Sirve para pararme en mi objeto, en este caso carrite; con .productos ingreso al array; una vez q estoy en el array puedo pedir la posicion : [i]; ingreso al precio .precio
+    return total; 
+  }
+};
+
+console.log("Total:", carrite.calcularTotal());
