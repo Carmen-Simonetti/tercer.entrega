@@ -18,7 +18,7 @@ RenderizarCombosAceite.forEach((botonComprar) => {
         let combo = botonComprar.closest(".combo"); //.closest busca el primer elemento que tenga la clase, en este caso, .combo 
         let Producto = {
             titulo: combo.querySelector(".h5").innerText, //combo. llamo a la variable q contiene a todos los botones que tienen esa clase.combo
-            imagen: combo.querySelector("img").getAttribute("src")};
+            imagen: combo.querySelector("img").getAttribute("src"),};
              let carrito = JSON.parse(localStorage.getItem("CarritoAceites")) || [];
              carrito.push(Producto);
              localStorage.setItem("CarritoAceites", JSON.stringify(carrito));

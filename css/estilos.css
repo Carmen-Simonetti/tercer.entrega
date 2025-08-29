@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.titulos-inicio a, .hero-productos a {
+.titulos-inicio a, .hero-productos button {
   font-size: 30px;
   background-color: brown;
   color: #fdf0d5;
@@ -753,6 +753,7 @@ h2 {
   border-radius: 15px;
   transition: transform 0.3s ease;
   align-items: center;
+  height: 370px !important;
 }
 .hero-productos .div-productos .card:hover {
   transform: scale(1.1);
@@ -765,16 +766,21 @@ h2 {
 .hero-productos .div-productos .card .card-body {
   background-color: #669bbc;
   border-radius: 15px;
+  height: 115px;
+  padding: 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
 }
 .hero-productos .div-productos .card .card-body h3 {
   color: #fdf0d5;
   font-size: 20px;
   text-align: center;
 }
-.hero-productos a {
+.hero-productos button {
   background-color: brown;
   color: #fdf0d5;
-  margin: 15px;
   border-radius: 10px;
   padding: 5px;
   display: flex;
@@ -782,7 +788,7 @@ h2 {
   font-size: 20px;
   text-decoration: none;
 }
-.hero-productos a:hover {
+.hero-productos button:hover {
   background-color: rgba(6, 225, 6, 0.766);
 }
 

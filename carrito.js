@@ -2,7 +2,7 @@
 
 
 
-//?-------------------------CARRITO REFRIGERANTES
+//?-------------------------CARRITO
 
 let productosDelCarrito = JSON.parse(localStorage.getItem("Card")) || [];
 

@@ -1,13 +1,13 @@
 
 
 const Refrigerantes = [
-    { nombre: "Refrigerante Clark Coolant", tipo: "refrigerante de tilenglicol", precio: "7000" },
-    { nombre: "Refrigerante Glicool", tipo: "refrigerante de tilenglicol", precio: "7000" },
-    { nombre: "Refrigerante Prestone", tipo: "refrigerante de tilenglicol", precio: "7000" },
-    { nombre: "Refrigerante Delta", tipo: "refrigerante de tilenglicol", precio: "7000" },
-    { nombre: "Refrigerante Aqua Freeze", tipo2: "refrigerante de propilenglicol", precio: "10000" },
-    { nombre: "Refrigerante Detex", tipo2: "refrigerante de propilenglicol", precio: "10000" },
-    { nombre: "Refrigerante Propilenglicol usp", tipo2: "refrigerante de propilenglicol", precio: "10000" }
+    //{ nombre: "Refrigerante Clark Coolant", img:"../img/clark.webp" , tipo: "refrigerante de tilenglicol", precio: "7000" },
+    //{ nombre: "Refrigerante Glicool", img:"../img/clark.webp",tipo: "refrigerante de tilenglicol", precio: "7000" },
+    { nombre: "Refrigerante Prestone", img:"../img/clark.webp",tipo: "refrigerante de tilenglicol", precio: "7000" },
+    { nombre: "Refrigerante Delta", img:"../img/clark.webp",tipo: "refrigerante de tilenglicol", precio: "7000" },
+    { nombre: "Refrigerante Aqua Freeze", img:"../img/clark.webp",tipo2: "refrigerante de propilenglicol", precio: "10000" },
+    { nombre: "Refrigerante Detex", img:"../img/clark.webp",tipo2: "refrigerante de propilenglicol", precio: "10000" },
+    { nombre: "Refrigerante Propilenglicol usp", img:"../img/clark.webp",tipo2: "refrigerante de propilenglicol", precio: "10000" }
 ];
 //console.log(Refrigerantes);
 // con el siguiente for muestro sólo los refrigerantes de tipo tilenglicol
@@ -22,10 +22,11 @@ const renderizarRefrigerantes = () => {
     let html = "";
     Refrigerantes.forEach((Refrigerante) => {//recorro mi array de Refrigerantes usando forEach para tener acceso a (){} que (){} me da acceso a c/u de mis Refrigerantes
     html += `
-    <div class= "Refrigerante" style="background-color:#669bbc; border-radius: 15px; padding: 0px; height: 250px";>
-    <div>${Refrigerante.nombre}</div>
-    <div>${Refrigerante.precio}</div>
-    <button onclick= "addToCard('${Refrigerante.nombre}')">Agregar al carrito</button>
+    <div class= "Refrigerante" style="background-color:#669bbc; border-radius: 15px; padding: 0px; height: 370px; justify-items: center";>
+    <img src="${Refrigerante.img}" style="height: 150px";>
+    <h5>${Refrigerante.nombre}</h5>
+    <h6>${Refrigerante.precio}</h6>
+    <button onclick= "addToCard('${Refrigerante.nombre}')">Comprar</button>
    </div> `;
     })
     contenedor.innerHTML = html; //agrego la variable anterior la llamada html a mi inner
