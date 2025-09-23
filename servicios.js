@@ -2,41 +2,80 @@
 // Dejar código listo para ser ejecutado cuando yo quiera; 
 // Hacer cosas dinámicas
 
+
 function mostrarMensaje() {
   const selectKm = document.getElementById('kilometraje');
   const km = Number(selectKm.value);
 
   if (km === 5000 || km < 5000) {
-    alert("Sólo control general");
+    Toastify({
+  text: "Sólo control general",
+  duration: 5000,
+  close: true,
+  gravity: "top", 
+  position: "center", 
+  stopOnFocus: true, //para que se detenga la notificacion cuando el mousse está encima
+  style: {
+    background: "linear-gradient(to right, #00b09b, #96c93d)",
+  },
+}).showToast();
   } else if (km <= 15000) {
-    alert("Cambio de aceite Sintético y filtro de aire");
+    Toastify({
+  text: "Cambio de aceite Sintético y filtro de aire",
+  duration: 5000,
+  close: true,
+  gravity: "top", 
+  position: "center", 
+  stopOnFocus: true, //para que se detenga la notificacion cuando el mousse está encima
+  style: {
+    background: "linear-gradient(to right, #00b09b, #96c93d)",
+  },
+}).showToast();
   } else if (km <= 20000) {
-    alert("Cambio de aceite Semi-sintético y filtro de aire");
+    Toastify({
+  text: "Cambio de aceite Semi-sintético y filtro de aire",
+  duration: 5000,
+  close: true,
+  gravity: "top", 
+  position: "center", 
+  stopOnFocus: true, //para que se detenga la notificacion cuando el mousse está encima
+  style: {
+    background: "linear-gradient(to right, #00b09b, #96c93d)",
+  },
+}).showToast();
   } else if (km <= 30000) {
-    alert("Cambio de aceite Mineral, filtro de aire y de habitáculo");
+    Toastify({
+  text: "Cambio de aceite Mineral, filtro de aire y de habitáculo",
+  duration: 5000,
+  close: true,
+  gravity: "top", 
+  position: "center", 
+  stopOnFocus: true, //para que se detenga la notificacion cuando el mousse está encima
+  style: {
+    background: "linear-gradient(to right, #669bbc, rgba(6, 225, 6, 0.766)",
+  },
+}).showToast();
   } else if (km <= 50000) {
-    alert("Mantenimiento completo: aceite, filtros, frenos, alineación");
+     Toastify({
+  text: "Matenimiento completo: aceite, filtros, frenos, alineación",
+  duration: 5000,
+  close: true,
+  gravity: "top", 
+  position: "center", 
+  stopOnFocus: true, //para que se detenga la notificacion cuando el mousse está encima
+  style: {
+    background: "linear-gradient(to right, #00b09b, #96c93d)",
+  },
+}).showToast();
   }
 };
+const btn = document.getElementById("btnCotizar");
+btn.addEventListener("click", mostrarMensaje);
 
 
-class Aceite {
-  constructor (nombre, graduacion, litros, kilometraje, precio) {
-    this.nombre = nombre;
-    this.graduacion = graduacion; 
-    this.litros = litros;
-    this.kilometraje = kilometraje;
-    this.precio = precio;
-  }
-  
-}
 
-//instanciar una class 
-let aceite1 = new Aceite ("Helix", "5w30", "1litro", "20.000 km", "30.000");
-let aceite2 = new Aceite ("Helix", "10w40", "1litro", "35.000 km", "25.000");
-let aceite3 = new Aceite ("Helix", "15w40", "1litro", "50.000 km", "17.000");
-//console.log(aceite1, aceite2, aceite3);
 
+//?ejercicios
 const AceitesSintético = [
 {nombre: "Helix 5w40", precio: "30000"},
 {nombre: "Elaion 5w40", precio: "28000"},
@@ -61,8 +100,6 @@ const AceitesMineral = [
 {nombre: "Liqui-Moly 15w40", precio: "12000", id: "54510"},
 {nombre: "Petronas Syntium 15w40", precio: "10000", id: "54509"},
 ];
-
-//?------------------CARRITO DE COMPRAS
 //const carrito = {
   AceitesMineral : [
 //{nombre: "Helix 15w40", precio: "20000", id: "54512", cantidad: "2"},

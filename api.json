@@ -1,0 +1,19 @@
+{
+
+    "pastillas": [
+        {"titulo": "pastillas de freno Semimetálicas", "material": "metal y otros minerales", "ventajas":"buena durabilidad y rendimiento", "precio": 20000},
+        {"titulo":"pastillas de freno Orgánicas","material": "fibra y caucho", "ventajas": "silenciosas y generan menos desgaste en los discos", "precio": 15000},
+        {"titulo": "pastillas de freno de Cerámica", "material": "cerámica","ventajas": "rendimiento silencioso y menos agresivas para los discos",
+        "precio": 10000}
+    ],
+    "bujias": [
+        {"nombre": "Bujías frias", "precio": 5000},
+        {"nombre": "Bujías de platino", "precio": 5000},
+        {"nombre": "Bujías incandescentes", "precio": 5000},
+        {"nombre": "Bujias multielectrodo", "precio": 15000},
+        {"nombre": "Bujías calientes", "precio": 15000},
+        {"nombre": "Bujías de iridio", "precio": 15000},
+        {"nombre": "Bujías de resistencia desnuda", "precio": 15000},
+        {"nombre": "Bujías de cobre", "precio": 15000}
+    ]
+}

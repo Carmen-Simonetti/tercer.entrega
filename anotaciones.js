@@ -22,7 +22,7 @@ let pastillasDeFrenosTres = {
   precio: "10.000",
 };
 
-console.log(pastillasDeFrenosUno, pastillasDeFrenosDos, pastillasDeFrenosTres);
+
 
 let BujíaUno = {  nombre: "Bujías frias", precio: "5000"}
 let BujíaDos = {nombre: "Bujías de platino", precio: "5000"}
@@ -51,16 +51,16 @@ const ProductosParaElAuto = [
   { nombreOnce: "Bujías para gas", precio: "15000" },
   { nombreDoce: "Bujías de resistencia protegida", precio: "20000" }
 ];
-console.log(ProductosParaElAuto);
+//console.log(ProductosParaElAuto);
 
 
 ProductosParaElAuto.unshift(pastillasDeFrenosTres);
 //con 'unshift' agrego un nuevo elemento al principio de mi array
-console.log(ProductosParaElAuto);
+//console.log(ProductosParaElAuto);
 
 
 //accedo/muestro al elemento Bujias incandescentes
-console.log(ProductosParaElAuto[5]);
+//console.log(ProductosParaElAuto[5]);
 
 
 //agrego un nuevo producto a mi lista

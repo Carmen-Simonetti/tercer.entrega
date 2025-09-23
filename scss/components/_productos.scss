@@ -7,9 +7,10 @@
     }
 
     .div-productos {
-        display: flex;
+        display: grid;
         /*distribuyo de manera horizontal*/
-        justify-content: space-evenly;
+        grid-template-columns: 350px 350px 350px;
+        justify-content: center;
 
         /*separo mis combos*/
         .card {
@@ -42,7 +43,7 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                width: 250px;
+                width: auto;
 
                 h3 {
                     color: $color-principal;

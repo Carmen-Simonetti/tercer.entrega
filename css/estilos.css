@@ -740,9 +740,10 @@ h2 {
   color: #669bbc;
 }
 .hero-productos .div-productos {
-  display: flex;
+  display: grid;
   /*distribuyo de manera horizontal*/
-  justify-content: space-evenly;
+  grid-template-columns: 350px 350px 350px;
+  justify-content: center;
   /*separo mis combos*/
 }
 .hero-productos .div-productos .card {
@@ -771,7 +772,7 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 250px;
+  width: auto;
 }
 .hero-productos .div-productos .card .card-body h3 {
   color: #fdf0d5;

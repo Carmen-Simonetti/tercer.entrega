@@ -1,39 +1,4 @@
 
-
-const Refrigerantes = [
-    //{ nombre: "Refrigerante Clark Coolant", img:"../img/clark.webp" , tipo: "refrigerante de tilenglicol", precio: "7000" },
-    //{ nombre: "Refrigerante Glicool", img:"../img/clark.webp",tipo: "refrigerante de tilenglicol", precio: "7000" },
-    { nombre: "Refrigerante Prestone", img:"../img/clark.webp",tipo: "refrigerante de tilenglicol", precio: "7000" },
-    { nombre: "Refrigerante Delta", img:"../img/clark.webp",tipo: "refrigerante de tilenglicol", precio: "7000" },
-    { nombre: "Refrigerante Aqua Freeze", img:"../img/clark.webp",tipo2: "refrigerante de propilenglicol", precio: "10000" },
-    { nombre: "Refrigerante Detex", img:"../img/clark.webp",tipo2: "refrigerante de propilenglicol", precio: "10000" },
-    { nombre: "Refrigerante Propilenglicol usp", img:"../img/clark.webp",tipo2: "refrigerante de propilenglicol", precio: "10000" }
-];
-//console.log(Refrigerantes);
-// con el siguiente for muestro sólo los refrigerantes de tipo tilenglicol
-//const filtrar = () => {
-//for (let i = 0; i <4; i++) {
-//console.log(Refrigerantes[i]);
-//}
-//};
-//!-----------------FUNCION RENDERIZAR REFRIGERANTES 
-const renderizarRefrigerantes = () => { 
-    let contenedor = document.querySelector(".productos-carrito"); //conecto con mi html
-    let html = "";
-    Refrigerantes.forEach((Refrigerante) => {//recorro mi array de Refrigerantes usando forEach para tener acceso a (){} que (){} me da acceso a c/u de mis Refrigerantes
-    html += `
-    <div class= "Refrigerante" style="background-color:#669bbc; border-radius: 15px; padding: 0px; height: 370px; justify-items: center";>
-    <img src="${Refrigerante.img}" style="height: 150px";>
-    <h5>${Refrigerante.nombre}</h5>
-    <h6>${Refrigerante.precio}</h6>
-    <button onclick= "addToCard('${Refrigerante.nombre}')">Comprar</button>
-   </div> `;
-    })
-    contenedor.innerHTML = html; //agrego la variable anterior la llamada html a mi inner
-};
-renderizarRefrigerantes(); //llamo a mi funcion
-// Selecciona el elemento
-
 //!------------TUVE QUE HACER UNA FUNCION PARA QUITAR UN STYLO
 // Selecciona todos los elementos con la clase 'mi-clase'
 const elementos = document.querySelectorAll('.card-body');
@@ -88,7 +53,18 @@ combos.forEach((boton) => {
 const mensajes = document.querySelectorAll(".btn.btn-primary"); //BUSCO LA CLASE .contact-form
 mensajes.forEach((mensaje) => {
   mensaje.addEventListener("click", function (mensaje) {
-      alert("Producto agregado al carrito");
+       Toastify({
+  text: "Producto agregado al carrito",
+  duration: 5000,
+  close: true,
+  gravity: "top", 
+  position: "center", 
+  stopOnFocus: true, //para que se detenga la notificacion cuando el mousse está encima
+  style: {
+    background: "linear-gradient(to right, #00b09b, #96c93d)",
+  },
+}).showToast();
+    
     }
   )});
 
@@ -100,3 +76,50 @@ mensajitos.forEach((mensajito) => { //recorro eso con forEach
     }
   )});
 
+
+
+
+
+
+
+  //?-----------------------------LIBRERIA
+
+  const crearProducto = async () => {
+    try {
+        let nuevoProducto = {};
+        const res = await axios.post(
+            "https://jsonplaceholder.typicode.com/posts", nuevoProducto);
+        console.log(res.data);
+        // Toastofy --> método para configurar la notificacion
+        Toastify({
+  text: "Hola bebé",
+  duration: 5000,
+  close: true,
+  gravity: "top", 
+  position: "center", 
+  stopOnFocus: true, //para que se detenga la notificacion cuando el mousse está encima
+  style: {
+    background: "linear-gradient(to right, #00b09b, #96c93d)",
+  },
+}).showToast();
+//showToast --> es el método que dispara la notificacion
+    } catch (error) {
+console.log(error);
+    }
+};
+
+//?--------------------------- SE UTILIZA FETCHING DE DATOS 
+const resultados = document.getElementById("resultados");
+const buscador = document.querySelector (".btn");
+buscador.addEventListener("click", (event)=>{
+  event.preventDefault(); //evito que se recargue mi pag
+  const obtenerProductos = async () => {
+  const response = await fetch ("../api.json");
+  const res = await response.json();
+ resultados.innerHTML = ""; // limpio
+  res.pastillas.forEach((producto) => {
+    resultados.innerHTML += `<p>${producto.titulo} - $${producto.precio}-${producto.material}-${producto.ventajas}</p>`;
+  });
+}
+obtenerProductos();
+})
